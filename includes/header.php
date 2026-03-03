@@ -752,7 +752,7 @@
                             id="menu-item-28243"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28243"
                         >
-                            <a href="javascript:void(0);"><span>DRR Premium County</span></a>
+                            <a href="projects/drr-premium-county/"><span>DRR Premium County</span></a>
                         </li>
                     </ul>
                 </li>
