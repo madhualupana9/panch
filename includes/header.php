@@ -762,6 +762,9 @@
             <a href="media.php"><span style="color: #ffffff">Media</span></a>
         </li>
         <li id="menu-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263">
+            <a href="partner-with-us.php"><span style="color: #ffffff">Partner with us</span></a>
+        </li>
+        <li id="menu-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263">
             <a href="contactus.php"><span style="color: #ffffff">Contact Us</span></a>
         </li>
     </ul>

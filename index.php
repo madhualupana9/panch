@@ -544,11 +544,11 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-1e06928 elementor-widget-mobile__width-initial sc_fly_static elementor-widget elementor-widget-heading" data-id="1e06928" data-element_type="widget" data-widget_type="heading.default">
                 <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">Designed <br>for Living.<br> Planned <br>for Growth</h2>             </div>
+                    <h2 class="elementor-heading-title elementor-size-default" style="color:white;">. </h2> </div>
                 </div>
                 <div class="elementor-element elementor-element-2dc6c0c elementor-absolute sc_fly_static elementor-widget elementor-widget-heading" data-id="2dc6c0c" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
                 <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">Apartments | Villas | Weekend homes</h2>             </div>
+                               </div>
                 </div>
                     </div>
         </div>
@@ -567,7 +567,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-47d89f7 elementor-absolute elementor-widget-mobile__width-initial sc_fly_static elementor-widget elementor-widget-image" data-id="47d89f7" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_scale_direction&quot;:&quot;out-in&quot;,&quot;motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
                 <div class="elementor-widget-container">
-                                                            <img loading="lazy" decoding="async" width="1167" height="497" src="wp-content/uploads/iamge12.png" class="attachment-full size-full wp-image-26548" alt="ankura villas">                                                           </div>
+                                                            <img loading="lazy" decoding="async" width="1167" height="497" src="assests/image/plot.jpeg" class="attachment-full size-full wp-image-26548" alt="ankura villas">                                                           </div>
                 </div>
                     </div>
         </div>
