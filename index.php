@@ -350,7 +350,7 @@
                                                                                                             >
                                                                                                                 <a
                                                                                                                     class="n2-style-4e71a4f43fe4ff5a6b7ac2f8ef7bf4e8-heading n2-ow"
-                                                                                                                    href="javascript:void(0);"
+                                                                                                                    href="projects/drr-premium-county/"
                                                                                                                     ><div>
                                                                                                                         <div>
                                                                                                                             Know
@@ -889,7 +889,7 @@
                                                                                 <div class="elementor-button-wrapper">
                                                                                     <a
                                                                                         class="elementor-button elementor-button-link elementor-size-sm"
-                                                                                        href="javascript:void(0);"
+                                                                                        href="projects/drr-premium-county/"
                                                                                     >
                                                                                         <span
                                                                                             class="elementor-button-content-wrapper"

@@ -50,18 +50,9 @@
                                     height="40"
                                     loading="eager"
                                     fetchpriority="high"
-                                    src="https://ankurahomes.com/urban-trilla-apartments/assets/img/ankura-logo.png"
+                                    src="/assests/image/paanchajanya-logo-new.png"
                             /></a>
-                            <div class="logo-divider"></div>
-                            <img
-                                alt="Urban Trilla Logo"
-                                class="logo"
-                                width="140"
-                                height="50"
-                                loading="eager"
-                                src="https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-logo.webp"
-                            />
-                        </div>
+                            
                         <div class="d-none d-md-block">
                             <a
                                 data-bs-toggle="modal"

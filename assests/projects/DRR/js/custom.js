@@ -17853,7 +17853,7 @@
                                             (0, St.jsx)("a", {
                                                 href: "https://ankurahomes.com",
                                                 children: (0, St.jsx)("img", {
-                                                    src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/ankura-logo.png",
+                                                    src: "/assests/image/paanchajanya-logo-new.png",
                                                     alt: "Ankura Homes Logo",
                                                     className: "logo",
                                                     width: "120",
@@ -17862,15 +17862,8 @@
                                                     fetchpriority: "high",
                                                 }),
                                             }),
-                                            (0, St.jsx)("div", { className: "logo-divider" }),
-                                            (0, St.jsx)("img", {
-                                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-logo.webp",
-                                                alt: "Urban Trilla Logo",
-                                                className: "logo",
-                                                width: "140",
-                                                height: "50",
-                                                loading: "eager",
-                                            }),
+                                            
+                                            
                                         ],
                                     }),
                                     (0, St.jsx)("div", {
@@ -17886,7 +17879,7 @@
                                     (0, St.jsx)("div", {
                                         className: "d-block d-md-none",
                                         children: (0, St.jsx)("img", {
-                                            src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-logo.webp",
+                                            src: "/assests/image/paanchajanya-logo-new.png",
                                             alt: "Mobile Logo",
                                             className: "logo",
                                             width: "100",
@@ -24399,7 +24392,7 @@
                                     }),
                                     (0, St.jsx)("div", { className: "overlay" }),
                                     (0, St.jsx)(_u.img, {
-                                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-logo.webp",
+                                        src: "/assests/image/paanchajanya-logo-new.png",
                                         alt: "Logo",
                                         width: "160",
                                         height: "60",
