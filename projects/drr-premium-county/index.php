@@ -114,39 +114,14 @@
                             <li class="nav-item">
                                 <a href="#specs" class="nav-link" data-bs-dismiss="offcanvas">Specifications</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#testimonial" class="nav-link" data-bs-dismiss="offcanvas">Testimonials</a>
-                            </li>
+
                             <li class="nav-item">
                                 <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <section id="banner" class="hero">
-                    <video
-                        autoplay=""
-                        loop=""
-                        playsinline=""
-                        preload="metadata"
-                        poster="https://ankurahomes.com/urban-trilla-apartments/assets/img/video-poster.webp"
-                        class="video-bg"
-                    >
-                        <source src="https://ankurahomes.com/urban-trilla-apartments/assets/vid/C4218_2.mp4" type="video/mp4" />
-                    </video>
-                    <div class="overlay"></div>
-                    <img
-                        alt="Logo"
-                        width="160"
-                        height="60"
-                        class="hero-logos"
-                        loading="eager"
-                        decoding="async"
-                        fetchpriority="high"
-                        src="https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-logo.webp"
-                        style="opacity: 1; transform: scale(0.0428854)"
-                    />
-                </section>
+                
                 <section class="banner_parallax_section">
                     <div class="sticky-wrap">
                         <h1 class="parallax-heading sticky-heading" style="opacity: 0; transform: translateY(1000px)">
@@ -161,7 +136,7 @@
                             loading="lazy"
                             decoding="async"
                             fetchpriority="low"
-                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-parallaximg.webp"
+                            src="/assests/projects/DRR/images/panch2.png"
                             style="opacity: 0.5; transform: translateY(600px)"
                         />
                     </div>
@@ -1453,148 +1428,8 @@
                         </div>
                     </div>
                 </section>
-                <section
-                    id="youtube"
-                    style="
-                        width: 100%;
-                        background-color: rgb(255, 255, 255);
-                        padding: 60px 0px 40px;
-                        text-align: center;
-                    "
-                >
-                    <h2
-                        class="section-title"
-                        style="font-size: 2.2rem; margin-bottom: 30px; font-weight: 900; color: rgb(17, 17, 17)"
-                    >
-                        Construction Update
-                    </h2>
-                    <div
-                        style="
-                            position: relative;
-                            width: 90%;
-                            max-width: 1200px;
-                            margin: 0px auto;
-                            aspect-ratio: 16 / 9;
-                            overflow: hidden;
-                            border-radius: 10px;
-                            box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px;
-                        "
-                    >
-                        <iframe
-                            src="https://www.youtube.com/embed/WckYkNyybTI?si=KJkGZj0v7j03W2ak"
-                            title="Project Video"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen=""
-                            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: none"
-                        ></iframe>
-                    </div>
-                </section>
-                <section id="testimonial" class="testimonials">
-                    <div class="container aos-init" data-aos="zoom-in">
-                        <div class="text-center mb-4"><h2 class="section-title mt-2">Testimonials</h2></div>
-                        <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                            <div class="swiper-wrapper">
-                                <div
-                                    class="swiper-slide swiper-slide-active"
-                                    data-aos-delay="0"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="0"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/yxd1-DX5-II?si?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div
-                                    class="swiper-slide swiper-slide-next"
-                                    data-aos-delay="100"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="1"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/MjMj3pR6If8?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div
-                                    class="swiper-slide"
-                                    data-aos-delay="200"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="2"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/Q2vG7mUWVFk?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div
-                                    class="swiper-slide"
-                                    data-aos-delay="300"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="3"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/VobrS1Kn0IE?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div
-                                    class="swiper-slide"
-                                    data-aos-delay="400"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="4"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/Ui-KjkGW2O8?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                            <div
-                                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
-                            >
-                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span
-                                ><span class="swiper-pagination-bullet"></span
-                                ><span class="swiper-pagination-bullet"></span
-                                ><span class="swiper-pagination-bullet"></span
-                                ><span class="swiper-pagination-bullet"></span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
+
                 <section id="contact" class="contact-section py-5">
                     <div class="container aos-init" data-aos="zoom-in">
                         <div class="text-center mb-5">
@@ -1606,7 +1441,7 @@
                                 <div class="map-container shadow-sm rounded-4 overflow-hidden">
                                     <iframe
                                         title="Google Map"
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2098000977167!2d78.17473987462832!3d17.449669701009046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbef73289041db%3A0xa0f9f55ccfbc6cf3!2sUrban%20Trilla%20Apartments!5e0!3m2!1sen!2sin!4v1758694083235!5m2!1sen!2sin"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.277809000427!2d78.3989531!3d17.446412499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91431bf07277%3A0x259463e3d24a7634!2sC9WX%2BHH8%2C%20Kakatiya%20Hills%2C%20Guttala_Begumpet%2C%20Kavuri%20Hills%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1772690338720!5m2!1sen!2sin"
                                         width="100%"
                                         height="350"
                                         allowfullscreen=""
@@ -1672,7 +1507,7 @@
                     <div class="footer-logo text-center mb-3">
                         <img
                             alt="Official Urban Trilla Apartments coloured logo"
-                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-color-logo.png"
+                            src="/assests/image/paanchajanya-logo-new.png"
                             style="width: 190px"
                         />
                     </div>
@@ -1681,13 +1516,13 @@
                             <li><a href="#">Home</a></li>
                             <li><a href="#highlights">Projects Highlights</a></li>
                             <li><a href="#location">Location Highlights</a></li>
-                            <li><a href="#testimonial">Testimonials</a></li>
-                            <li><a href="Tel:+918367670909">Contact</a></li>
+
+                            <li><a href="Tel:+919100999099">Contact</a></li>
                         </ul>
                     </nav>
-                    <p><b>RERA NO:</b> P02400003866</p>
-                    <a href="tel:+918367670909"
-                        ><p><b>Call:</b> +91 8367670909</p></a
+                    <p><b>RERA NO:</b> </p>
+                    <a href="tel:+919100999099"
+                        ><p><b>Call:</b> +91 9100999099</p></a
                     >
                     <div class="social-icons d-flex justify-content-center gap-3 mb-3">
                         <a target="_blank" href="https://www.facebook.com/AnkuraHomes1/" aria-label="Facebook"

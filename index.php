@@ -140,7 +140,7 @@
                                                                         <picture class="skip-lazy" data-skip-lazy="1"
                                                                             ><img
                                                                                 decoding="async"
-                                                                                src="https://static.wixstatic.com/media/0f832a_598c3812f18a40e4af5023282891e1a8~mv2.png/v1/fill/w_925,h_520,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/0f832a_598c3812f18a40e4af5023282891e1a8~mv2.png"
+                                                                                src="/assests/image/future-city.jpg"
                                                                                 alt=""
                                                                                 title=""
                                                                                 loading="lazy"
@@ -567,7 +567,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-47d89f7 elementor-absolute elementor-widget-mobile__width-initial sc_fly_static elementor-widget elementor-widget-image" data-id="47d89f7" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_scale_direction&quot;:&quot;out-in&quot;,&quot;motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
                 <div class="elementor-widget-container">
-                                                            <img loading="lazy" decoding="async" width="1167" height="497" src="assests/image/plot.jpeg" class="attachment-full size-full wp-image-26548" alt="ankura villas">                                                           </div>
+                                                            <img loading="lazy" decoding="async" width="1167" height="497" src="assests/image/slide3.png" class="attachment-full size-full wp-image-26548" alt="ankura villas">                                                           </div>
                 </div>
                     </div>
         </div>

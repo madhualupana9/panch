@@ -111,14 +111,14 @@
                             id="menu-item-28695"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
                         >
-                            <a href="#"><span style="color: #ffffff">media</span></a>
+                            <a href="#"><span style="color: #ffffff">Careers</span></a>
                         </li>
 
                         <li
                             id="menu-item-28695"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
                         >
-                            <a href="#"><span style="color: #ffffff">projects</span></a>
+                            <a href="#"><span style="color: #ffffff">Projects</span></a>
                         </li>
 
                         <li
@@ -126,6 +126,13 @@
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
                         >
                             <a href="#"><span style="color: #ffffff">Contactus</span></a>
+                        </li>
+
+                        <li
+                            id="menu-item-28695"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
+                        >
+                            <a href="#"><span style="color: #ffffff">Privacy Policy</span></a>
                         </li>
                         
                     </ul>

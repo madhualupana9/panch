@@ -123,9 +123,7 @@
                             <li class="nav-item">
                                 <a href="#specs" class="nav-link" data-bs-dismiss="offcanvas">Specifications</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#testimonial" class="nav-link" data-bs-dismiss="offcanvas">Testimonials</a>
-                            </li>
+
                             <li class="nav-item">
                                 <a href="#contact" class="nav-link" data-bs-dismiss="offcanvas">Contact</a>
                             </li>
@@ -1499,111 +1497,7 @@
                         ></iframe>
                     </div>
                 </section>
-                <section id="testimonial" class="testimonials">
-                    <div class="container aos-init" data-aos="zoom-in">
-                        <div class="text-center mb-4"><h2 class="section-title mt-2">Testimonials</h2></div>
-                        <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                            <div class="swiper-wrapper">
-                                <div
-                                    class="swiper-slide swiper-slide-active"
-                                    data-aos-delay="0"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="0"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/yxd1-DX5-II?si?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div
-                                    class="swiper-slide swiper-slide-next"
-                                    data-aos-delay="100"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="1"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/MjMj3pR6If8?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div
-                                    class="swiper-slide"
-                                    data-aos-delay="200"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="2"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/Q2vG7mUWVFk?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div
-                                    class="swiper-slide"
-                                    data-aos-delay="300"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="3"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/VobrS1Kn0IE?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div
-                                    class="swiper-slide"
-                                    data-aos-delay="400"
-                                    style="width: 378.667px; margin-right: 20px"
-                                    data-swiper-slide-index="4"
-                                >
-                                    <div class="video-wrapper">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/Ui-KjkGW2O8?rel=0&amp;autoplay=0&amp;mute=1"
-                                            title="YouTube testimonial"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""
-                                            loading="lazy"
-                                        ></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                            <div
-                                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
-                            >
-                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span
-                                ><span class="swiper-pagination-bullet"></span
-                                ><span class="swiper-pagination-bullet"></span
-                                ><span class="swiper-pagination-bullet"></span
-                                ><span class="swiper-pagination-bullet"></span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <section id="contact" class="contact-section py-5">
                     <div class="container aos-init" data-aos="zoom-in">
                         <div class="text-center mb-5">
@@ -1690,7 +1584,7 @@
                             <li><a href="#">Home</a></li>
                             <li><a href="#highlights">Projects Highlights</a></li>
                             <li><a href="#location">Location Highlights</a></li>
-                            <li><a href="#testimonial">Testimonials</a></li>
+
                             <li><a href="Tel:+918367670909">Contact</a></li>
                         </ul>
                     </nav>

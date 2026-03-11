@@ -88,7 +88,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h2 class="section-title">Our Story</h2>
-                    <p>Panchajanya Ecovillages Pvt Ltd, founded by Mr. Rajender Reddy in 2009, has established itself as a leading provider of Villa Plots in Hyderabad, Shirdi, Bangalore, and Bangkok.</p>
+                    <p>Paanchajanya Reality Pvt Ltd, founded by Mr. Rajender Reddy in 2009, has established itself as a leading provider of Villa Plots in Hyderabad, Shirdi, Bangalore, and Bangkok.</p>
                     <p>Over the years, the company has sold thousands of plots, growing from its initial project of 2000 plots to delivering over 11 lakh square yards.</p>
                     <p>The company’s success is built upon its commitment to passing on the benefits of its cost-efficiency to its customers. This principle, along with the company’s constant efforts to improve the community and make a positive impact on people’s lives, has been a driving force behind its success over the last 25 years.</p>
                 </div>
