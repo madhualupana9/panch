@@ -2533,10 +2533,10 @@
         width: 90%;
     }
     /* header liniar bg color code starts */
-    .header_position_over:not(.trx_addons_page_scrolled) .top_panel .sc_layouts_row[class*="scheme_"],
+    /* .header_position_over:not(.trx_addons_page_scrolled) .top_panel .sc_layouts_row[class*="scheme_"],
     .header_position_over .top_panel .sc_layouts_row[class*="scheme_"]:not(.sc_layouts_row_fixed_on) {
         background: linear-gradient(to bottom, rgb(255 255 255 / 33%), rgb(0 0 0 / 0%));
-    }
+    } */
     @media only screen and (min-width: 1px) and (max-width: 700px) {
         div#n2-ss-4 .n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading {
             font-size: 22px !important;

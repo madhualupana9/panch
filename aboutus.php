@@ -3,10 +3,10 @@
 <!-- Custom Styles for this page -->
 <style>
     .page-banner {
-        background-image: url('assests/image/banner2.jpg');
+        
         background-size: cover;
         background-position: center;
-        padding: 180px 0 120px;
+        padding: 80px 0 20px;
         position: relative;
         text-align: center;
         color: #fff;
@@ -77,9 +77,7 @@
 <div class="about-page-wrapper">
     <!-- Banner -->
     <section class="page-banner">
-        <div class="container">
-            <h1>About Us</h1>
-        </div>
+       
     </section>
 
     <!-- Our Story -->
