@@ -29,7 +29,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="sc_layouts_item elementor-element elementor-element-9ed9639 sc_fly_static elementor-widget elementor-widget-image" data-id="9ed9639" data-element_type="widget" data-widget_type="image.default">
                 <div class="elementor-widget-container">
-                                                            <img loading="lazy" width="168" height="60" src="assests/image/paanchajanya-logo-new.png" class="attachment-full size-full wp-image-27540" alt="">                                                          </div>
+                                                            <a href="index.php"><img loading="lazy" width="168" height="60" src="assests/image/paanchajanya-logo-new.png" class="attachment-full size-full wp-image-27540" alt=""></a>                                                          </div>
                 </div>
                 <div class="sc_layouts_item elementor-element elementor-element-6994220 sc_fly_static elementor-widget elementor-widget-heading" data-id="6994220" data-element_type="widget" data-widget_type="heading.default">
                 <div class="elementor-widget-container">
@@ -105,34 +105,34 @@
                             id="menu-item-28696"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28696"
                         >
-                            <a href="#"><span style="color: #ffffff">About Us</span></a>
+                            <a href="aboutus.php"><span style="color: #ffffff">About Us</span></a>
                         </li>
                         <li
                             id="menu-item-28695"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
                         >
-                            <a href="#"><span style="color: #ffffff">Careers</span></a>
-                        </li>
-
-                        <li
-                            id="menu-item-28695"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
-                        >
-                            <a href="#"><span style="color: #ffffff">Projects</span></a>
+                            <a href="careers.php"><span style="color: #ffffff">Careers</span></a>
                         </li>
 
                         <li
                             id="menu-item-28695"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
                         >
-                            <a href="#"><span style="color: #ffffff">Contactus</span></a>
+                            <a href="project.php"><span style="color: #ffffff">Projects</span></a>
                         </li>
 
                         <li
                             id="menu-item-28695"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
                         >
-                            <a href="#"><span style="color: #ffffff">Privacy Policy</span></a>
+                            <a href="contactus.php"><span style="color: #ffffff">Contactus</span></a>
+                        </li>
+
+                        <li
+                            id="menu-item-28695"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
+                        >
+                            <a href="privacy-policy.php"><span style="color: #ffffff">Privacy Policy</span></a>
                         </li>
                         
                     </ul>
