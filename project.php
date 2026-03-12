@@ -3,11 +3,31 @@
         <meta charset="utf-8" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet" />
-        <link rel="icon" href="https://ankurahomes.com/urban-trilla-apartments/assets/fevicon.png" />
+        <link rel="icon" href="/assests/image/favicon.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Urban Trilla Apartments" />
-        <title>Urban Trilla Apartments</title>
+        
+        <!-- SEO Meta Tags -->
+        <title>Urban Trilla Apartments - Luxury Living in Hyderabad | Paanchajanya Reality</title>
+        <meta name="description" content="Discover Urban Trilla Apartments by Paanchajanya Reality. Luxury living with modern amenities in the heart of Hyderabad. Explore floor plans, highlights, and more." />
+        <meta name="keywords" content="Urban Trilla Apartments, Luxury Apartments Hyderabad, Paanchajanya Reality, Buy Home Hyderabad" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://paanchajanyareality.com/project.php" />
+        <meta property="og:title" content="Urban Trilla Apartments - Luxury Living in Hyderabad | Paanchajanya Reality" />
+        <meta property="og:description" content="Discover Urban Trilla Apartments by Paanchajanya Reality. Luxury living with modern amenities in the heart of Hyderabad." />
+        <meta property="og:image" content="https://paanchajanyareality.com/assests/image/paanchajanya-logo-new.png" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://paanchajanyareality.com/project.php" />
+        <meta property="twitter:title" content="Urban Trilla Apartments - Luxury Living in Hyderabad | Paanchajanya Reality" />
+        <meta property="twitter:description" content="Discover Urban Trilla Apartments by Paanchajanya Reality. Luxury living with modern amenities in the heart of Hyderabad." />
+        <meta property="twitter:image" content="https://paanchajanyareality.com/assests/image/paanchajanya-logo-new.png" />
+
+        <link rel="canonical" href="https://paanchajanyareality.com/project.php" />
+        <meta name="robots" content="index, follow" />
         <script async="" src="https://scripts.clarity.ms/0.8.56/clarity.js"></script>
         <script defer="defer" src="assests/projects/DRR/js/custom.js"></script>
         <link href="https://ankurahomes.com/urban-trilla-apartments/static/css/main.e54e2a16.css" rel="stylesheet" />

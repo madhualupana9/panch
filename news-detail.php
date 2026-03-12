@@ -15,13 +15,14 @@ if (!$article) {
     exit;
 }
 
-include 'includes/header.php'; 
-
-$date = date('F d, Y', strtotime($article['published_at']));
 $image_path = $article['image'];
 if (strpos($image_path, 'news/') === 0) {
     $image_path = 'admin/public/storage/' . $image_path;
 }
+
+include 'includes/header.php'; 
+
+$date = date('F d, Y', strtotime($article['published_at']));
 ?>
 
 <style>

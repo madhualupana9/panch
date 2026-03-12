@@ -14,8 +14,8 @@ class RealEstateNewsSeeder extends Seeder
             [
                 'title' => 'The Rise of Eco-Friendly Living in Hyderabad',
                 'slug' => 'rise-of-eco-friendly-living-hyderabad',
-                'excerpt' => 'Explore how Paanchajanya Eco Villages is redefining urban living with sustainable practices and green landscapes in the heart of Hyderabad.',
-                'content' => 'Explore how Paanchajanya Eco Villages is redefining urban living with sustainable practices and green landscapes in the heart of Hyderabad. Our commitment to sustainability goes beyond just planting trees; it encompasses water recycling, solar energy, and the use of eco-friendly building materials.',
+                'excerpt' => 'Explore how Paanchajanya Reality is redefining urban living with sustainable practices and green landscapes in the heart of Hyderabad.',
+                'content' => 'Explore how Paanchajanya Reality is redefining urban living with sustainable practices and green landscapes in the heart of Hyderabad. Our commitment to sustainability goes beyond just planting trees; it encompasses water recycling, solar energy, and the use of eco-friendly building materials.',
                 'image' => 'assests/image/future-city.jpg.jpg',
                 'category' => 'Sustainability',
                 'author' => 'Paanchajanya Team',

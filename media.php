@@ -208,7 +208,7 @@
                             <img src="assests/image/banner9.jpg" alt="Villa Plots">
                             <div class="gallery-overlay">
                                 <h4>Villa Plots</h4>
-                                <p>Nature • Eco Villages</p>
+                                <p>Nature • Reality</p>
                             </div>
                         </a>
                     </div>

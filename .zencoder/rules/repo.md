@@ -3,10 +3,10 @@ description: Repository Information Overview
 alwaysApply: true
 ---
 
-# Paanchajanya Eco Villages Information
+# Paanchajanya Reality Information
 
 ## Summary
-Paanchajanya Eco Villages is a real estate development website focused on luxury apartments and villas in Hyderabad. The repository contains a static export of a WordPress-based site, specifically utilizing the **Elementor** page builder and the **Balance** theme.
+Paanchajanya Reality is a real estate development website focused on luxury apartments and villas in Hyderabad. The repository contains a static export of a WordPress-based site, specifically utilizing the **Elementor** page builder and the **Balance** theme.
 
 ## Structure
 - **assests/**: Core static assets including CSS, JS, fonts, and images.

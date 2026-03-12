@@ -3,7 +3,80 @@
 $stmt_count = $pdo->query("SELECT COUNT(*) FROM sliders WHERE is_active = 1");
 $slider_count = $stmt_count->fetchColumn();
 ?>
-<?php $current_page = basename($_SERVER['PHP_SELF']); ?>
+<?php $current_page = basename($_SERVER['PHP_SELF']); 
+
+// SEO Data Mapping
+$seo_data = [
+    'index.php' => [
+        'title' => 'Paanchajanya Reality - Buy Luxury Apartments & Villas in Hyderabad',
+        'description' => 'PAANCHAJANYA REALITY is one of the leading real estate developers in Hyderabad. Explore luxury projects like Urban Elite, Premium County, and more. Buy your dream home today!',
+        'keywords' => 'Luxury Apartments Hyderabad, Villas in Hyderabad, Real Estate Developers Hyderabad, Paanchajanya Reality, Urban Elite, Premium County'
+    ],
+    'aboutus.php' => [
+        'title' => 'About Us - Paanchajanya Reality | Real Estate Developers in Hyderabad',
+        'description' => 'Learn more about Paanchajanya Reality, our vision, mission, and our commitment to building sustainable and luxury living spaces in Hyderabad.',
+        'keywords' => 'About Paanchajanya Reality, Real Estate Company Hyderabad, Sustainable Living Hyderabad'
+    ],
+    'contactus.php' => [
+        'title' => 'Contact Us - Paanchajanya Reality | Get in Touch Today',
+        'description' => 'Have questions? Contact Paanchajanya Reality for inquiries about our luxury apartments and villas in Hyderabad. We are here to help you find your dream home.',
+        'keywords' => 'Contact Real Estate Developer, Paanchajanya Contact, Real Estate Inquiry Hyderabad'
+    ],
+    'blog.php' => [
+        'title' => 'Blog - Real Estate Insights & News | Paanchajanya Reality',
+        'description' => 'Stay updated with the latest trends in the real estate market, home buying tips, and news from Paanchajanya Reality.',
+        'keywords' => 'Real Estate Blog, Home Buying Tips, Hyderabad Real Estate News'
+    ],
+    'careers.php' => [
+        'title' => 'Careers - Join the Team at Paanchajanya Reality',
+        'description' => 'Looking for a career in real estate? Join Paanchajanya Reality and be part of a team building the future of luxury living in Hyderabad.',
+        'keywords' => 'Real Estate Jobs Hyderabad, Careers at Paanchajanya, Job Openings Real Estate'
+    ],
+    'media.php' => [
+        'title' => 'Media & Events - Paanchajanya Reality',
+        'description' => 'Explore our media gallery, news coverage, and events. See how Paanchajanya Reality is making an impact in the Hyderabad real estate market.',
+        'keywords' => 'Paanchajanya Media, Real Estate Events Hyderabad, News Gallery'
+    ],
+    'partner-with-us.php' => [
+        'title' => 'Partner With Us - Paanchajanya Reality',
+        'description' => 'Collaborate with Paanchajanya Reality. We are looking for partners to join us in creating exceptional real estate projects in Hyderabad.',
+        'keywords' => 'Real Estate Partnership, Collaborate with Paanchajanya, Business Opportunities Real Estate'
+    ],
+    'privacy-policy.php' => [
+        'title' => 'Privacy Policy - Paanchajanya Reality',
+        'description' => 'Read our privacy policy to understand how Paanchajanya Reality handles your personal data and ensures your privacy.',
+        'keywords' => 'Privacy Policy, Data Protection, Paanchajanya Reality'
+    ],
+    'news-detail.php' => [
+        'title' => 'News Detail - Paanchajanya Reality',
+        'description' => 'Read the latest news and updates from Paanchajanya Reality about our projects and achievements.',
+        'keywords' => 'Real Estate News, Paanchajanya Updates'
+    ]
+];
+
+// Get current page SEO data or use default
+$current_seo = isset($seo_data[$current_page]) ? $seo_data[$current_page] : $seo_data['index.php'];
+
+// Base URL for canonical and OG tags
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+$base_url = $protocol . "://" . $_SERVER['HTTP_HOST'];
+$canonical_url = $base_url . $_SERVER['REQUEST_URI'];
+
+// Handle dynamic news article SEO
+if ($current_page == 'news-detail.php' && isset($article)) {
+    $current_seo['title'] = $article['title'] . " - Paanchajanya News";
+    $current_seo['description'] = substr(strip_tags($article['content']), 0, 160);
+    $current_seo['keywords'] = $article['category'] . ", Real Estate News, Paanchajanya";
+    
+    // Set dynamic OG Image for news
+    $og_image = isset($image_path) ? $image_path : ($base_url . "/assests/image/paanchajanya-logo-new.png");
+    if (isset($image_path) && strpos($image_path, 'http') === false) {
+        $og_image = $base_url . "/" . $image_path;
+    }
+} else {
+    $og_image = $base_url . "/assests/image/paanchajanya-logo-new.png";
+}
+?>
 <!doctype html>
 <html lang="en-US" class="no-js scheme_light">
     <head>
@@ -12,35 +85,62 @@ $slider_count = $stmt_count->fetchColumn();
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <title>Paanchajanya Eco Villages - Buy Luxury Apartments, Villas and More!</title>
-        <meta
-            name="description"
-            content="PAANCHAJANYA REALITY is one of the leading real estate developers in Hyderabad. Here we have projects like Urban Elite, Premium County, and more. Explore Now!"
-        />
-        <link rel="canonical" href="index" />
+        
+        <!-- Primary Meta Tags -->
+        <title><?php echo htmlspecialchars($current_seo['title']); ?></title>
+        <meta name="title" content="<?php echo htmlspecialchars($current_seo['title']); ?>" />
+        <meta name="description" content="<?php echo htmlspecialchars($current_seo['description']); ?>" />
+        <meta name="keywords" content="<?php echo htmlspecialchars($current_seo['keywords']); ?>" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="<?php echo $canonical_url; ?>" />
+        <meta property="og:title" content="<?php echo htmlspecialchars($current_seo['title']); ?>" />
+        <meta property="og:description" content="<?php echo htmlspecialchars($current_seo['description']); ?>" />
+        <meta property="og:image" content="<?php echo $og_image; ?>" />
+        <meta property="og:site_name" content="Paanchajanya Reality" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="PAANCHAJANYA REALITY - Buy Luxury Apartments, Villas and More!" />
-        <meta
-            property="og:description"
-            content="PAANCHAJANYA REALITY is one of the leading real estate developers in Hyderabad. Here we have projects like Urban Elite, Premium County, and more. Explore Now!"
-        />
-        <meta property="og:url" content="/" />
-        <meta property="og:site_name" content="PAANCHAJANYA REALITY" />
-        <meta
-            property="og:image"
-            content=""
-        />
-        <meta property="og:image:width" content="2048" />
-        <meta property="og:image:height" content="1116" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="PAANCHAJANYA REALITY" />
-        <meta property="og:description" content="" />
-        <meta
-            property="og:image"
-            content="assests/image/paanchajanya-logo-new.png"
-        />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="<?php echo $canonical_url; ?>" />
+        <meta property="twitter:title" content="<?php echo htmlspecialchars($current_seo['title']); ?>" />
+        <meta property="twitter:description" content="<?php echo htmlspecialchars($current_seo['description']); ?>" />
+        <meta property="twitter:image" content="<?php echo $og_image; ?>" />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="<?php echo $canonical_url; ?>" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="/assests/image/favicon.png" type="image/png" />
+
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "RealEstateAgent",
+          "name": "Paanchajanya Reality",
+          "url": "<?php echo $base_url; ?>",
+          "logo": "<?php echo $base_url; ?>/assests/image/paanchajanya-logo-new.png",
+          "description": "<?php echo $seo_data['index.php']['description']; ?>",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Hyderabad",
+            "addressRegion": "Telangana",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-XXXXXXXXXX",
+            "contactType": "sales"
+          },
+          "sameAs": [
+            "https://www.facebook.com/PaanchajanyaReality",
+            "https://www.instagram.com/paanchajanyareality",
+            "https://www.linkedin.com/company/paanchajanya-reality"
+          ]
+        }
+        </script>
 
        <style>
             img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -837,7 +937,7 @@ $slider_count = $stmt_count->fetchColumn();
     <div class="search_modern">
         <span class="search_submit"></span>
         <div class="search_wrap scheme_dark">
-            <div class="search_header_wrap"><img class="logo_image" src="wp-content/uploads/2024/01/logo-2.png" srcset="wp-content/uploads/2024/01/logo-2-retina.png 2x" alt="Paanchajanya Eco Villages">                <a class="search_close"></a>
+            <div class="search_header_wrap"><img class="logo_image" src="wp-content/uploads/2024/01/logo-2.png" srcset="wp-content/uploads/2024/01/logo-2-retina.png 2x" alt="Paanchajanya Reality">                <a class="search_close"></a>
             </div>
             <div class="search_form_wrap">
                 <form role="search" method="get" class="search_form" action="#">

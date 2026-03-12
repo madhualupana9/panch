@@ -277,7 +277,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="sc_layouts_item elementor-element elementor-element-e5df69a sc_fly_static elementor-widget elementor-widget-text-editor" data-id="e5df69a" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
-                                    <p><a href="index.htm" target="_blank" rel="noopener">PAANCHAJANYA REALITY</a> © 2026. All Rights Reserved.</p>                             </div>
+                                    <p><a href="/" target="_blank" rel="noopener">PAANCHAJANYA REALITY</a> © 2026. All Rights Reserved.</p>                             </div>
                 </div>
                     </div>
         </div>
