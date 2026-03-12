@@ -17850,18 +17850,6 @@
                                     (0, St.jsxs)("div", {
                                         className: "d-none d-md-flex align-items-center justify-content-center gap-2",
                                         children: [
-                                            (0, St.jsx)("a", {
-                                                href: "https://ankurahomes.com",
-                                                children: (0, St.jsx)("img", {
-                                                    src: "/assests/image/paanchajanya-logo-new.png",
-                                                    alt: "Ankura Homes Logo",
-                                                    className: "logo",
-                                                    width: "120",
-                                                    height: "40",
-                                                    loading: "eager",
-                                                    fetchpriority: "high",
-                                                }),
-                                            }),
                                             
                                             
                                         ],
@@ -17878,14 +17866,7 @@
                                     }),
                                     (0, St.jsx)("div", {
                                         className: "d-block d-md-none",
-                                        children: (0, St.jsx)("img", {
-                                            src: "/assests/image/paanchajanya-logo-new.png",
-                                            alt: "Mobile Logo",
-                                            className: "logo",
-                                            width: "100",
-                                            height: "35",
-                                            loading: "eager",
-                                        }),
+                                        children: null,
                                     }),
                                 ],
                             }),
@@ -24382,10 +24363,10 @@
                                         loop: !0,
                                         playsInline: !0,
                                         preload: "metadata",
-                                        poster: "https://ankurahomes.com/urban-trilla-apartments/assets/img/video-poster.webp",
+                                        poster: "",
                                         className: "video-bg",
                                         children: (0, St.jsx)("source", {
-                                            src: s ? "https://ankurahomes.com/urban-trilla-apartments/assets/vid/C4218_4.mp4" : "https://ankurahomes.com/urban-trilla-apartments/assets/vid/C4218_2.mp4",
+                                            src: s ? "" : "",
                                             type: "video/mp4",
                                         }),
                                     }),
@@ -24415,7 +24396,7 @@
                                             style: { y: n, opacity: i },
                                             className: "parallax-heading sticky-heading",
                                             children: [
-                                                "DRR PREMIUM COUNTY",
+                                                "",
                                                 (0, St.jsxs)("p", {
                                                     className: "location_name",
                                                     children: [
@@ -35354,8 +35335,8 @@
                         key: "master",
                         label: "Master Plan",
                         type: "single",
-                        img: "https://ankurahomes.com/urban-trilla-apartments/assets/img/plans/masterplan.webp",
-                        alt: "Master site plan of Urban Trilla Apartments",
+                        img: "/assests/projects/DRR/images/layout/plan1.png",
+                        alt: "Layout For DRR Premium County",
                     },
                     {
                         key: "blockA",
@@ -40523,7 +40504,7 @@
                                 boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
                             },
                             children: (0, St.jsx)("iframe", {
-                                src: "https://www.youtube.com/embed/WckYkNyybTI?si=KJkGZj0v7j03W2ak",
+                                src: "https://www.youtube.com/embed/y9j-BL5ocW8?si=wmCN1dXXsNnYn_Ck",
                                 title: "Project Video",
                                 frameBorder: "0",
                                 allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",

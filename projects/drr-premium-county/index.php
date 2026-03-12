@@ -63,16 +63,6 @@
                             <div class="hamburger"><span></span><span></span><span></span></div>
                         </button>
                         <div class="d-none d-md-flex align-items-center justify-content-center gap-2">
-                            <a href="https://ankurahomes.com"
-                                ><img
-                                    alt="Ankura Homes Logo"
-                                    class="logo"
-                                    width="120"
-                                    height="40"
-                                    loading="eager"
-                                    fetchpriority="high"
-                                    src="/assests/image/paanchajanya-logo-new.png"
-                            /></a>
                             
                         <div class="d-none d-md-block">
                             <a
@@ -82,15 +72,6 @@
                                 >Contact Us</a
                             >
                         </div>
-                        <div class="d-block d-md-none">
-                            <img
-                                alt="Mobile Logo"
-                                class="logo"
-                                width="100"
-                                height="35"
-                                loading="eager"
-                                src="https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-logo.webp"
-                            />
                         </div>
                     </div>
                 </header>
