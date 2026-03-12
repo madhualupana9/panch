@@ -1,9 +1,9 @@
-Why Panchajanya Eco Villages ?
+Why Panchajanya Reality  ?
 25+ Years of Experience
 50+ Projects
 527+ Acres of area developed
 2750+ Happy Customers
-About Us Panchajanya Eco Villages
+About Us Panchajanya Reality
 Panchajanya Ecovillages Pvt Ltd, founded by Mr.Rajender Reddy in 2009, has established itself as a leading provider of Villa Plots in Hyderabad, Shirdi, Bangalore, and Bangkok. Over the years, the company has sold thousands of plots, growing from its initial project of 2000 plots to delivering over 11 lakh square yards.
 
 The company’s success is built upon its commitment to passing on the benefits of its cost-efficiency to its customers. This principle, along with the company’s constant efforts to improve the community and make a positive impact on people’s lives, has been a driving force behind its success over the last 25 years.
@@ -123,12 +123,12 @@ Corporate office
 C9WX+HH8, Kakatiya Hills, Guttala_Begumpet, Kavuri Hills, Madhapur, Hyderabad, Telangana 500033
 
 Our Story
-Panchajanya Eco villages Pvt Ltd, founded by Mr.Rajender Reddy in 2009, has established itself as a leading provider of Villa Plots in Hyderabad, Shirdi, Bangalore, and Bangkok. Over the years, the company has sold thousands of plots, growing from its initial project of 2000 plots to delivering over 11 lakh square yards.
+Panchajanya Reality  Pvt Ltd, founded by Mr.Rajender Reddy in 2009, has established itself as a leading provider of Villa Plots in Hyderabad, Shirdi, Bangalore, and Bangkok. Over the years, the company has sold thousands of plots, growing from its initial project of 2000 plots to delivering over 11 lakh square yards.
 
 The company’s success is built upon its commitment to passing on the benefits of its cost-efficiency to its customers. This principle, along with the company’s constant efforts to improve the community and make a positive impact on people’s lives, has been a driving force behind its success over the last 25 years.
 
 Our Vision
-At Panchajanya Eco Villages, our vision is to create lasting value by empowering individuals and communities through the ownership of well-located, strategically developed open plots. We envision a future where everyone has the opportunity to own a piece of land that not only serves as a foundation for their dreams but also contributes to sustainable growth and development.
+At Panchajanya Reality , our vision is to create lasting value by empowering individuals and communities through the ownership of well-located, strategically developed open plots. We envision a future where everyone has the opportunity to own a piece of land that not only serves as a foundation for their dreams but also contributes to sustainable growth and development.
 
 We are committed to transforming landscapes and elevating neighborhoods, offering transparent and reliable solutions that help you make informed decisions in the real estate market. Whether you're looking to build your dream home, invest in future growth, or create a legacy, we strive to make your journey as smooth and rewarding as possible.
 
@@ -149,7 +149,7 @@ In 2009, Mr. Dasarı founded Sahaja Properties, leveraging his expertise in the 
         <div class="row mb-60  justify-content-center align-items-center">
             <div class="col-lg-8">
                 <div class="section-2__title-wrapper mb-20 mb-lg-0">
-                    <!-- <span class="section-2__subtitle mb-10"><img class="rightLeft" src="assets/imgs/update/section-title/left-shape.svg" alt="arrow not found">Panchajanya Eco Villages</span> -->
+                    <!-- <span class="section-2__subtitle mb-10"><img class="rightLeft" src="assets/imgs/update/section-title/left-shape.svg" alt="arrow not found">Panchajanya Reality</span> -->
                     <h2 class="section-2__title text-capitalize title-animation">What Our Customers Say About Us</h2>
                 </div>
             </div>

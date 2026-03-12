@@ -24415,12 +24415,12 @@
                                             style: { y: n, opacity: i },
                                             className: "parallax-heading sticky-heading",
                                             children: [
-                                                "Exclusive 4 Bhk Apartments",
+                                                "DRR PREMIUM COUNTY",
                                                 (0, St.jsxs)("p", {
                                                     className: "location_name",
                                                     children: [
-                                                        (0, St.jsx)("span", { className: "at", children: "at" }),
-                                                        " Mokila",
+                                                        (0, St.jsx)("span", { className: "at", children: "" }),
+                                                        "",
                                                     ],
                                                 }),
                                             ],
@@ -24429,7 +24429,7 @@
                                             style: { y: r, opacity: o },
                                             src: s
                                                 ? "https://ankurahomes.com/urban-trilla-apartments/assets/img/mobile-parallax.webp"
-                                                : "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-parallaximg.webp",
+                                                : "/assests/projects/DRR/images/panch2.png",
                                             alt: "Urban Trilla Apartments exterior view",
                                             width: "800",
                                             height: "600",
