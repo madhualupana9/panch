@@ -1,4 +1,11 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+include 'includes/header.php'; 
+require_once 'includes/db.php';
+
+// Fetch active jobs from database
+$stmt = $pdo->query("SELECT * FROM careers WHERE is_active = 1 ORDER BY `order` ASC, created_at DESC");
+$jobs = $stmt->fetchAll();
+?>
 
 <!-- Custom Styles for Careers Page -->
 <style>
@@ -135,58 +142,28 @@
         <div class="container">
             <h2 class="section-title">Open Positions</h2>
             <div class="row g-4">
-                <!-- Job 1 -->
-                <div class="col-lg-6">
-                    <div class="job-card">
-                        <h3 class="job-title">Sales Executive (Real Estate)</h3>
-                        <div class="job-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
-                            <span><i class="fas fa-briefcase"></i> Full-time</span>
-                            <span><i class="fas fa-clock"></i> 2-4 Years Exp.</span>
+                <?php if (count($jobs) > 0): ?>
+                    <?php foreach ($jobs as $job): ?>
+                        <div class="col-lg-6">
+                            <div class="job-card">
+                                <h3 class="job-title"><?php echo htmlspecialchars($job['title']); ?></h3>
+                                <div class="job-meta">
+                                    <span><i class="fas fa-map-marker-alt"></i> <?php echo htmlspecialchars($job['location']); ?></span>
+                                    <span><i class="fas fa-briefcase"></i> <?php echo htmlspecialchars($job['type']); ?></span>
+                                    <span><i class="fas fa-clock"></i> <?php echo htmlspecialchars($job['experience']); ?> Exp.</span>
+                                </div>
+                                <p class="job-desc"><?php echo htmlspecialchars($job['description']); ?></p>
+                                <a href="javascript:void(0)" class="btn-apply btn-apply-now" 
+                                   data-job-id="<?php echo $job['id']; ?>" 
+                                   data-job-title="<?php echo htmlspecialchars($job['title']); ?>">Apply Now</a>
+                            </div>
                         </div>
-                        <p class="job-desc">We are looking for motivated Sales Executives to join our growing team. You will be responsible for handling inquiries, site visits, and closing deals for our luxury villa plots.</p>
-                        <a href="#" class="btn-apply">Apply Now</a>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <div class="col-12 text-center">
+                        <p>Currently, there are no open positions. Please check back later.</p>
                     </div>
-                </div>
-                <!-- Job 2 -->
-                <div class="col-lg-6">
-                    <div class="job-card">
-                        <h3 class="job-title">Digital Marketing Specialist</h3>
-                        <div class="job-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Remote / Office</span>
-                            <span><i class="fas fa-briefcase"></i> Full-time</span>
-                            <span><i class="fas fa-clock"></i> 3+ Years Exp.</span>
-                        </div>
-                        <p class="job-desc">Help us expand our digital footprint. Manage SEO, SEM, and social media campaigns for our premium real estate developments in South India.</p>
-                        <a href="#" class="btn-apply">Apply Now</a>
-                    </div>
-                </div>
-                <!-- Job 3 -->
-                <div class="col-lg-6">
-                    <div class="job-card">
-                        <h3 class="job-title">Customer Relations Manager</h3>
-                        <div class="job-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
-                            <span><i class="fas fa-briefcase"></i> Full-time</span>
-                            <span><i class="fas fa-clock"></i> 5+ Years Exp.</span>
-                        </div>
-                        <p class="job-desc">Build and maintain long-term relationships with our valued customers. Oversee post-sales processes and ensure customer satisfaction.</p>
-                        <a href="#" class="btn-apply">Apply Now</a>
-                    </div>
-                </div>
-                <!-- Job 4 -->
-                <div class="col-lg-6">
-                    <div class="job-card">
-                        <h3 class="job-title">Project Coordinator</h3>
-                        <div class="job-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Shirdi / Hyderabad</span>
-                            <span><i class="fas fa-briefcase"></i> Full-time</span>
-                            <span><i class="fas fa-clock"></i> 3+ Years Exp.</span>
-                        </div>
-                        <p class="job-desc">Coordinate with various departments and stakeholders to ensure timely delivery of our real estate projects according to quality standards.</p>
-                        <a href="#" class="btn-apply">Apply Now</a>
-                    </div>
-                </div>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -200,5 +177,139 @@
         </div>
     </section>
 </div>
+
+<!-- Job Application Modal -->
+<div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="applyModalLabel">Apply for <span id="modalJobTitle">Position</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="jobApplyForm" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <input type="hidden" name="career_id" id="modalJobId">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" name="full_name" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="text" name="phone" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Years of Experience</label>
+                            <input type="number" name="years_of_experience" class="form-control" min="0">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Current Location</label>
+                            <input type="text" name="current_location" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Notice Period</label>
+                            <input type="text" name="notice_period" class="form-control" placeholder="e.g. 30 days">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Resume (PDF/DOC) *</label>
+                            <input type="file" name="resume" class="form-control" accept=".pdf,.doc,.docx" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Cover Letter</label>
+                            <textarea name="cover_letter" class="form-control" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div id="formAlert" class="mt-3" style="display: none;"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn-apply border-0" id="submitBtn">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="assests/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const applyModal = new bootstrap.Modal(document.getElementById('applyModal'));
+    const applyButtons = document.querySelectorAll('.btn-apply-now');
+    const jobApplyForm = document.getElementById('jobApplyForm');
+    const formAlert = document.getElementById('formAlert');
+    const submitBtn = document.getElementById('submitBtn');
+
+    applyButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const jobId = this.getAttribute('data-job-id');
+            const jobTitle = this.getAttribute('data-job-title');
+            
+            document.getElementById('modalJobId').value = jobId;
+            document.getElementById('modalJobTitle').textContent = jobTitle;
+            
+            // Reset form and alert
+            jobApplyForm.reset();
+            formAlert.style.display = 'none';
+            formAlert.className = 'mt-3 alert';
+            
+            applyModal.show();
+        });
+    });
+
+    jobApplyForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+        
+        const formData = new FormData(this);
+        
+        fetch('http://127.0.0.1:8000/api/job-applications', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                formAlert.textContent = data.message;
+                formAlert.className = 'mt-3 alert alert-success';
+                formAlert.style.display = 'block';
+                jobApplyForm.reset();
+                setTimeout(() => {
+                    applyModal.hide();
+                }, 3000);
+            } else {
+                let errorMsg = data.message || 'Something went wrong. Please try again.';
+                if (data.errors) {
+                    errorMsg += '<ul>';
+                    Object.values(data.errors).forEach(errs => {
+                        errs.forEach(err => {
+                            errorMsg += `<li>${err}</li>`;
+                        });
+                    });
+                    errorMsg += '</ul>';
+                }
+                formAlert.innerHTML = errorMsg;
+                formAlert.className = 'mt-3 alert alert-danger';
+                formAlert.style.display = 'block';
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            formAlert.textContent = 'An error occurred while submitting the form. Please try again.';
+            formAlert.className = 'mt-3 alert alert-danger';
+            formAlert.style.display = 'block';
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit Application';
+        });
+    });
+});
+</script>
 
 <?php include 'includes/footer.php'; ?>
