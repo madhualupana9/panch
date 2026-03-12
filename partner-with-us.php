@@ -38,7 +38,7 @@
     }
 
     .partner-section {
-        padding: 100px 0;
+        padding: 140px 0;
         background: #fff;
     }
 
@@ -154,24 +154,20 @@
     @media (max-width: 768px) {
         .page-banner { padding: 120px 0 80px; }
         .page-banner h1 { font-size: 2.8rem; }
-        .partner-section { padding: 60px 0; }
+        .partner-section { padding: 156px 0; }
         .partner-card { margin-bottom: 30px; }
         .partner-card h2 { font-size: 2.4rem; }
     }
 </style>
 
 <div class="partner-page-wrapper">
-    <!-- Banner -->
-    <section class="page-banner">
-        <div class="container">
-            <h1>Partner with us.</h1>
-        </div>
-    </section>
+    
 
     <section class="partner-section">
         <div class="container">
             <!-- Main Header -->
             <div class="row">
+                <h2 class="section-title">Partner With Us</h2>
                 <div class="col-12">
                     <p class="partner-intro">
                         At Paanchajanya Realty, we believe in forging strong, collaborative partnerships to drive success in the real estate industry. Whether you're a developer, investor, or service provider, partnering with us means gaining access to our extensive market expertise, innovative solutions, and commitment to excellence.

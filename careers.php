@@ -98,13 +98,7 @@
 </style>
 
 <div class="careers-page-wrapper">
-    <!-- Banner -->
-    <section class="page-banner">
-        <div class="container">
-            <h1>Join Our Team</h1>
-            <p class="mt-3 text-white lead">Build your career with Paanchajanya Eco Villages</p>
-        </div>
-    </section>
+    
 
     <!-- Why Join Us -->
     <section class="section-padding">

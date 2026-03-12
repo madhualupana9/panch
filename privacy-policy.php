@@ -45,12 +45,6 @@
 </style>
 
 <div class="privacy-page-wrapper">
-    <!-- Banner -->
-    <section class="page-banner">
-        <div class="container">
-            <h1>Privacy Policy</h1>
-        </div>
-    </section>
 
     <!-- Content -->
     <section class="section-padding">

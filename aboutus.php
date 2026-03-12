@@ -20,7 +20,7 @@
     .page-banner .container { position: relative; z-index: 2; }
     .page-banner h1 { font-size: 3.5rem; font-weight: 700; margin: 0; color: aliceblue;}
 
-    .section-padding { padding: 80px 0; }
+    .section-padding { padding: 125px 0; }
     .bg-light-section { background-color: #fcfbf7; }
 
     .section-title { margin-bottom: 30px; font-weight: 700; color: #1a1a1a; position: relative; }
@@ -75,10 +75,7 @@
 </style>
 
 <div class="about-page-wrapper">
-    <!-- Banner -->
-    <section class="page-banner">
-       
-    </section>
+   
 
     <!-- Our Story -->
     <section class="section-padding">

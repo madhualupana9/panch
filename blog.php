@@ -20,7 +20,7 @@
     .page-banner .container { position: relative; z-index: 2; }
     .page-banner h1 { font-size: 3.5rem; font-weight: 700; margin: 0; color: aliceblue;}
 
-    .section-padding { padding: 80px 0; }
+    .section-padding { padding: 120px 0; }
     .bg-light-section { background-color: #fcfbf7; }
 
     .section-title { margin-bottom: 50px; font-weight: 700; color: #1a1a1a; position: relative; text-align: center; }
@@ -116,18 +116,12 @@
     @media (max-width: 768px) {
         .page-banner { padding: 120px 0 80px; }
         .page-banner h1 { font-size: 2.5rem; }
-        .section-padding { padding: 50px 0; }
+        .section-padding { padding: 120px 0; }
         .blog-img-wrapper { height: 200px; }
     }
 </style>
 
 <div class="blog-page-wrapper">
-    <!-- Banner -->
-    <section class="page-banner">
-        <div class="container">
-            <h1>Blog & Insights</h1>
-        </div>
-    </section>
 
     <!-- Blog Posts Grid -->
     <section class="section-padding">

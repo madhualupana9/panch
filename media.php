@@ -135,12 +135,7 @@
 </style>
 
 <div class="media-page-wrapper">
-    <!-- Header Banner -->
-    <section class="page-banner">
-        <div class="container">
-            <h1 id="media-title">Portfolio Gallery</h1>
-        </div>
-    </section>
+    
 
     <!-- Filters Section -->
     <div class="container">

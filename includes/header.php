@@ -1,3 +1,4 @@
+<?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 <!doctype html>
 <html lang="en-US" class="no-js scheme_light">
     <head>
@@ -152,6 +153,50 @@
 .top_panel.scrolled .sc_layouts_menu_nav a span {
   color: #000000 !important;
 }
+
+<?php if ($current_page != 'index.php') : ?>
+/* Non-index page nav styles */
+.is-non-index .top_panel,
+.is-non-index .top_panel.non-index-nav,
+.is-non-index .top_panel.non-index-nav .elementor-section,
+.is-non-index .top_panel.non-index-nav .sc_layouts_row {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+.is-non-index .top_panel.non-index-nav .sc_layouts_menu_nav > li > a span,
+.is-non-index .top_panel.non-index-nav .sc_layouts_menu_nav > li > a {
+  color: #000000 !important;
+}
+/* Keep sub-menu links white as they have a dark background */
+.is-non-index .top_panel.non-index-nav .sc_layouts_menu_nav .sub-menu a span,
+.is-non-index .top_panel.non-index-nav .sc_layouts_menu_nav .sub-menu a {
+  color: #ffffff !important;
+}
+/* Sticky/scrolled header also stays white and keeps link colors */
+.is-non-index .top_panel.scrolled,
+.is-non-index .top_panel.scrolled .elementor-section,
+.is-non-index .top_panel.scrolled .sc_layouts_row {
+  background-color: #ffffff !important;
+}
+.is-non-index .top_panel.scrolled .sc_layouts_menu_nav > li > a span,
+.is-non-index .top_panel.scrolled .sc_layouts_menu_nav > li > a {
+  color: #000000 !important;
+}
+.is-non-index .top_panel.scrolled .sc_layouts_menu_nav .sub-menu a span,
+.is-non-index .top_panel.scrolled .sc_layouts_menu_nav .sub-menu a {
+  color: #ffffff !important;
+}
+/* Mobile menu links for non-index */
+.is-non-index .menu_mobile_nav_area a span,
+.is-non-index .menu_mobile_nav_area a {
+  color: #000000 !important;
+}
+/* Burger and Search icons for non-index */
+.is-non-index .sc_layouts_menu_mobile_button_burger .sc_layouts_item_icon,
+.is-non-index .search_submit:before {
+  color: #000000 !important;
+}
+<?php endif; ?>
 
         </style>
         
@@ -702,7 +747,7 @@
 
 </head>
 
-<body class="home page-template-default page page-id-26735 wp-custom-logo sp-easy-accordion-enabled rttpg rttpg-7.7.19 radius-frontend rttpg-body-wrap rttpg-flaticon frontpage skin_default scheme_light blog_mode_front body_style_fullscreen  is_stream blog_style_classic_3 sidebar_hide expand_content remove_margins trx_addons_present header_type_custom header_style_header-custom-20908 header_position_over menu_side_none no_layout fixed_blocks_sticky elementor-default elementor-kit-15 elementor-page elementor-page-26735">
+<body class="home page-template-default page page-id-26735 wp-custom-logo sp-easy-accordion-enabled rttpg rttpg-7.7.19 radius-frontend rttpg-body-wrap rttpg-flaticon frontpage skin_default scheme_light blog_mode_front body_style_fullscreen  is_stream blog_style_classic_3 sidebar_hide expand_content remove_margins trx_addons_present header_type_custom header_style_header-custom-20908 header_position_over menu_side_none no_layout fixed_blocks_sticky elementor-default elementor-kit-15 elementor-page elementor-page-26735 <?php echo ($current_page != 'index.php') ? 'is-non-index' : ''; ?>">
     
 
         
@@ -712,7 +757,7 @@
         <div class="page_wrap">
 
 <!-- header start -->
-                <header class="top_panel top_panel_custom top_panel_custom_20908 top_panel_custom_header-default-single              without_bg_image">
+                <header class="top_panel top_panel_custom top_panel_custom_20908 top_panel_custom_header-default-single              without_bg_image <?php echo ($current_page != 'index.php') ? 'non-index-nav' : ''; ?>">
             <div data-elementor-type="cpt_layouts" data-elementor-id="20908" class="elementor elementor-20908" data-elementor-post-type="cpt_layouts">
                         <section class="elementor-section elementor-top-section elementor-element elementor-element-4ce9290 elementor-section-full_width elementor-section-content-middle sc_layouts_row sc_layouts_row_type_compact sc_layouts_hide_on_mobile sc_layouts_hide_on_tablet scheme_blue_light elementor-section-height-default elementor-section-height-default sc_fly_static" data-id="4ce9290" data-element_type="section">
                         <div class="elementor-container elementor-column-gap-extended">

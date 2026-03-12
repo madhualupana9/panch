@@ -14,7 +14,7 @@
     .contact-hero {
         height: 60vh;
         min-height: 400px;
-        background: url('assests/image/banner.jpg') no-repeat center center;
+        background: url('assests/image/contact-us.jpg') no-repeat center center;
         background-size: cover;
         position: relative;
         display: flex;
@@ -63,6 +63,10 @@
         color: var(--primary-gold);
         font-size: 1.5rem;
     }
+    .info-card .icon-box::before,
+    .info-card .icon-box::after {
+        display: none !important;
+    }
     .info-card h4 { font-weight: 700; margin-bottom: 15px; color: #333; }
     .info-card p, .info-card a { color: #666; font-size: 1.05rem; line-height: 1.8; text-decoration: none; display: block; }
     .info-card a:hover { color: var(--primary-gold); }
@@ -87,7 +91,7 @@
         border: none;
         border-bottom: 2px solid #eee;
         border-radius: 0;
-        padding: 10px 0;
+        padding: 10px 0 10px 40px;
         font-size: 1.1rem;
         background: transparent !important;
         transition: var(--transition);
@@ -96,11 +100,23 @@
     .premium-form textarea.form-control { height: 120px; }
     .premium-form .form-control:focus { border-color: var(--primary-gold); }
 
+    .premium-form .field-icon {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        color: #999;
+        font-size: 1.2rem;
+        transition: var(--transition);
+    }
+    .premium-form .form-control:focus ~ .field-icon {
+        color: var(--primary-gold);
+    }
+
     /* Floating Labels Effect */
     .premium-form label {
         position: absolute;
         top: 15px;
-        left: 0;
+        left: 40px;
         color: #999;
         pointer-events: none;
         transition: var(--transition);
@@ -109,6 +125,7 @@
     .premium-form .form-control:focus ~ label,
     .premium-form .form-control:valid ~ label {
         top: -20px;
+        left: 0;
         font-size: 0.9rem;
         color: var(--primary-gold);
         font-weight: 600;
@@ -180,7 +197,6 @@
     <!-- Hero Section -->
     <section class="contact-hero">
         <div class="hero-content container">
-            <h1>Contact Us</h1>
         </div>
     </section>
 
@@ -203,29 +219,33 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <input type="text" name="name" class="form-control" required>
+                                                <i class="fa-solid fa-user field-icon"></i>
                                                 <label>Full Name</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <input type="email" name="email" class="form-control" required>
+                                                <i class="fa-solid fa-envelope field-icon"></i>
                                                 <label>Email Address</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <input type="tel" name="phone" class="form-control" required>
+                                                <i class="fa-solid fa-phone field-icon"></i>
                                                 <label>Phone Number</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <textarea name="message" class="form-control" required></textarea>
+                                                <i class="fa-solid fa-comment-dots field-icon"></i>
                                                 <label>Your Message</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="submit-premium-btn">Connect With Us</button>
+                                            <button type="submit" class="submit-premium-btn"><i class="fa-solid fa-paper-plane me-2"></i> Connect With Us</button>
                                         </div>
                                     </div>
                                 </form>
@@ -236,19 +256,28 @@
                                 <div class="row g-4">
                                     <div class="col-12">
                                         <div class="info-card">
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
                                             <h4>Corporate Office</h4>
                                             <p>Kakatiya Hills, Guttala Begumpet, Kavuri Hills, Madhapur, Hyderabad, Telangana 500033</p>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="info-card">
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-headset"></i>
+                                            </div>
                                             <h4>Quick Connect</h4>
-                                            <p>Toll Free: <a href="tel:+919100999099">+91 91009 99099</a></p>
+                                            <p>Call us: <a href="tel:+919100999099">+91 91009 99099</a></p>
                                             <p>Support: <a href="mailto:panchajanyaecovillages@gmail.com">panchajanyaecovillages@gmail.com</a></p>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="info-card">
+                                            <div class="icon-box">
+                                                <i class="fa-solid fa-clock"></i>
+                                            </div>
                                             <h4>Working Hours</h4>
                                             <p>Mon - Sat: 09:00 AM - 07:00 PM</p>
                                             <p>Sunday: 10:00 AM - 04:00 PM</p>

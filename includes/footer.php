@@ -200,7 +200,7 @@
                             href="https://www.youtube.com/"
                             class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"
                             ><span class="social_icon social_icon_youtube2" style=""
-                                ><span class="trx_addons_icon-youtube2"></span></span></a
+                                ><span class="fa-brands fa-youtube"></span></span></a
                         ><a
                             target="_blank"
                             href="https://in.linkedin.com/"
