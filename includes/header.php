@@ -745,6 +745,7 @@
     id="jquery-migrate-js"
 ></script>
 
+<link rel="stylesheet" href="assests/css/whatsapp-widget.css">
 </head>
 
 <body class="home page-template-default page page-id-26735 wp-custom-logo sp-easy-accordion-enabled rttpg rttpg-7.7.19 radius-frontend rttpg-body-wrap rttpg-flaticon frontpage skin_default scheme_light blog_mode_front body_style_fullscreen  is_stream blog_style_classic_3 sidebar_hide expand_content remove_margins trx_addons_present header_type_custom header_style_header-custom-20908 header_position_over menu_side_none no_layout fixed_blocks_sticky elementor-default elementor-kit-15 elementor-page elementor-page-26735 <?php echo ($current_page != 'index.php') ? 'is-non-index' : ''; ?>">

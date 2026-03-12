@@ -1,0 +1,140 @@
+#whatsapp-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#whatsapp-button {
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+#whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+#whatsapp-popup {
+    display: none;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.popup-header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.popup-header .brand-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: #fff;
+    padding: 5px;
+}
+
+.popup-header .header-content .title {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.popup-header .header-content .status {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.popup-header .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.popup-body {
+    padding: 20px;
+    background-color: #e5ddd5;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+}
+
+.popup-body .message {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    position: relative;
+}
+
+.popup-body .message::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.popup-footer {
+    padding: 15px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.chat-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.chat-btn:hover {
+    background-color: #128c7e;
+}
+
+.chat-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

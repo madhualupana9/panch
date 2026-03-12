@@ -13,6 +13,7 @@
         <link href="https://ankurahomes.com/urban-trilla-apartments/static/css/main.e54e2a16.css" rel="stylesheet" />
     
        
+        <link rel="stylesheet" href="assests/css/whatsapp-widget.css">
     </head>
     <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
        
@@ -1903,5 +1904,38 @@
         
         
         </div>
+<div id="whatsapp-widget">
+    <!-- Popup -->
+    <div id="whatsapp-popup">
+        <div class="popup-header">
+            <button class="close-btn" id="close-popup">×</button>
+            <img src="assests/image/paanchajanya-logo-new.png" alt="Paanchajanya Realty" class="brand-logo">
+            <div class="header-content">
+                <div class="title">Paanchajanya Realty</div>
+                <div class="status">Online now</div>
+            </div>
+        </div>
+        <div class="popup-body">
+            <div class="message">
+                👋 Hi there! Welcome to Paanchajanya Realty.<br>
+                Looking for luxury apartments or villas? 
+                Our team is just a message away on WhatsApp.
+            </div>
+        </div>
+        <div class="popup-footer">
+            <a href="https://wa.me/918688177563?text=Hi,%20I%20am%20coming%20from%20Paanchajanya%20Reality%20website%20for%20enquiry." target="_blank" class="chat-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+                Chat on WhatsApp
+            </a>
+        </div>
+    </div>
+    <!-- Floating Button -->
+    <div id="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+</div>
+
+<script src="assests/js/whatsapp-widget.js"></script>
+
     </body>
 </html>
