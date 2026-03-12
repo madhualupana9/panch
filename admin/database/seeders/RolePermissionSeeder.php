@@ -92,6 +92,12 @@ class RolePermissionSeeder extends Seeder
             ['name' => 'roles.create', 'display_name' => 'Create Roles', 'description' => 'Create new roles', 'module' => 'roles'],
             ['name' => 'roles.edit', 'display_name' => 'Edit Roles', 'description' => 'Edit existing roles', 'module' => 'roles'],
             ['name' => 'roles.delete', 'display_name' => 'Delete Roles', 'description' => 'Delete roles', 'module' => 'roles'],
+
+            // Sliders
+            ['name' => 'sliders.view', 'display_name' => 'View Sliders', 'description' => 'View homepage sliders', 'module' => 'sliders'],
+            ['name' => 'sliders.create', 'display_name' => 'Create Sliders', 'description' => 'Create new homepage sliders', 'module' => 'sliders'],
+            ['name' => 'sliders.edit', 'display_name' => 'Edit Sliders', 'description' => 'Edit existing homepage sliders', 'module' => 'sliders'],
+            ['name' => 'sliders.delete', 'display_name' => 'Delete Sliders', 'description' => 'Delete homepage sliders', 'module' => 'sliders'],
         ];
 
         foreach ($permissions as $permission) {
@@ -132,7 +138,7 @@ class RolePermissionSeeder extends Seeder
         // Assign specific permissions to editor role
         $editorPermissions = Permission::whereIn('module', [
             'dashboard', 'projects', 'news', 'services', 'technologies',
-            'clients', 'careers', 'content'
+            'clients', 'careers', 'content', 'sliders'
         ])->pluck('id');
         $editorRole->permissions()->sync($editorPermissions);
 

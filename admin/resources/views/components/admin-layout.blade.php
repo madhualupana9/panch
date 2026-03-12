@@ -53,6 +53,13 @@
                     <span>Page Content</span>
                 </a> -->
 
+                @if(auth()->user()->can('sliders.view'))
+                <a href="{{ route('admin.sliders.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.sliders.*') ? 'active' : '' }}">
+                    <i class="fas fa-images w-5"></i>
+                    <span>Homepage Sliders</span>
+                </a>
+                @endif
+
                 @if(auth()->user()->can('projects.view'))
                 <a href="{{ route('admin.projects.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.projects.*') ? 'active' : '' }}">
                     <i class="fas fa-project-diagram w-5"></i>
@@ -64,34 +71,6 @@
                 <a href="{{ route('admin.news.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.news.*') ? 'active' : '' }}">
                     <i class="fas fa-newspaper w-5"></i>
                     <span>News & Blog</span>
-                </a>
-                @endif
-
-                @if(auth()->user()->can('navigation.view'))
-                <a href="{{ route('admin.navigation.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.navigation.*') ? 'active' : '' }}">
-                    <i class="fas fa-bars w-5"></i>
-                    <span>Navigation</span>
-                </a>
-                @endif
-
-                @if(auth()->user()->can('services.view'))
-                <a href="{{ route('admin.services.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.services.*') ? 'active' : '' }}">
-                    <i class="fas fa-cogs w-5"></i>
-                    <span>Services</span>
-                </a>
-                @endif
-
-                @if(auth()->user()->can('technologies.view'))
-                <a href="{{ route('admin.technologies.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.technologies.*') ? 'active' : '' }}">
-                    <i class="fas fa-microchip w-5"></i>
-                    <span>Technologies</span>
-                </a>
-                @endif
-
-                @if(auth()->user()->can('clients.view'))
-                <a href="{{ route('admin.clients.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.clients.*') ? 'active' : '' }}">
-                    <i class="fas fa-users w-5"></i>
-                    <span>Clients</span>
                 </a>
                 @endif
 

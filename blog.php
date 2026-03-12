@@ -129,101 +129,41 @@
             <h2 class="section-title">Latest Updates</h2>
             
             <div class="row g-4">
-                <!-- Blog Post 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
-                        <div class="blog-img-wrapper">
-                            <img src="assests/image/future-city.jpg" alt="Eco-Friendly Living" class="blog-img">
-                            <div class="blog-date">March 11, 2026</div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-category">Sustainability</div>
-                            <h3 class="blog-title">The Rise of Eco-Friendly Living in Hyderabad</h3>
-                            <p class="blog-excerpt">Explore how Paanchajanya Eco Villages is redefining urban living with sustainable practices and green landscapes in the heart of Hyderabad.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                $stmt = $pdo->prepare("SELECT * FROM news WHERE is_published = 1 ORDER BY published_at DESC");
+                $stmt->execute();
+                $news_articles = $stmt->fetchAll();
 
-                <!-- Blog Post 2 -->
+                if ($news_articles):
+                    foreach ($news_articles as $article):
+                        $date = date('F d, Y', strtotime($article['published_at']));
+                        $image_path = $article['image'];
+                        if (strpos($image_path, 'news/') === 0) {
+                            $image_path = 'admin/public/storage/' . $image_path;
+                        }
+                ?>
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-card">
                         <div class="blog-img-wrapper">
-                            <img src="assests/image/plot.jpeg" alt="Real Estate Investment" class="blog-img">
-                            <div class="blog-date">March 05, 2026</div>
+                            <img src="<?php echo htmlspecialchars($image_path); ?>" alt="<?php echo htmlspecialchars($article['title']); ?>" class="blog-img">
+                            <div class="blog-date"><?php echo $date; ?></div>
                         </div>
                         <div class="blog-content">
-                            <div class="blog-category">Investment</div>
-                            <h3 class="blog-title">Why Invest in Open Plots in 2026?</h3>
-                            <p class="blog-excerpt">Understanding the long-term benefits of investing in strategically located open plots and how it offers superior returns compared to other assets.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="blog-category"><?php echo htmlspecialchars($article['category']); ?></div>
+                            <h3 class="blog-title"><?php echo htmlspecialchars($article['title']); ?></h3>
+                            <p class="blog-excerpt"><?php echo htmlspecialchars($article['excerpt']); ?></p>
+                            <a href="news-detail.php?slug=<?php echo $article['slug']; ?>" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Blog Post 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
-                        <div class="blog-img-wrapper">
-                            <img src="assests/image/3985.jpg" alt="Luxury Living" class="blog-img">
-                            <div class="blog-date">February 28, 2026</div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-category">Lifestyle</div>
-                            <h3 class="blog-title">Apartments vs. Villas: Which One is for You?</h3>
-                            <p class="blog-excerpt">A comprehensive comparison between the communal living of luxury apartments and the privacy of independent villas to help you decide.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
+                <?php 
+                    endforeach;
+                else:
+                ?>
+                <div class="col-12 text-center">
+                    <p>No news articles found.</p>
                 </div>
-
-                <!-- Blog Post 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
-                        <div class="blog-img-wrapper">
-                            <img src="assests/image/banner9.jpg" alt="Construction Progress" class="blog-img">
-                            <div class="blog-date">February 15, 2026</div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-category">Project Updates</div>
-                            <h3 class="blog-title">Project Milestones: Reaching New Heights</h3>
-                            <p class="blog-excerpt">We are excited to share the latest progress on our ongoing projects across Hyderabad and the vision for our upcoming developments.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Blog Post 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
-                        <div class="blog-img-wrapper">
-                            <img src="assests/image/banner2.jpg" alt="Community Building" class="blog-img">
-                            <div class="blog-date">February 10, 2026</div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-category">Community</div>
-                            <h3 class="blog-title">Building Communities, Not Just Homes</h3>
-                            <p class="blog-excerpt">How we focus on creating holistic environments that foster social interaction and a sense of belonging for our residents.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Blog Post 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
-                        <div class="blog-img-wrapper">
-                            <img src="assests/image/projects/project1.jpg" alt="Interior Design" class="blog-img">
-                            <div class="blog-date">January 25, 2026</div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-category">Design</div>
-                            <h3 class="blog-title">Modern Interior Trends for Luxury Villas</h3>
-                            <p class="blog-excerpt">A look at the latest design trends that blend functionality with opulence to create the perfect living spaces.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <?php endif; ?>
             </div>
         </div>
     </section>

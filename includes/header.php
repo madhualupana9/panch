@@ -1,3 +1,8 @@
+<?php include 'includes/db.php'; ?>
+<?php
+$stmt_count = $pdo->query("SELECT COUNT(*) FROM sliders WHERE is_active = 1");
+$slider_count = $stmt_count->fetchColumn();
+?>
 <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 <!doctype html>
 <html lang="en-US" class="no-js scheme_light">
@@ -632,6 +637,7 @@
         _N2.r(["documentReady", "smartslider-frontend", "SmartSliderWidgetArrowImage", "ss-simple"], function () {
             new _N2.SmartSliderSimple("n2-ss-10", {
                 admin: false,
+                slides: <?php echo $slider_count; ?>,
                 "background.video.mobile": 1,
                 loadingTime: 2000,
                 alias: { id: 0, smoothScroll: 0, slideSwitch: 0, scroll: 1 },
@@ -922,7 +928,7 @@
 <ul class="sub-menu"><li id="menu_mobile-item-30409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30409"><a href="#"><span>Current Projects</span></a>
     <ul class="sub-menu"><li id="menu_mobile-item-28243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28243"><a href="javascript:void(0);"><span>DRR Premium County</span></a></li></ul>
 </li></ul>
-</li><li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="javascript:void(0);"><span style="color: #FFFFFF;">Media</span></a></li> <li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="javascript:void(0);"><span style="color: #FFFFFF;">Media</span></a></li></ul> <li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="javascript:void(0);"><span style="color: #FFFFFF;">Contact Us</span></a></li></ul></nav><div class="socials_mobile"><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_youtube2" style=""><span class="trx_addons_icon-youtube2"></span></span></a></div>            </div>
+</li><li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="blog.php"><span style="color: #FFFFFF;">Blog</span></a></li> <li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="contactus.php"><span style="color: #FFFFFF;">Contact Us</span></a></li></ul></nav><div class="socials_mobile"><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_youtube2" style=""><span class="trx_addons_icon-youtube2"></span></span></a></div>            </div>
         </div><div class="menu_mobile_widgets_area"></div>
     </div>
 </div>

@@ -1,5 +1,27 @@
 <?php include 'includes/header.php'; ?>
 
+<?php
+$message_status = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = isset($_POST['name']) ? trim($_POST['name']) : '';
+    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $phone = isset($_POST['phone']) ? trim($_POST['phone']) : '';
+    $message = isset($_POST['message']) ? trim($_POST['message']) : '';
+
+    if ($name && $email && $message) {
+        try {
+            $stmt = $pdo->prepare("INSERT INTO contact_submissions (name, email, phone, message, status, created_at, updated_at) VALUES (?, ?, ?, ?, 'new', NOW(), NOW())");
+            $stmt->execute([$name, $email, $phone, $message]);
+            $message_status = 'success';
+        } catch (PDOException $e) {
+            $message_status = 'error';
+        }
+    } else {
+        $message_status = 'validation_error';
+    }
+}
+?>
+
 <!-- Premium Contact Page Styles -->
 <style>
     :root {
@@ -214,7 +236,22 @@
                                     <h2>Send us a message</h2>
                                     <p>Fill out the form below and our property expert will reach out to you within 24 hours.</p>
                                 </div>
-                                <form action="#" method="POST" class="premium-form">
+
+                                <?php if ($message_status === 'success'): ?>
+                                    <div class="alert alert-success" style="background: #e8f5e9; color: #2e7d32; padding: 15px; border-radius: 10px; margin-bottom: 30px; border: 1px solid #c8e6c9;">
+                                        <i class="fas fa-check-circle me-2"></i> Thank you! Your message has been sent successfully. We will contact you soon.
+                                    </div>
+                                <?php elseif ($message_status === 'error'): ?>
+                                    <div class="alert alert-danger" style="background: #ffebee; color: #c62828; padding: 15px; border-radius: 10px; margin-bottom: 30px; border: 1px solid #ffcdd2;">
+                                        <i class="fas fa-exclamation-circle me-2"></i> Sorry, something went wrong. Please try again later.
+                                    </div>
+                                <?php elseif ($message_status === 'validation_error'): ?>
+                                    <div class="alert alert-warning" style="background: #fff3e0; color: #ef6c00; padding: 15px; border-radius: 10px; margin-bottom: 30px; border: 1px solid #ffe0b2;">
+                                        <i class="fas fa-info-circle me-2"></i> Please fill in all required fields.
+                                    </div>
+                                <?php endif; ?>
+
+                                <form action="contactus.php" method="POST" class="premium-form" id="contactForm">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -245,7 +282,10 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="submit-premium-btn"><i class="fa-solid fa-paper-plane me-2"></i> Connect With Us</button>
+                                            <button type="submit" class="submit-premium-btn" id="submitBtn">
+                                                <span class="btn-text"><i class="fa-solid fa-paper-plane me-2"></i> Connect With Us</span>
+                                                <span class="btn-processing" style="display: none;"><i class="fas fa-spinner fa-spin me-2"></i> processing..please wait ..</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
@@ -329,6 +369,25 @@
                 start: "top 90%",
             }
         });
+
+        // Contact Form Submission Handling
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnProcessing = submitBtn.querySelector('.btn-processing');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', () => {
+                // Disable the button
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = '0.7';
+                submitBtn.style.cursor = 'not-allowed';
+                
+                // Show processing text
+                btnText.style.display = 'none';
+                btnProcessing.style.display = 'inline-block';
+            });
+        }
     });
 </script>
 

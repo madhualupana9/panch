@@ -1,5 +1,10 @@
 
 <?php include 'includes/header.php'; ?>
+<?php include 'includes/db.php'; ?>
+<?php
+$stmt = $pdo->query("SELECT * FROM sliders WHERE is_active = 1 ORDER BY `order` ASC");
+$sliders = $stmt->fetchAll();
+?>
             
             
             
@@ -58,9 +63,10 @@
                                                     <div class="n2-ss-slider-2 n2-ow">
                                                         <div class="n2-ss-slider-3 n2-ow">
                                                             <div class="n2-ss-slide-backgrounds n2-ow-all">
+                                                                <?php foreach ($sliders as $index => $slider): ?>
                                                                 <div
                                                                     class="n2-ss-slide-background"
-                                                                    data-public-id="1"
+                                                                    data-public-id="<?php echo $index + 1; ?>"
                                                                     data-mode="fill"
                                                                 >
                                                                     <div
@@ -69,15 +75,15 @@
                                                                         data-opacity="100"
                                                                         data-x="50"
                                                                         data-y="50"
-                                                                        data-alt=""
-                                                                        data-title=""
+                                                                        data-alt="<?php echo htmlspecialchars($slider['title'] ?? ''); ?>"
+                                                                        data-title="<?php echo htmlspecialchars($slider['title'] ?? ''); ?>"
                                                                     >
                                                                         <picture class="skip-lazy" data-skip-lazy="1"
                                                                             ><img
                                                                                 decoding="async"
-                                                                                src="assests/image/banner9.jpg"
-                                                                                alt=""
-                                                                                title=""
+                                                                                src="admin/public/storage/<?php echo $slider['image']; ?>"
+                                                                                alt="<?php echo htmlspecialchars($slider['title'] ?? ''); ?>"
+                                                                                title="<?php echo htmlspecialchars($slider['title'] ?? ''); ?>"
                                                                                 loading="lazy"
                                                                                 class="skip-lazy"
                                                                                 data-skip-lazy="1"
@@ -90,71 +96,7 @@
                                                                         data-overlay="1"
                                                                     ></div>
                                                                 </div>
-                                                                <div
-                                                                    class="n2-ss-slide-background"
-                                                                    data-public-id="2"
-                                                                    data-mode="fill"
-                                                                >
-                                                                    <div
-                                                                        class="n2-ss-slide-background-image"
-                                                                        data-blur="0"
-                                                                        data-opacity="100"
-                                                                        data-x="40"
-                                                                        data-y="12"
-                                                                        data-alt=""
-                                                                        data-title=""
-                                                                        style="--ss-o-pos-x: 40%; --ss-o-pos-y: 12%"
-                                                                    >
-                                                                        <picture class="skip-lazy" data-skip-lazy="1"
-                                                                            ><img
-                                                                                decoding="async"
-                                                                                src="assests/image/banner2.jpg"
-                                                                                alt=""
-                                                                                title=""
-                                                                                loading="lazy"
-                                                                                class="skip-lazy"
-                                                                                data-skip-lazy="1"
-                                                                        /></picture>
-                                                                    </div>
-                                                                    <div
-                                                                        data-color="RGBA(0,0,0,0.54)"
-                                                                        style="background-color: RGBA(0, 0, 0, 0.54)"
-                                                                        class="n2-ss-slide-background-color"
-                                                                        data-overlay="1"
-                                                                    ></div>
-                                                                </div>
-                                                                <div
-                                                                    class="n2-ss-slide-background"
-                                                                    data-public-id="3"
-                                                                    data-mode="fill"
-                                                                >
-                                                                    <div
-                                                                        class="n2-ss-slide-background-image"
-                                                                        data-blur="0"
-                                                                        data-opacity="100"
-                                                                        data-x="50"
-                                                                        data-y="50"
-                                                                        data-alt=""
-                                                                        data-title=""
-                                                                    >
-                                                                        <picture class="skip-lazy" data-skip-lazy="1"
-                                                                            ><img
-                                                                                decoding="async"
-                                                                                src="/assests/image/future-city.jpg"
-                                                                                alt=""
-                                                                                title=""
-                                                                                loading="lazy"
-                                                                                class="skip-lazy"
-                                                                                data-skip-lazy="1"
-                                                                        /></picture>
-                                                                    </div>
-                                                                    <div
-                                                                        data-color="RGBA(0,0,0,0.41)"
-                                                                        style="background-color: RGBA(0, 0, 0, 0.41)"
-                                                                        class="n2-ss-slide-background-color"
-                                                                        data-overlay="1"
-                                                                    ></div>
-                                                                </div>
+                                                                <?php endforeach; ?>
                                                             </div>
                                                             <div class="n2-ss-slider-4 n2-ow">
                                                                 <svg
@@ -163,20 +105,21 @@
                                                                     data-related-device="desktopPortrait"
                                                                     class="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"
                                                                 ></svg>
+                                                                <?php foreach ($sliders as $index => $slider): ?>
                                                                 <div
-                                                                    data-first="1"
+                                                                    data-first="<?php echo $index === 0 ? '1' : '0'; ?>"
                                                                     data-slide-duration="0"
-                                                                    data-id="69"
-                                                                    data-slide-public-id="1"
-                                                                    data-title="Slide 1"
-                                                                    class="n2-ss-slide n2-ow n2-ss-slide-69"
+                                                                    data-id="<?php echo 69 + $index; ?>"
+                                                                    data-slide-public-id="<?php echo $index + 1; ?>"
+                                                                    data-title="<?php echo htmlspecialchars($slider['title'] ?? 'Slide'); ?>"
+                                                                    class="n2-ss-slide n2-ow n2-ss-slide-<?php echo 69 + $index; ?>"
                                                                 >
                                                                     <div
                                                                         role="note"
                                                                         class="n2-ss-slide--focus"
                                                                         tabindex="-1"
                                                                     >
-                                                                        Slide 1
+                                                                        <?php echo htmlspecialchars($slider['title'] ?? 'Slide'); ?>
                                                                     </div>
                                                                     <div
                                                                         class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"
@@ -220,7 +163,7 @@
                                                                                                             data-sstype="layer"
                                                                                                         >
                                                                                                             <div
-                                                                                                                id="n2-ss-10item1"
+                                                                                                                id="n2-ss-10item<?php echo $index * 2 + 1; ?>"
                                                                                                                 class="n2-font-50dc700098640c141c34c6546eae3f8d-hover n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading n2-ss-item-content n2-ss-text n2-ow"
                                                                                                                 style="
                                                                                                                     display: block;
@@ -232,7 +175,7 @@
                                                                                                                         font-weight: 300;
                                                                                                                         font-style: bold;
                                                                                                                     "
-                                                                                                                    >Own Land. Build Dreams. Create Legacy.</span
+                                                                                                                    ><?php echo htmlspecialchars($slider['title'] ?? ''); ?></span
                                                                                                                 ><br />
                                                                                                             </div>
                                                                                                         </div>
@@ -241,21 +184,22 @@
                                                                                                             data-pm="normal"
                                                                                                             data-sstype="layer"
                                                                                                         >
-                                                                                                            <!-- <div
+                                                                                                            <?php if (!empty($slider['link'])): ?>
+                                                                                                            <div
                                                                                                                 class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-16248716f1d5831bb54a9dc1b02d167d-link n2-ss-nowrap n2-ss-button-container--non-full-width"
                                                                                                             >
                                                                                                                 <a
                                                                                                                     class="n2-style-4e71a4f43fe4ff5a6b7ac2f8ef7bf4e8-heading n2-ow"
-                                                                                                                    href="javascript:void(0);"
+                                                                                                                    href="<?php echo htmlspecialchars($slider['link']); ?>"
                                                                                                                     ><div>
                                                                                                                         <div>
-                                                                                                                            Know
-                                                                                                                            More
+                                                                                                                            <?php echo htmlspecialchars($slider['link_text'] ?? 'Know More'); ?>
                                                                                                                             ➔
                                                                                                                         </div>
                                                                                                                     </div></a
                                                                                                                 >
-                                                                                                            </div> -->
+                                                                                                            </div>
+                                                                                                            <?php endif; ?>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -267,218 +211,10 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                               
-                                                                <div
-                                                                    data-slide-duration="0"
-                                                                    data-id="63"
-                                                                    data-slide-public-id="2"
-                                                                    data-title="Slide 1"
-                                                                    class="n2-ss-slide n2-ow n2-ss-slide-63"
-                                                                >
-                                                                    <div
-                                                                        role="note"
-                                                                        class="n2-ss-slide--focus"
-                                                                        tabindex="-1"
-                                                                    >
-                                                                        Slide 1
-                                                                    </div>
-                                                                    <div
-                                                                        class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"
-                                                                    >
-                                                                        <div
-                                                                            class="n2-ss-layer n2-ow n-uc-Uz9xGKsWpY5f"
-                                                                            data-sstype="slide"
-                                                                            data-pm="default"
-                                                                        >
-                                                                            <div
-                                                                                class="n2-ss-layer n2-ow n-uc-zMaqAOHPG9gJ"
-                                                                                data-pm="default"
-                                                                                data-sstype="content"
-                                                                                data-hasbackground="0"
-                                                                            >
-                                                                                <div
-                                                                                    class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-zMaqAOHPG9gJ-inner"
-                                                                                >
-                                                                                    <div
-                                                                                        class="n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n-uc-XX8bsul3yDds"
-                                                                                        data-pm="normal"
-                                                                                        data-sstype="row"
-                                                                                    >
-                                                                                        <div
-                                                                                            class="n2-ss-layer-row n2-ss-layer-with-background n-uc-XX8bsul3yDds-inner"
-                                                                                        >
-                                                                                            <div
-                                                                                                class="n2-ss-layer-row-inner"
-                                                                                            >
-                                                                                                <div
-                                                                                                    class="n2-ss-layer n2-ow n-uc-646ZIVmlbjwP"
-                                                                                                    data-pm="default"
-                                                                                                    data-sstype="col"
-                                                                                                >
-                                                                                                    <div
-                                                                                                        class="n2-ss-layer-col n2-ss-layer-with-background n2-ss-layer-content n-uc-646ZIVmlbjwP-inner"
-                                                                                                    >
-                                                                                                        <div
-                                                                                                            class="n2-ss-layer n2-ow n-uc-qzdqKzEO3yRM"
-                                                                                                            data-pm="normal"
-                                                                                                            data-sstype="layer"
-                                                                                                        >
-                                                                                                            <div
-                                                                                                                id="n2-ss-10item3"
-                                                                                                                class="n2-font-50dc700098640c141c34c6546eae3f8d-hover n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading n2-ss-item-content n2-ss-text n2-ow"
-                                                                                                                style="
-                                                                                                                    display: block;
-                                                                                                                "
-                                                                                                            >
-                                                                                                                <br />
-                                                                                                                <span
-                                                                                                                    style="
-                                                                                                                        font-weight: 300;
-                                                                                                                        font-style: bold;
-                                                                                                                    "
-                                                                                                                    >Invest in Land. Invest in Tomorrow</span
-                                                                                                                ><br />
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div
-                                                                                                            class="n2-ss-layer n2-ow n-uc-zWNUzGto0Z4P n2-ss-layer--auto"
-                                                                                                            data-pm="normal"
-                                                                                                            data-sstype="layer"
-                                                                                                        >
-                                                                                                            <div
-                                                                                                                class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-16248716f1d5831bb54a9dc1b02d167d-link n2-ss-nowrap n2-ss-button-container--non-full-width"
-                                                                                                            >
-                                                                                                                <a
-                                                                                                                    class="n2-style-4e71a4f43fe4ff5a6b7ac2f8ef7bf4e8-heading n2-ow"
-                                                                                                                    href="projects/drr-premium-county/"
-                                                                                                                    ><div>
-                                                                                                                        <div>
-                                                                                                                            Know
-                                                                                                                            More
-                                                                                                                            ➔
-                                                                                                                        </div>
-                                                                                                                    </div></a
-                                                                                                                >
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    data-slide-duration="0"
-                                                                    data-id="64"
-                                                                    data-slide-public-id="3"
-                                                                    data-title="Slide 1"
-                                                                    class="n2-ss-slide n2-ow n2-ss-slide-64"
-                                                                >
-                                                                    <div
-                                                                        role="note"
-                                                                        class="n2-ss-slide--focus"
-                                                                        tabindex="-1"
-                                                                    >
-                                                                        Slide 1
-                                                                    </div>
-                                                                    <div
-                                                                        class="n2-ss-layers-container n2-ss-slide-limiter n2-ow"
-                                                                    >
-                                                                        <div
-                                                                            class="n2-ss-layer n2-ow n-uc-NlSXBLgcSug4"
-                                                                            data-sstype="slide"
-                                                                            data-pm="default"
-                                                                        >
-                                                                            <div
-                                                                                class="n2-ss-layer n2-ow n-uc-Y9c3LVflqdH7"
-                                                                                data-pm="default"
-                                                                                data-sstype="content"
-                                                                                data-hasbackground="0"
-                                                                            >
-                                                                                <div
-                                                                                    class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-Y9c3LVflqdH7-inner"
-                                                                                >
-                                                                                    <div
-                                                                                        class="n2-ss-layer n2-ow n2-ss-layer--block n2-ss-has-self-align n-uc-fQXmrHWmRqW3"
-                                                                                        data-pm="normal"
-                                                                                        data-sstype="row"
-                                                                                    >
-                                                                                        <div
-                                                                                            class="n2-ss-layer-row n2-ss-layer-with-background n-uc-fQXmrHWmRqW3-inner"
-                                                                                        >
-                                                                                            <div
-                                                                                                class="n2-ss-layer-row-inner"
-                                                                                            >
-                                                                                                <div
-                                                                                                    class="n2-ss-layer n2-ow n-uc-9iIns52tIVHZ"
-                                                                                                    data-pm="default"
-                                                                                                    data-sstype="col"
-                                                                                                >
-                                                                                                    <div
-                                                                                                        class="n2-ss-layer-col n2-ss-layer-with-background n2-ss-layer-content n-uc-9iIns52tIVHZ-inner"
-                                                                                                    >
-                                                                                                        <div
-                                                                                                            class="n2-ss-layer n2-ow n-uc-KrkAmYcTBPzB"
-                                                                                                            data-pm="normal"
-                                                                                                            data-sstype="layer"
-                                                                                                        >
-                                                                                                            <div
-                                                                                                                id="n2-ss-10item5"
-                                                                                                                class="n2-font-50dc700098640c141c34c6546eae3f8d-hover n2-style-f8293b450b12ef15d5c4ff97a617a3e3-heading n2-ss-item-content n2-ss-text n2-ow"
-                                                                                                                style="
-                                                                                                                    display: block;
-                                                                                                                "
-                                                                                                            >
-                                                                                                                <br />
-                                                                                                                <span
-                                                                                                                    style="
-                                                                                                                        font-weight: 300;
-                                                                                                                        font-style: bold;
-                                                                                                                    "
-                                                                                                                    >Invest in Hyderabad’s Emerging Growth Corridors</span
-                                                                                                                ><br />
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div
-                                                                                                            class="n2-ss-layer n2-ow n-uc-H9BJxATX9x2T n2-ss-layer--auto"
-                                                                                                            data-pm="normal"
-                                                                                                            data-sstype="layer"
-                                                                                                        >
-                                                                                                            <!-- <div
-                                                                                                                class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-16248716f1d5831bb54a9dc1b02d167d-link n2-ss-nowrap n2-ss-button-container--non-full-width"
-                                                                                                            >
-                                                                                                                <a
-                                                                                                                    class="n2-style-4e71a4f43fe4ff5a6b7ac2f8ef7bf4e8-heading n2-ow"
-                                                                                                                    href="javascript:void(0);"
-                                                                                                                    ><div>
-                                                                                                                        <div>
-                                                                                                                            Know
-                                                                                                                            More
-                                                                                                                            ➔
-                                                                                                                        </div>
-                                                                                                                    </div></a
-                                                                                                                >
-                                                                                                            </div> -->
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                
-                                                               
-                                                              
+                                                                <?php endforeach; ?>
                                                             </div>
+
+                                                           
                                                         </div>
                                                     </div>
                                                 </div>

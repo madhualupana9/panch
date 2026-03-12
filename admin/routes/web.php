@@ -58,6 +58,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
             Route::resource('roles', App\Http\Controllers\Admin\RoleController::class);
         });
 
+        // Sliders Management
+        Route::middleware('permission:sliders.view,sliders.create,sliders.edit,sliders.delete')->group(function () {
+            Route::resource('sliders', App\Http\Controllers\Admin\SliderController::class);
+        });
+
         // Projects Management
         Route::middleware('permission:projects.view,projects.create,projects.edit,projects.delete')->group(function () {
             Route::resource('projects', ProjectController::class);

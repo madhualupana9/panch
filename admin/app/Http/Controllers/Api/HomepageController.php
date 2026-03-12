@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\ContentSection;
+use App\Models\Slider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HomepageController extends Controller
 {
@@ -14,10 +16,20 @@ class HomepageController extends Controller
     public function index()
     {
         try {
+            // Get Content Sections
             $sections = ContentSection::where('is_active', true)
                 ->whereIn('section_key', ['hero', 'about', 'stats', 'business_sectors'])
                 ->get()
                 ->keyBy('section_key');
+
+            // Get Sliders
+            $sliders = Slider::where('is_active', true)
+                ->orderBy('order')
+                ->get()
+                ->map(function ($slider) {
+                    $slider->image = $slider->image ? asset(Storage::url($slider->image)) : null;
+                    return $slider;
+                });
 
             // Process each section to convert image URLs
             $processedSections = [];
@@ -33,7 +45,10 @@ class HomepageController extends Controller
 
             return response()->json([
                 'success' => true,
-                'data' => $processedSections
+                'data' => [
+                    'sections' => $processedSections,
+                    'sliders' => $sliders
+                ]
             ]);
         } catch (\Exception $e) {
             return response()->json([
