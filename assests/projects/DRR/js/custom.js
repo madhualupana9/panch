@@ -17921,7 +17921,6 @@
                                             ["location", "Location Highlights"],
                                             ["gallery", "Gallery"],
                                             ["specs", "Specifications"],
-                                            ["testimonial", "Testimonials"],
                                             ["contact", "Contact"],
                                         ].map((e) => {
                                             let [t, n] = e;
@@ -35977,54 +35976,6 @@
                         }),
                     });
                 });
-            function Uh() {
-                return (
-                    (0, t.useEffect)(() => {
-                        Et().init({ duration: 1e3, once: !0 });
-                    }, []),
-                    (0, St.jsx)("section", {
-                        id: "testimonial",
-                        className: "testimonials",
-                        children: (0, St.jsxs)("div", {
-                            className: "container",
-                            "data-aos": "zoom-in",
-                            children: [
-                                (0, St.jsx)("div", {
-                                    className: "text-center mb-4",
-                                    children: (0, St.jsx)("h2", {
-                                        className: "section-title mt-2",
-                                        children: "Testimonials",
-                                    }),
-                                }),
-                                (0, St.jsx)(_h, {
-                                    modules: [Ch, kh],
-                                    spaceBetween: 20,
-                                    slidesPerView: 3,
-                                    loop: !0,
-                                    autoplay: { delay: 8e3, disableOnInteraction: !1 },
-                                    pagination: { clickable: !0 },
-                                    navigation: !0,
-                                    breakpoints: {
-                                        220: { slidesPerView: 1 },
-                                        768: { slidesPerView: 2 },
-                                        1024: { slidesPerView: 3 },
-                                    },
-                                    children: Hh.map((e, t) =>
-                                        (0, St.jsx)(
-                                            Eh,
-                                            {
-                                                "data-aos-delay": 100 * t,
-                                                children: (0, St.jsx)(Wh, { videoId: e.videoId }),
-                                            },
-                                            e.id
-                                        )
-                                    ),
-                                }),
-                            ],
-                        }),
-                    })
-                );
-            }
             async function qh(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "thank-you";
                 const n = new URLSearchParams();
@@ -36358,7 +36309,7 @@
                         (0, St.jsx)("div", {
                             className: "footer-logo text-center mb-3",
                             children: (0, St.jsx)("img", {
-                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-color-logo.png",
+                                src: "/assests/image/paanchajanya-logo-new.png",
                                 alt: "Official Urban Trilla Apartments coloured logo",
                                 style: { width: "190px" },
                             }),
@@ -36382,19 +36333,16 @@
                                         }),
                                     }),
                                     (0, St.jsx)("li", {
-                                        children: (0, St.jsx)("a", { href: "#testimonial", children: "Testimonials" }),
-                                    }),
-                                    (0, St.jsx)("li", {
-                                        children: (0, St.jsx)("a", { href: "Tel:+918367670909", children: "Contact" }),
+                                        children: (0, St.jsx)("a", { href: "Tel:+919100999099", children: "Contact" }),
                                     }),
                                 ],
                             }),
                         }),
-                        (0, St.jsxs)("p", { children: [(0, St.jsx)("b", { children: "RERA NO:" }), " P02400003866"] }),
+                        (0, St.jsxs)("p", { children: [(0, St.jsx)("b", { children: "" }), " "] }),
                         (0, St.jsx)("a", {
-                            href: "tel:+918367670909",
+                            href: "tel:+919100999099",
                             children: (0, St.jsxs)("p", {
-                                children: [(0, St.jsx)("b", { children: "Call:" }), " +91 8367670909"],
+                                children: [(0, St.jsx)("b", { children: "Call:" }), " +91 9100999099"],
                             }),
                         }),
                         (0, St.jsxs)("div", {
@@ -36402,25 +36350,25 @@
                             children: [
                                 (0, St.jsx)("a", {
                                     target: "_blank",
-                                    href: "https://www.facebook.com/AnkuraHomes1/",
+                                    href: "https://www.facebook.com/",
                                     "aria-label": "Facebook",
                                     children: (0, St.jsx)(om, {}),
                                 }),
                                 (0, St.jsx)("a", {
                                     target: "_blank",
-                                    href: "https://www.youtube.com/@ankurahomesofficial",
+                                    href: "https://www.youtube.com/",
                                     "aria-label": "Youtube",
                                     children: (0, St.jsx)(lm, {}),
                                 }),
                                 (0, St.jsx)("a", {
                                     target: "_blank",
-                                    href: "https://www.instagram.com/ankurahomes/",
+                                    href: "https://www.instagram.com/",
                                     "aria-label": "Instagram",
                                     children: (0, St.jsx)(am, {}),
                                 }),
                                 (0, St.jsx)("a", {
                                     target: "_blank",
-                                    href: "https://in.linkedin.com/company/ankura-homes",
+                                    href: "https://in.linkedin.com/",
                                     "aria-label": "LinkedIn",
                                     children: (0, St.jsx)(sm, {}),
                                 }),
@@ -36429,7 +36377,7 @@
                         (0, St.jsx)("div", {
                             className: "footer-bottom text-center",
                             children: (0, St.jsxs)("small", {
-                                children: ["\xa9 ", e, " Urban Trilla. All rights reserved."],
+                                children: ["\xa9 ", e, " Paanchajanya Reality | DRR Premium County. All rights reserved."],
                             }),
                         }),
                         (0, St.jsx)("style", {
@@ -40620,7 +40568,6 @@
                                                 (0, St.jsx)(Rh, {}),
                                                 (0, St.jsx)(Vh, {}),
                                                 (0, St.jsx)(Ox, {}),
-                                                (0, St.jsx)(Uh, {}),
                                                 (0, St.jsx)(Yh, {}),
                                                 (0, St.jsx)(cm, {}),
                                                 (0, St.jsx)(um, {}),
