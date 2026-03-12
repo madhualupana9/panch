@@ -14,6 +14,8 @@ use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\CareerController;
 use App\Http\Controllers\Admin\ContactSubmissionController;
 use App\Http\Controllers\Admin\JobApplicationController;
+use App\Http\Controllers\Admin\VendorController;
+use App\Http\Controllers\Admin\ChannelPartnerController;
 use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\ProjectController as ApiProjectController;
 use App\Http\Controllers\Api\ServiceController as ApiServiceController;
@@ -22,6 +24,7 @@ use App\Http\Controllers\Api\NewsController as ApiNewsController;
 use App\Http\Controllers\Api\CareerController as ApiCareerController;
 use App\Http\Controllers\Api\JobApplicationController as ApiJobApplicationController;
 use App\Http\Controllers\Api\HomepageController;
+use App\Http\Controllers\Api\VendorPartnerController;
 
 // Redirect root to admin login
 Route::get('/', function () {
@@ -131,6 +134,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
             Route::put('/contacts/{contact}', [ContactSubmissionController::class, 'update'])->name('contacts.update');
             Route::delete('/contacts/{contact}', [ContactSubmissionController::class, 'destroy'])->name('contacts.destroy');
         });
+
+        // Vendors
+        Route::get('/vendors', [VendorController::class, 'index'])->name('vendors.index');
+        Route::get('/vendors/{vendor}', [VendorController::class, 'show'])->name('vendors.show');
+        Route::delete('/vendors/{vendor}', [VendorController::class, 'destroy'])->name('vendors.destroy');
+
+        // Channel Partners
+        Route::get('/channel-partners', [ChannelPartnerController::class, 'index'])->name('channel-partners.index');
+        Route::get('/channel-partners/{channelPartner}', [ChannelPartnerController::class, 'show'])->name('channel-partners.show');
+        Route::delete('/channel-partners/{channelPartner}', [ChannelPartnerController::class, 'destroy'])->name('channel-partners.destroy');
     });
 });
 
@@ -138,6 +151,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
 Route::prefix('api')->group(function () {
     // Contact form submission
     Route::post('/contact', [ContactController::class, 'submit']);
+    Route::post('/vendor-submit', [VendorPartnerController::class, 'submitVendor']);
+    Route::post('/channel-partner-submit', [VendorPartnerController::class, 'submitChannelPartner']);
 
     // Projects API
     Route::get('/projects', [ApiProjectController::class, 'index']);

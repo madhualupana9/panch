@@ -139,6 +139,26 @@
                 <i class="fas fa-users text-purple-500 text-2xl"></i>
             </div>
         </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Vendors</p>
+                    <p class="text-2xl font-bold text-gray-800">{{ $stats['vendors'] ?? 0 }}</p>
+                </div>
+                <i class="fas fa-users text-blue-500 text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Channel Partners</p>
+                    <p class="text-2xl font-bold text-gray-800">{{ $stats['channel_partners'] ?? 0 }}</p>
+                </div>
+                <i class="fas fa-handshake text-indigo-500 text-2xl"></i>
+            </div>
+        </div>
     </div>
 
     <!-- Recent Activity & Quick Actions -->
@@ -226,7 +246,7 @@
             <i class="fas fa-bolt text-yellow-500 mr-2"></i>
             Quick Actions
         </h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
             <a href="{{ route('admin.projects.create') }}" class="flex flex-col items-center justify-center p-6 bg-blue-50 hover:bg-blue-100 rounded-lg transition group">
                 <i class="fas fa-plus-circle text-blue-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
                 <span class="text-sm font-semibold text-blue-700">Add Project</span>
@@ -234,6 +254,14 @@
             <a href="{{ route('admin.news.create') }}" class="flex flex-col items-center justify-center p-6 bg-purple-50 hover:bg-purple-100 rounded-lg transition group">
                 <i class="fas fa-plus-circle text-purple-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
                 <span class="text-sm font-semibold text-purple-700">Add News</span>
+            </a>
+            <a href="{{ route('admin.vendors.index') }}" class="flex flex-col items-center justify-center p-6 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition group">
+                <i class="fas fa-users text-indigo-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
+                <span class="text-sm font-semibold text-indigo-700">Vendors</span>
+            </a>
+            <a href="{{ route('admin.channel-partners.index') }}" class="flex flex-col items-center justify-center p-6 bg-teal-50 hover:bg-teal-100 rounded-lg transition group">
+                <i class="fas fa-handshake text-teal-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
+                <span class="text-sm font-semibold text-teal-700">Partners</span>
             </a>
             <a href="{{ route('admin.content.index') }}" class="flex flex-col items-center justify-center p-6 bg-green-50 hover:bg-green-100 rounded-lg transition group">
                 <i class="fas fa-edit text-green-600 text-3xl mb-2 group-hover:scale-110 transition"></i>

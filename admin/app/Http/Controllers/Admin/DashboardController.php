@@ -9,6 +9,8 @@ use App\Models\ContentSection;
 use App\Models\NavigationItem;
 use App\Models\SiteSetting;
 use App\Models\User;
+use App\Models\Vendor;
+use App\Models\ChannelPartner;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -26,6 +28,8 @@ class DashboardController extends Controller
             'settings' => SiteSetting::count(),
             'users' => User::count(),
             'news_views' => News::sum('views'),
+            'vendors' => Vendor::count(),
+            'channel_partners' => ChannelPartner::count(),
         ];
 
         $recentProjects = Project::latest()->take(5)->get();

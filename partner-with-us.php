@@ -183,7 +183,7 @@
                         <h2>Vendors</h2>
                         <p>At Paanchajanya Realty, we value strong partnerships with our vendors to ensure the highest standards in our projects. If you're interested in working with us, please fill out the form below to get started.</p>
                         
-                        <form action="#" method="POST" class="partner-form">
+                        <form id="vendorForm" class="partner-form">
                             <div class="form-group">
                                 <i class="icon-user input-icon"></i>
                                 <input type="text" name="name" class="form-control" placeholder="Name" required>
@@ -200,6 +200,7 @@
                                 <i class="icon-pencil input-icon"></i>
                                 <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
                             </div>
+                            <div id="vendorResponse" class="mb-3"></div>
                             <div>
                                 <button type="submit" class="submit-btn">Submit</button>
                             </div>
@@ -213,7 +214,7 @@
                         <h2>Channel Partners</h2>
                         <p>At Paanchajanya Realty, we're seeking dynamic channel partners to enhance our real estate offerings. If you're interested in partnering with us, please fill out the form below.</p>
                         
-                        <form action="#" method="POST" class="partner-form">
+                        <form id="partnerForm" class="partner-form">
                             <div class="form-group">
                                 <i class="icon-user input-icon"></i>
                                 <input type="text" name="name" class="form-control" placeholder="Name" required>
@@ -230,6 +231,7 @@
                                 <i class="icon-pencil input-icon"></i>
                                 <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
                             </div>
+                            <div id="partnerResponse" class="mb-3"></div>
                             <div>
                                 <button type="submit" class="submit-btn">Submit</button>
                             </div>
@@ -240,5 +242,68 @@
         </div>
     </section>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Vendor Form Submission
+    $('#vendorForm').on('submit', function(e) {
+        e.preventDefault();
+        const $form = $(this);
+        const $btn = $form.find('button');
+        const $response = $('#vendorResponse');
+        
+        $btn.prop('disabled', true).text('Submitting...');
+        $response.html('');
+
+        $.ajax({
+            url: 'admin/public/api/vendor-submit',
+            method: 'POST',
+            data: $form.serialize(),
+            success: function(res) {
+                $response.html('<div class="alert alert-success">' + res.message + '</div>');
+                $form[0].reset();
+            },
+            error: function(err) {
+                let msg = 'Something went wrong. Please try again.';
+                if (err.responseJSON && err.responseJSON.message) msg = err.responseJSON.message;
+                $response.html('<div class="alert alert-danger">' + msg + '</div>');
+            },
+            complete: function() {
+                $btn.prop('disabled', false).text('Submit');
+            }
+        });
+    });
+
+    // Channel Partner Form Submission
+    $('#partnerForm').on('submit', function(e) {
+        e.preventDefault();
+        const $form = $(this);
+        const $btn = $form.find('button');
+        const $response = $('#partnerResponse');
+        
+        $btn.prop('disabled', true).text('Submitting...');
+        $response.html('');
+
+        $.ajax({
+            url: 'admin/public/api/channel-partner-submit',
+            method: 'POST',
+            data: $form.serialize(),
+            success: function(res) {
+                $response.html('<div class="alert alert-success">' + res.message + '</div>');
+                $form[0].reset();
+            },
+            error: function(err) {
+                let msg = 'Something went wrong. Please try again.';
+                if (err.responseJSON && err.responseJSON.message) msg = err.responseJSON.message;
+                $response.html('<div class="alert alert-danger">' + msg + '</div>');
+            },
+            complete: function() {
+                $btn.prop('disabled', false).text('Submit');
+            }
+        });
+    });
+});
+</script>
 
 <?php include 'includes/footer.php'; ?>

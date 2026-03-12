@@ -68,6 +68,26 @@
                     <span>Navigation</span>
                 </a>
 
+                <!-- Partners Management -->
+                <div class="pt-4 pb-2">
+                    <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Partners</p>
+                </div>
+
+                <a href="{{ route('admin.vendors.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.vendors.*') ? 'active' : '' }}">
+                    <i class="fas fa-users w-5"></i>
+                    <span>Vendors</span>
+                </a>
+
+                <a href="{{ route('admin.channel-partners.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.channel-partners.*') ? 'active' : '' }}">
+                    <i class="fas fa-handshake w-5"></i>
+                    <span>Channel Partners</span>
+                </a>
+
+                <a href="{{ route('admin.contacts.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.contacts.*') ? 'active' : '' }}">
+                    <i class="fas fa-envelope w-5"></i>
+                    <span>Contact Requests</span>
+                </a>
+
                 <!-- Settings -->
                 <div class="pt-4 pb-2">
                     <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Settings</p>

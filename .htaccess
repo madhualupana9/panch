@@ -1,5 +1,12 @@
 RewriteEngine On
 
+# Pass admin requests to the admin/public folder
+RewriteRule ^admin/api/(.*)$ admin/public/index.php [L,QSA]
+RewriteRule ^admin/(.*)$ admin/public/$1 [L]
+
+# Also handle /admin without trailing slash
+RewriteRule ^admin$ admin/public/index.php [L]
+
 # Rewrite for news-detail/slug to news-detail.php?slug=slug
 RewriteRule ^news-detail/([^/]+)/?$ news-detail.php?slug=$1 [L,QSA]
 

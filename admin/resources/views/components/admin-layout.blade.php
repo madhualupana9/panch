@@ -112,6 +112,28 @@
                     @endif
                 </a>
                 @endif
+
+                <a href="{{ route('admin.vendors.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.vendors.*') ? 'active' : '' }}">
+                    <i class="fas fa-users w-5"></i>
+                    <span>Vendors</span>
+                    @php
+                        $newVendorsCount = \App\Models\Vendor::whereNull('read_at')->count();
+                    @endphp
+                    @if($newVendorsCount > 0)
+                        <span class="ml-auto bg-blue-500 text-white text-xs px-2 py-1 rounded-full">{{ $newVendorsCount }}</span>
+                    @endif
+                </a>
+
+                <a href="{{ route('admin.channel-partners.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.channel-partners.*') ? 'active' : '' }}">
+                    <i class="fas fa-handshake w-5"></i>
+                    <span>Channel Partners</span>
+                    @php
+                        $newPartnersCount = \App\Models\ChannelPartner::whereNull('read_at')->count();
+                    @endphp
+                    @if($newPartnersCount > 0)
+                        <span class="ml-auto bg-indigo-500 text-white text-xs px-2 py-1 rounded-full">{{ $newPartnersCount }}</span>
+                    @endif
+                </a>
                 @endif
 
                 <!-- User Management -->
