@@ -1,5 +1,5 @@
 <?php 
-include 'includes/header.php'; 
+include 'includes/db.php';
 
 $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 $article = null;
@@ -11,9 +11,11 @@ if ($slug) {
 }
 
 if (!$article) {
-    header("Location: blog.php");
+    header("Location: /blog");
     exit;
 }
+
+include 'includes/header.php'; 
 
 $date = date('F d, Y', strtotime($article['published_at']));
 $image_path = $article['image'];
@@ -98,7 +100,7 @@ if (strpos($image_path, 'news/') === 0) {
     <section class="content-section">
         <div class="container">
             <div class="news-article-content">
-                <a href="blog.php" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+                <a href="blog" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Blog</a>
                 
                 <div class="article-body">
                     <?php echo $article['content']; ?>

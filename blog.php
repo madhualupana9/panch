@@ -152,7 +152,7 @@
                             <div class="blog-category"><?php echo htmlspecialchars($article['category']); ?></div>
                             <h3 class="blog-title"><?php echo htmlspecialchars($article['title']); ?></h3>
                             <p class="blog-excerpt"><?php echo htmlspecialchars($article['excerpt']); ?></p>
-                            <a href="news-detail.php?slug=<?php echo $article['slug']; ?>" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="news-detail/<?php echo $article['slug']; ?>" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

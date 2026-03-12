@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Rewrite for news-detail/slug to news-detail.php?slug=slug
+RewriteRule ^news-detail/([^/]+)/?$ news-detail.php?slug=$1 [L,QSA]
+
+# Redirect /file.php to /file
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.php\ HTTP
+RewriteRule ^([^.]+)\.php$ /$1 [R=301,L]
+
+# Internal rewrite: /file to /file.php if it exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

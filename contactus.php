@@ -251,7 +251,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     </div>
                                 <?php endif; ?>
 
-                                <form action="contactus.php" method="POST" class="premium-form" id="contactForm">
+                                <form action="contactus" method="POST" class="premium-form" id="contactForm">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">

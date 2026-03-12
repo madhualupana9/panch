@@ -7,6 +7,7 @@ $slider_count = $stmt_count->fetchColumn();
 <!doctype html>
 <html lang="en-US" class="no-js scheme_light">
     <head>
+        <base href="/">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="format-detection" content="telephone=no" />
@@ -16,7 +17,7 @@ $slider_count = $stmt_count->fetchColumn();
             name="description"
             content="PAANCHAJANYA REALITY is one of the leading real estate developers in Hyderabad. Here we have projects like Urban Elite, Premium County, and more. Explore Now!"
         />
-        <link rel="canonical" href="index.html" />
+        <link rel="canonical" href="index" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="PAANCHAJANYA REALITY - Buy Luxury Apartments, Villas and More!" />
@@ -772,7 +773,7 @@ $slider_count = $stmt_count->fetchColumn();
             <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="sc_layouts_item elementor-element elementor-element-4b817d3 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_logo" data-id="4b817d3" data-element_type="widget" data-widget_type="trx_sc_layouts_logo.default">
                 <div class="elementor-widget-container">
-                    <a href="index.php" class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_392944631"><img loading="lazy" class="logo_image" src="assests/image/paanchajanya-logo-new.png" alt="PAANCHAJANYA REALITY" width="300" height="107"></a>               </div>
+                    <a href="index" class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_392944631"><img loading="lazy" class="logo_image" src="assests/image/paanchajanya-logo-new.png" alt="PAANCHAJANYA REALITY" width="300" height="107"></a>               </div>
                 </div>
                     </div>
         </div>
@@ -788,7 +789,7 @@ $slider_count = $stmt_count->fetchColumn();
 >
     <ul id="sc_layouts_menu_575918428" class="sc_layouts_menu_nav">
         <li id="menu-item-28238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28238">
-            <a href="aboutus.php"><span style="color: #ffffff">About Us</span></a>
+            <a href="aboutus"><span style="color: #ffffff">About Us</span></a>
         </li>
         <li
             id="menu-item-18327"
@@ -813,13 +814,13 @@ $slider_count = $stmt_count->fetchColumn();
             </ul>
         </li>
         <li id="menu-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263">
-            <a href="partner-with-us.php"><span style="color: #ffffff">Partner with us</span></a>
+            <a href="partner-with-us"><span style="color: #ffffff">Partner with us</span></a>
         </li>
         <li id="menu-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263">
-            <a href="blog.php"><span style="color: #ffffff">Blog</span></a>
+            <a href="blog"><span style="color: #ffffff">Blog</span></a>
         </li>
         <li id="menu-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263">
-            <a href="contactus.php"><span style="color: #ffffff">Contact Us</span></a>
+            <a href="contactus"><span style="color: #ffffff">Contact Us</span></a>
         </li>
     </ul>
 </nav>
@@ -928,7 +929,7 @@ $slider_count = $stmt_count->fetchColumn();
 <ul class="sub-menu"><li id="menu_mobile-item-30409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30409"><a href="#"><span>Current Projects</span></a>
     <ul class="sub-menu"><li id="menu_mobile-item-28243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28243"><a href="javascript:void(0);"><span>DRR Premium County</span></a></li></ul>
 </li></ul>
-</li><li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="blog.php"><span style="color: #FFFFFF;">Blog</span></a></li> <li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="contactus.php"><span style="color: #FFFFFF;">Contact Us</span></a></li></ul></nav><div class="socials_mobile"><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_youtube2" style=""><span class="trx_addons_icon-youtube2"></span></span></a></div>            </div>
+</li><li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="blog"><span style="color: #FFFFFF;">Blog</span></a></li> <li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="contactus"><span style="color: #FFFFFF;">Contact Us</span></a></li></ul></nav><div class="socials_mobile"><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_youtube2" style=""><span class="trx_addons_icon-youtube2"></span></span></a></div>            </div>
         </div><div class="menu_mobile_widgets_area"></div>
     </div>
 </div>
