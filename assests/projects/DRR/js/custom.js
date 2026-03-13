@@ -17901,7 +17901,7 @@
                                             ["plans", "Plans"],
                                             ["location", "Location Highlights"],
                                             ["gallery", "Gallery"],
-                                            ["specs", "Specifications"],
+                                            ["specs", "Amenities"],
                                             ["contact", "Contact"],
                                         ].map((e) => {
                                             let [t, n] = e;
@@ -35814,68 +35814,21 @@
                 });
             }
             const zh = {
-                    "FRAMED STRUCTURE": ["RCC framed structure to withstand wind & seismic loads"],
-                    KITCHEN: [
-                        "Granite platform with stainless steel sink",
-                        "Separate municipal tap (water provided by GHMC along with borewell water) provision for fixing of water RO system, exhaust fan & chimney",
-                        "Provision for geyser for hot water near the sink utilities/wash; dishwasher & washing machine provision",
-                    ],
-                    "SUPER STRUCTURE": ["8 brick work with 10 plastering", "4 brick work with 6 plastering"],
-                    BATHROOMS: [
-                        "EWC with vertical stack flushing system with hydro-pneumatic system",
-                        "Single lever fixture with wall mixer-cum-shower provision for geysers in all bathrooms",
-                        "Chrome-plated CP fittings in all the toilets with Kohler make or equivalent, sanitary in American standard or equivalent",
-                    ],
-                    PLASTERING: [
-                        "External: Double coat cement plastering with texture, primer & two coat paint",
-                        "Internal: Cement plastering with 2 coats of luppam finished",
-                    ],
-                    DOORS: [
-                        "Main Door Frame: Best quality Dura frame with melamine/PU finish with 8 ft height",
-                        "Main Door Shutter: 40mm both sides teak veneer shutter with melamine/PU finish",
-                        "Internal Door Frame/Shutter: Best quality hardwood door frame with polish/paint BWP grade both sides 1 mm thick laminate French doors (if any)",
-                    ],
-                    WINDOWS: [
-                        "UPVC door frames with performance glass acoustically treated/tinted float glass panelled shutters & designer hardware of reputed make",
-                        "UPVC door frames with plain/tinted float glass with suitable finishes, provision for mosquito mesh track",
-                    ],
-                    PAINTING: [
-                        "External: Textured finish & two coats of exterior emulsion paint with architectural features",
-                        "Internal: Smooth finish with two coats of premium acrylic emulsion paint of reputed make over a coat of primer",
-                        "Living & Dining: 800mm x 800mm double charged",
-                    ],
-                    FLOORING: [
-                        "Living & Dining: 800mm x 800mm double charged vitrified tiles",
-                        "Bathrooms: Anti-skid ceramic tiles",
-                        "Corridors: Granite",
-                        "Balcony & Utility: Anti-skid vitrified/ceramic",
-                        "Staircase: Granite",
-                    ],
-                    "TILE CLADDING": [
-                        "Dadoing in kitchen: Glazed ceramic tiles dado up to 2 ft height above kitchen platform",
-                        "Bathrooms: Glazed ceramic tile dado up to 7 ft height",
-                        "Utilities: Rustic vitrified tiles of SKGT tile dado up to 3 ft height",
-                    ],
-                    ELECTRICAL: [
-                        "Concealed copper wiring (Havells or equivalent), power outlets for air-conditioners in all bedrooms, power outlets for geysers in all bathrooms, power plugs for cooking range chimney, refrigerators, microwave ovens, mixer/grinders in kitchen and washing machine",
-                        "Three-phase supply for each unit & individual meter boards",
-                        "Elegant designer modular electrical switches MCB for each distribution board",
-                    ],
-                    GENERATOR: ["100% DG set backup with acoustic enclosure & AMF"],
-                    "PARKING MANAGEMENT": [
-                        "Entire parking is well-designed to suit the number of car parks required",
-                        "Parking signage and equipment at required places to improve driving comfort with 12 feet cellar",
-                    ],
-                    "CLUBHOUSE & AMENITIES": [
-                        "Well-designed clubhouse of 20,668 sft. laundry room facilities, multi-purpose hall, squash, etc.",
-                        "Swimming pool with changing rooms & open showers, separate rooms for associations, maintenance & servant toilets",
-                    ],
-                    "FIRE & SAFETY": [
-                        "Fire hydrant & fire sprinkler system in all the floors & basements",
-                        "Fire alarms & public address system in all floors & parking areas (basements)",
-                        "Control panels will be kept at main security",
-                        "LPG supply of gas from centralized gas bank to all individual apartments with pre-paid gas meters",
-                    ],
+                    "GATED COMMUNITY": ["Secured access with controlled entry/exit points"],
+                    "24/7 SECURITY": ["Professional security personnel and surveillance systems"],
+                    CLUBHOUSE: ["Recreation place to socialize with friends & family"],
+                    "SWIMMING POOL": ["Pristine pool to relax and rejuvenate yourself"],
+                    "FITNESS CENTER": ["To workout and keep yourself fit and healthy"],
+                    "LANDSCAPED GARDENS": ["Alluring and soothing green spaces and parks"],
+                    "WALKING AND BIKING TRAILS": ["Defined paths for outdoor activities"],
+                    "CHILDREN'S PLAY AREA": ["Safe play zones for kids"],
+                    "TENNIS OR BASKETBALL COURTS": ["Games & Sports facilities for residents"],
+                    "COMMUNITY HALL": ["Celebrate every occasion of life"],
+                    "PARKING FACILITIES": ["Ample parking for residents and guests."],
+                    "UTILITY CONNECTIONS": ["Access to water, electricity, and sewage systems"],
+                    "RETAIL & DINING OPTIONS": ["Shops and restaurants within the vicinity"],
+                    "MAINTENANCE SERVICES": ["On-site support for landscaping & repairs"],
+                    ELECTRIFICATION: ["Entire venture is provided with standard electricity connection"],
                 },
                 Bh = (0, t.memo)((e) => {
                     let { title: t, list: n, index: i } = e;
@@ -35931,7 +35884,7 @@
                                     "data-aos": "zoom-in",
                                     children: (0, St.jsx)("h2", {
                                         className: "section-title mt-2 text-white",
-                                        children: "Specifications",
+                                        children: "LIVE LARGER THAN LIFE",
                                     }),
                                 }),
                                 (0, St.jsx)("div", {

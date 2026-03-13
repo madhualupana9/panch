@@ -114,7 +114,7 @@
                                 <a href="#gallery" class="nav-link" data-bs-dismiss="offcanvas">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#specs" class="nav-link" data-bs-dismiss="offcanvas">Specifications</a>
+                                <a href="#specs" class="nav-link" data-bs-dismiss="offcanvas">Amenities</a>
                             </li>
 
                             <li class="nav-item">
@@ -977,32 +977,20 @@
                 <section id="specs" class="section">
                     <div class="container">
                         <div class="text-center mb-4 aos-init" data-aos="zoom-in">
-                            <h2 class="section-title mt-2 text-white">Specifications</h2>
+                            <h2 class="section-title mt-2 text-white">LIVE LARGER THAN LIFE</h2>
                         </div>
                         <div class="accordion row" id="specAcc">
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="0">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-0">
-                                        <button
-                                            class="accordion-button"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-0"
-                                            aria-expanded="true"
-                                            aria-controls="c-0"
-                                        >
-                                            FRAMED STRUCTURE
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c-0" aria-expanded="true" aria-controls="c-0">
+                                            GATED COMMUNITY
                                         </button>
                                     </h2>
-                                    <div
-                                        id="c-0"
-                                        class="accordion-collapse collapse show"
-                                        data-bs-parent="#specAcc"
-                                        style=""
-                                    >
+                                    <div id="c-0" class="accordion-collapse collapse show" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>RCC framed structure to withstand wind &amp; seismic loads</li>
+                                                <li>Secured access with controlled entry/exit points</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1011,30 +999,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="50">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-1">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-1"
-                                            aria-expanded="false"
-                                            aria-controls="c-1"
-                                        >
-                                            KITCHEN
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-1" aria-expanded="false" aria-controls="c-1">
+                                            24/7 SECURITY
                                         </button>
                                     </h2>
                                     <div id="c-1" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>Granite platform with stainless steel sink</li>
-                                                <li>
-                                                    Separate municipal tap (water provided by GHMC along with borewell
-                                                    water) provision for fixing of water RO system, exhaust fan &amp;
-                                                    chimney
-                                                </li>
-                                                <li>
-                                                    Provision for geyser for hot water near the sink utilities/wash;
-                                                    dishwasher &amp; washing machine provision
-                                                </li>
+                                                <li>Professional security personnel and surveillance systems</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1043,22 +1015,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="100">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-2">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-2"
-                                            aria-expanded="false"
-                                            aria-controls="c-2"
-                                        >
-                                            SUPER STRUCTURE
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-2" aria-expanded="false" aria-controls="c-2">
+                                            CLUBHOUSE
                                         </button>
                                     </h2>
                                     <div id="c-2" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>8 brick work with 10 plastering</li>
-                                                <li>4 brick work with 6 plastering</li>
+                                                <li>Recreation place to socialize with friends &amp; family</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1067,31 +1031,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="150">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-3">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-3"
-                                            aria-expanded="false"
-                                            aria-controls="c-3"
-                                        >
-                                            BATHROOMS
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-3" aria-expanded="false" aria-controls="c-3">
+                                            SWIMMING POOL
                                         </button>
                                     </h2>
                                     <div id="c-3" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    EWC with vertical stack flushing system with hydro-pneumatic system
-                                                </li>
-                                                <li>
-                                                    Single lever fixture with wall mixer-cum-shower provision for
-                                                    geysers in all bathrooms
-                                                </li>
-                                                <li>
-                                                    Chrome-plated CP fittings in all the toilets with Kohler make or
-                                                    equivalent, sanitary in American standard or equivalent
-                                                </li>
+                                                <li>Pristine pool to relax and rejuvenate yourself</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1100,25 +1047,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="200">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-4">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-4"
-                                            aria-expanded="false"
-                                            aria-controls="c-4"
-                                        >
-                                            PLASTERING
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-4" aria-expanded="false" aria-controls="c-4">
+                                            FITNESS CENTER
                                         </button>
                                     </h2>
                                     <div id="c-4" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    External: Double coat cement plastering with texture, primer &amp;
-                                                    two coat paint
-                                                </li>
-                                                <li>Internal: Cement plastering with 2 coats of luppam finished</li>
+                                                <li>To workout and keep yourself fit and healthy</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1127,33 +1063,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="250">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-5">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-5"
-                                            aria-expanded="false"
-                                            aria-controls="c-5"
-                                        >
-                                            DOORS
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-5" aria-expanded="false" aria-controls="c-5">
+                                            LANDSCAPED GARDENS
                                         </button>
                                     </h2>
                                     <div id="c-5" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    Main Door Frame: Best quality Dura frame with melamine/PU finish
-                                                    with 8 ft height
-                                                </li>
-                                                <li>
-                                                    Main Door Shutter: 40mm both sides teak veneer shutter with
-                                                    melamine/PU finish
-                                                </li>
-                                                <li>
-                                                    Internal Door Frame/Shutter: Best quality hardwood door frame with
-                                                    polish/paint BWP grade both sides 1 mm thick laminate French doors
-                                                    (if any)
-                                                </li>
+                                                <li>Alluring and soothing green spaces and parks</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1162,29 +1079,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="300">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-6">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-6"
-                                            aria-expanded="false"
-                                            aria-controls="c-6"
-                                        >
-                                            WINDOWS
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-6" aria-expanded="false" aria-controls="c-6">
+                                            WALKING AND BIKING TRAILS
                                         </button>
                                     </h2>
                                     <div id="c-6" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    UPVC door frames with performance glass acoustically treated/tinted
-                                                    float glass panelled shutters &amp; designer hardware of reputed
-                                                    make
-                                                </li>
-                                                <li>
-                                                    UPVC door frames with plain/tinted float glass with suitable
-                                                    finishes, provision for mosquito mesh track
-                                                </li>
+                                                <li>Defined paths for outdoor activities</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1193,29 +1095,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="350">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-7">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-7"
-                                            aria-expanded="false"
-                                            aria-controls="c-7"
-                                        >
-                                            PAINTING
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-7" aria-expanded="false" aria-controls="c-7">
+                                            CHILDREN'S PLAY AREA
                                         </button>
                                     </h2>
                                     <div id="c-7" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    External: Textured finish &amp; two coats of exterior emulsion paint
-                                                    with architectural features
-                                                </li>
-                                                <li>
-                                                    Internal: Smooth finish with two coats of premium acrylic emulsion
-                                                    paint of reputed make over a coat of primer
-                                                </li>
-                                                <li>Living &amp; Dining: 800mm x 800mm double charged</li>
+                                                <li>Safe play zones for kids</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1224,27 +1111,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="400">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-8">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-8"
-                                            aria-expanded="false"
-                                            aria-controls="c-8"
-                                        >
-                                            FLOORING
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-8" aria-expanded="false" aria-controls="c-8">
+                                            TENNIS OR BASKETBALL COURTS
                                         </button>
                                     </h2>
                                     <div id="c-8" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    Living &amp; Dining: 800mm x 800mm double charged vitrified tiles
-                                                </li>
-                                                <li>Bathrooms: Anti-skid ceramic tiles</li>
-                                                <li>Corridors: Granite</li>
-                                                <li>Balcony &amp; Utility: Anti-skid vitrified/ceramic</li>
-                                                <li>Staircase: Granite</li>
+                                                <li>Games &amp; Sports facilities for residents</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1253,29 +1127,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="450">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-9">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-9"
-                                            aria-expanded="false"
-                                            aria-controls="c-9"
-                                        >
-                                            TILE CLADDING
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-9" aria-expanded="false" aria-controls="c-9">
+                                            COMMUNITY HALL
                                         </button>
                                     </h2>
                                     <div id="c-9" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    Dadoing in kitchen: Glazed ceramic tiles dado up to 2 ft height
-                                                    above kitchen platform
-                                                </li>
-                                                <li>Bathrooms: Glazed ceramic tile dado up to 7 ft height</li>
-                                                <li>
-                                                    Utilities: Rustic vitrified tiles of SKGT tile dado up to 3 ft
-                                                    height
-                                                </li>
+                                                <li>Celebrate every occasion of life</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1284,31 +1143,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="500">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-10">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-10"
-                                            aria-expanded="false"
-                                            aria-controls="c-10"
-                                        >
-                                            ELECTRICAL
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-10" aria-expanded="false" aria-controls="c-10">
+                                            PARKING FACILITIES
                                         </button>
                                     </h2>
                                     <div id="c-10" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    Concealed copper wiring (Havells or equivalent), power outlets for
-                                                    air-conditioners in all bedrooms, power outlets for geysers in all
-                                                    bathrooms, power plugs for cooking range chimney, refrigerators,
-                                                    microwave ovens, mixer/grinders in kitchen and washing machine
-                                                </li>
-                                                <li>Three-phase supply for each unit &amp; individual meter boards</li>
-                                                <li>
-                                                    Elegant designer modular electrical switches MCB for each
-                                                    distribution board
-                                                </li>
+                                                <li>Ample parking for residents and guests.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1317,21 +1159,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="550">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-11">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-11"
-                                            aria-expanded="false"
-                                            aria-controls="c-11"
-                                        >
-                                            GENERATOR
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-11" aria-expanded="false" aria-controls="c-11">
+                                            UTILITY CONNECTIONS
                                         </button>
                                     </h2>
                                     <div id="c-11" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>100% DG set backup with acoustic enclosure &amp; AMF</li>
+                                                <li>Access to water, electricity, and sewage systems</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1340,28 +1175,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="600">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-12">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-12"
-                                            aria-expanded="false"
-                                            aria-controls="c-12"
-                                        >
-                                            PARKING MANAGEMENT
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-12" aria-expanded="false" aria-controls="c-12">
+                                            RETAIL &amp; DINING OPTIONS
                                         </button>
                                     </h2>
                                     <div id="c-12" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    Entire parking is well-designed to suit the number of car parks
-                                                    required
-                                                </li>
-                                                <li>
-                                                    Parking signage and equipment at required places to improve driving
-                                                    comfort with 12 feet cellar
-                                                </li>
+                                                <li>Shops and restaurants within the vicinity</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1370,28 +1191,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="650">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-13">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-13"
-                                            aria-expanded="false"
-                                            aria-controls="c-13"
-                                        >
-                                            CLUBHOUSE &amp; AMENITIES
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-13" aria-expanded="false" aria-controls="c-13">
+                                            MAINTENANCE SERVICES
                                         </button>
                                     </h2>
                                     <div id="c-13" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    Well-designed clubhouse of 20,668 sft. laundry room facilities,
-                                                    multi-purpose hall, squash, etc.
-                                                </li>
-                                                <li>
-                                                    Swimming pool with changing rooms &amp; open showers, separate rooms
-                                                    for associations, maintenance &amp; servant toilets
-                                                </li>
+                                                <li>On-site support for landscaping &amp; repairs</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1400,33 +1207,14 @@
                             <div class="col-md-6 mb-3 aos-init" data-aos="fade-up" data-aos-delay="700">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="h-14">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#c-14"
-                                            aria-expanded="false"
-                                            aria-controls="c-14"
-                                        >
-                                            FIRE &amp; SAFETY
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c-14" aria-expanded="false" aria-controls="c-14">
+                                            ELECTRIFICATION
                                         </button>
                                     </h2>
                                     <div id="c-14" class="accordion-collapse collapse" data-bs-parent="#specAcc">
                                         <div class="accordion-body">
                                             <ul class="mb-0">
-                                                <li>
-                                                    Fire hydrant &amp; fire sprinkler system in all the floors &amp;
-                                                    basements
-                                                </li>
-                                                <li>
-                                                    Fire alarms &amp; public address system in all floors &amp; parking
-                                                    areas (basements)
-                                                </li>
-                                                <li>Control panels will be kept at main security</li>
-                                                <li>
-                                                    LPG supply of gas from centralized gas bank to all individual
-                                                    apartments with pre-paid gas meters
-                                                </li>
+                                                <li>Entire venture is provided with standard electricity connection</li>
                                             </ul>
                                         </div>
                                     </div>
