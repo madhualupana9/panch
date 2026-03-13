@@ -35637,13 +35637,24 @@
                 });
             }
             const jh = [
-                    ["Continental Hospital", "25 mins"],
-                    ["Indus International School", "2 mins"],
-                    ["ICFAI Business School", "10 mins"],
-                    ["ORR Exit 2", "13 mins"],
-                    ["Shankarpally Railway Station", "12 mins"],
-                    ["RGI Airport", "40 mins"],
-                    ["Mokila Police Station", "15 mins"],
+                    ["Regional Ring Road", "6 min / 2.5 km"],
+                    ["Prestigious 4th City", "10 min / 5 km"],
+                    ["Maisigandi Temple", "5 min / 8 km"],
+                    ["Srisailam Highway", "1 min / 1 km"],
+                    ["Maheshwara Maha Pyramid", "3.5 min / 5 km"],
+                    ["Proposed Kandukur Metro Rail", "12 min / 13 km"],
+                    ["Amazon Data Center", "19 min / 12 km"],
+                    ["Pharma City", "15 min / 8 km"],
+                    ["Sreenidhi Serengeti", "15 min / 13.5 km"],
+                    ["Habitat Highlands", "20 min / 15 km"],
+                    ["MGM School", "29 min / 22 km"],
+                    ["Kavuri Forest Nest Villas", "25 min / 22 km"],
+                    ["ORR Exit 14", "25 min / 22.5 km"],
+                    ["Fab City", "26 min / 23 km"],
+                    ["Ramky Discovery City", "32 min / 26 km"],
+                    ["Collectorate Office", "40 min / 31 km"],
+                    ["Foxconn", "40 min / 31 km"],
+                    ["RGI Airport", "41 min / 32 km"],
                 ],
                 Dh = (0, t.memo)((e) => {
                     let { label: t, time: n, index: i } = e;
@@ -35680,9 +35691,9 @@
                                             children: (0, St.jsx)("div", {
                                                 "data-aos": "zoom-in",
                                                 children: (0, St.jsx)("img", {
-                                                    src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-location-high.webp",
+                                                    src: "/assests/projects/DRR/images/route.png",
                                                     className: "w-100 pt-4",
-                                                    alt: "Location map showing Urban Trilla Apartments",
+                                                    alt: "Location map showing DRR Premium County",
                                                     loading: "lazy",
                                                 }),
                                             }),

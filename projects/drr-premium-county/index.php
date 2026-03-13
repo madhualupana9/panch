@@ -753,54 +753,59 @@
                             <div class="col-12 col-lg-4 order-1 order-lg-2">
                                 <h2 class="section-title mt-2 main_headings">Location Highlights</h2>
                                 <ul class="list-group list-group-flush mt-3">
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center"
-                                        style="opacity: 1; transform: none"
-                                    >
-                                        <span class="fw-semibold">Continental Hospital</span
-                                        ><span class="badge text-bg-warning text-dark rounded-pill">25 mins</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Regional Ring Road</span><span class="badge text-bg-warning text-dark rounded-pill">6 min / 2.5 km</span>
                                     </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center"
-                                        style="opacity: 1; transform: none"
-                                    >
-                                        <span class="fw-semibold">Indus International School</span
-                                        ><span class="badge text-bg-warning text-dark rounded-pill">2 mins</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Prestigious 4th City</span><span class="badge text-bg-warning text-dark rounded-pill">10 min / 5 km</span>
                                     </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center"
-                                        style="opacity: 1; transform: none"
-                                    >
-                                        <span class="fw-semibold">ICFAI Business School</span
-                                        ><span class="badge text-bg-warning text-dark rounded-pill">10 mins</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Maisigandi Temple</span><span class="badge text-bg-warning text-dark rounded-pill">5 min / 8 km</span>
                                     </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center"
-                                        style="opacity: 1; transform: none"
-                                    >
-                                        <span class="fw-semibold">ORR Exit 2</span
-                                        ><span class="badge text-bg-warning text-dark rounded-pill">13 mins</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Srisailam Highway</span><span class="badge text-bg-warning text-dark rounded-pill">1 min / 1 km</span>
                                     </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center"
-                                        style="opacity: 1; transform: none"
-                                    >
-                                        <span class="fw-semibold">Shankarpally Railway Station</span
-                                        ><span class="badge text-bg-warning text-dark rounded-pill">12 mins</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Maheshwara Maha Pyramid</span><span class="badge text-bg-warning text-dark rounded-pill">3.5 min / 5 km</span>
                                     </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center"
-                                        style="opacity: 1; transform: none"
-                                    >
-                                        <span class="fw-semibold">RGI Airport</span
-                                        ><span class="badge text-bg-warning text-dark rounded-pill">40 mins</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Proposed Kandukur Metro Rail</span><span class="badge text-bg-warning text-dark rounded-pill">12 min / 13 km</span>
                                     </li>
-                                    <li
-                                        class="list-group-item d-flex justify-content-between align-items-center"
-                                        style="opacity: 1; transform: none"
-                                    >
-                                        <span class="fw-semibold">Mokila Police Station</span
-                                        ><span class="badge text-bg-warning text-dark rounded-pill">15 mins</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Amazon Data Center</span><span class="badge text-bg-warning text-dark rounded-pill">19 min / 12 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Pharma City</span><span class="badge text-bg-warning text-dark rounded-pill">15 min / 8 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Sreenidhi Serengeti</span><span class="badge text-bg-warning text-dark rounded-pill">15 min / 13.5 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Habitat Highlands</span><span class="badge text-bg-warning text-dark rounded-pill">20 min / 15 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">MGM School</span><span class="badge text-bg-warning text-dark rounded-pill">29 min / 22 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Kavuri Forest Nest Villas</span><span class="badge text-bg-warning text-dark rounded-pill">25 min / 22 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">ORR Exit 14</span><span class="badge text-bg-warning text-dark rounded-pill">25 min / 22.5 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Fab City</span><span class="badge text-bg-warning text-dark rounded-pill">26 min / 23 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Ramky Discovery City</span><span class="badge text-bg-warning text-dark rounded-pill">32 min / 26 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Collectorate Office</span><span class="badge text-bg-warning text-dark rounded-pill">40 min / 31 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">Foxconn</span><span class="badge text-bg-warning text-dark rounded-pill">40 min / 31 km</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center" style="opacity: 1; transform: none">
+                                        <span class="fw-semibold">RGI Airport</span><span class="badge text-bg-warning text-dark rounded-pill">41 min / 32 km</span>
                                     </li>
                                 </ul>
                             </div>
