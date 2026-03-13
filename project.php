@@ -216,13 +216,13 @@
                                     "
                                 >
                                     <span style="font-weight: 700; font-size: 0.9rem; color: rgb(27, 27, 27)"
-                                        >2.9 Acres</span
+                                        >17 Acres</span
                                     >
                                     <p
                                         class="mb-0"
                                         style="font-size: 0.95rem; color: rgb(102, 102, 102); text-align: center"
                                     >
-                                        Lifestyle Project
+                                        Spread Across
                                     </p>
                                 </div>
                             </div>
@@ -237,12 +237,12 @@
                                         padding-bottom: 2rem;
                                     "
                                 >
-                                    <span style="font-weight: 700; font-size: 0.9rem; color: rgb(27, 27, 27)">3</span>
+                                    <span style="font-weight: 700; font-size: 0.9rem; color: rgb(27, 27, 27)">HMDA</span>
                                     <p
                                         class="mb-0"
                                         style="font-size: 0.95rem; color: rgb(102, 102, 102); text-align: center"
                                     >
-                                        Blocks
+                                        Approved Layout
                                     </p>
                                 </div>
                             </div>
@@ -258,13 +258,13 @@
                                     "
                                 >
                                     <span style="font-weight: 700; font-size: 0.9rem; color: rgb(27, 27, 27)"
-                                        >136
+                                        >40 & 33 ft
                                     </span>
                                     <p
                                         class="mb-0"
                                         style="font-size: 0.95rem; color: rgb(102, 102, 102); text-align: center"
                                     >
-                                        Units
+                                        Black Top Roads
                                     </p>
                                 </div>
                             </div>
@@ -280,13 +280,13 @@
                                     "
                                 >
                                     <span style="font-weight: 700; font-size: 0.9rem; color: rgb(27, 27, 27)"
-                                        >2627 - 3893 sft</span
+                                        >100% Vaastu</span
                                     >
                                     <p
                                         class="mb-0"
                                         style="font-size: 0.95rem; color: rgb(102, 102, 102); text-align: center"
                                     >
-                                        Flat Sizes
+                                        Compliant
                                     </p>
                                 </div>
                             </div>
@@ -302,13 +302,13 @@
                                     "
                                 >
                                     <span style="font-weight: 700; font-size: 0.9rem; color: rgb(27, 27, 27)"
-                                        >21,000 sft</span
+                                        >100% Clear</span
                                     >
                                     <p
                                         class="mb-0"
                                         style="font-size: 0.95rem; color: rgb(102, 102, 102); text-align: center"
                                     >
-                                        Clubhouse
+                                        Title
                                     </p>
                                 </div>
                             </div>
@@ -324,13 +324,13 @@
                                     "
                                 >
                                     <span style="font-weight: 700; font-size: 0.9rem; color: rgb(27, 27, 27)"
-                                        >30,000+ sft</span
+                                        >24/7 Security</span
                                     >
                                     <p
                                         class="mb-0"
                                         style="font-size: 0.95rem; color: rgb(102, 102, 102); text-align: center"
                                     >
-                                        Outdoor Amenities
+                                        Gated Community
                                     </p>
                                 </div>
                             </div>

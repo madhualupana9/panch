@@ -24773,25 +24773,25 @@
             };
             var Xu;
             const Ku = [
-                    { title: 2, suffix: ".9 Acres", text: "Lifestyle Project" },
-                    { title: 3, suffix: "", text: "Blocks" },
-                    { title: 136, suffix: " ", text: "Units" },
-                    { title: 2627, suffix: " - 3893 sft", text: "Flat Sizes" },
-                    { title: 21, suffix: ",000 sft", text: "Clubhouse" },
-                    { title: 30, suffix: ",000+ sft", text: "Outdoor Amenities" },
+                    { title: 17, suffix: " Acres", text: "Spread Across" },
+                    { title: 0, suffix: "HMDA", text: "Approved Layout" },
+                    { title: 40, suffix: " & 33 ft", text: "Black Top Roads" },
+                    { title: 100, suffix: "% Vaastu", text: "Compliant" },
+                    { title: 100, suffix: "% Clear", text: "Title" },
+                    { title: 24, suffix: "/7 Security", text: "Gated Community" },
                 ],
                 $u = (0, t.memo)((e) => {
                     let { value: n, suffix: i, inView: r } = e;
                     const [o, a] = (0, t.useState)(0);
                     return (
                         (0, t.useEffect)(() => {
-                            if (!r) return;
+                            if (!r || !n) return;
                             const e = Yu(0, n, { duration: 1.5, onUpdate: (e) => a(Math.floor(e)) });
                             return () => e.stop();
                         }, [r, n]),
                         (0, St.jsxs)("span", {
                             style: { fontWeight: 700, fontSize: ".9rem", color: "#1b1b1b" },
-                            children: [o, i],
+                            children: [n ? o : "", i],
                         })
                     );
                 });
