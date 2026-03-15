@@ -30720,115 +30720,94 @@
                 },
                 Xf = [
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/security-cabin.webp",
+                        icon: "fas fa-archway",
                         label: "Gated Community",
-                        alt: "Gated Community",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/security-cabin.webp",
+                        icon: "fas fa-user-shield",
                         label: "24/7 security",
-                        alt: "24/7 security",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/walking-track.webp",
+                        icon: "fas fa-road",
                         label: "RCC internal roads",
-                        alt: "RCC internal roads",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/avenue-plantation.webp",
+                        icon: "fas fa-seedling",
                         label: "Tree plantations",
-                        alt: "Tree plantations",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/courtyard.webp",
+                        icon: "fas fa-tree",
                         label: "Landscaping",
-                        alt: "Landscaping",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/ev.webp",
+                        icon: "fas fa-bolt",
                         label: "Electrification",
-                        alt: "Electrification",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/ev.webp",
+                        icon: "fas fa-plug",
                         label: "Utility connections",
-                        alt: "Utility connections",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/clubhouse.webp",
+                        icon: "fas fa-building",
                         label: "Clubhouse",
-                        alt: "Clubhouse",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/infinity-pool.webp",
+                        icon: "fas fa-swimming-pool",
                         label: "Swimming Pool",
-                        alt: "Swimming Pool",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/gym.webp",
+                        icon: "fas fa-dumbbell",
                         label: "Fitness Center",
-                        alt: "Fitness Center",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/courtyard.webp",
+                        icon: "fas fa-leaf",
                         label: "Landscaped Gardens",
-                        alt: "Landscaped Gardens",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/walking-track.webp",
+                        icon: "fas fa-walking",
                         label: "Walking and Biking Trails",
-                        alt: "Walking and Biking Trails",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/childrens-play-area.webp",
+                        icon: "fas fa-child",
                         label: "Children\u2019s Play Area",
-                        alt: "Children\u2019s Play Area",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/half-basketball.webp",
+                        icon: "fas fa-basketball-ball",
                         label: "Tennis or Basketball Courts",
-                        alt: "Tennis or Basketball Courts",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/multipurpose-hal.webp",
+                        icon: "fas fa-users",
                         label: "Community Hall",
-                        alt: "Community Hall",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/ev.webp",
+                        icon: "fas fa-parking",
                         label: "Ample Parking Facilities",
-                        alt: "Ample Parking Facilities",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/cafe.webp",
+                        icon: "fas fa-utensils",
                         label: "Retail and dining options",
-                        alt: "Retail and dining options",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/courtyard.webp",
+                        icon: "fas fa-paw",
                         label: "Pet-friendly areas",
-                        alt: "Pet-friendly areas",
                     },
                     {
-                        src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/security-cabin.webp",
+                        icon: "fas fa-tools",
                         label: "Maintenance services",
-                        alt: "Maintenance services",
                     },
                 ],
                 Kf = (0, t.memo)((e) => {
-                    let { src: t, label: n, alt: i, index: r } = e;
+                    let { icon: t, label: n, index: r } = e;
                     return (0, St.jsx)("div", {
                         className: "col-6 col-md-2 amenities_box",
                         children: (0, St.jsxs)("div", {
                             className: "amenity glass-card",
                             children: [
-                                (0, St.jsx)("a", {
-                                    children: (0, St.jsx)("img", {
-                                        src: t,
-                                        alt: i,
-                                        loading: "lazy",
-                                        decoding: "async",
-                                        fetchpriority: 0 === r ? "high" : "low",
+                                (0, St.jsx)("div", {
+                                    className: "amenity-icon mb-3",
+                                    children: (0, St.jsx)("i", {
+                                        className: t + " fa-2x",
+                                        style: { color: "#ffffff" }
                                     }),
                                 }),
                                 (0, St.jsx)("div", { className: "fw-semibold mt-1", children: n }),
@@ -30854,10 +30833,10 @@
                                     }),
                                 }),
                                 (0, St.jsx)("div", {
-                                    className: "row g-3 g-md-4 text-white",
+                                    className: "row g-3 g-md-4 text-white text-center",
                                     children: Xf.map((e, t) => {
-                                        let { src: n, label: i, alt: r } = e;
-                                        return (0, St.jsx)(Kf, { src: n, label: i, alt: r, index: t }, t);
+                                        let { icon: n, label: i } = e;
+                                        return (0, St.jsx)(Kf, { icon: n, label: i, index: t }, t);
                                     }),
                                 }),
                             ],
