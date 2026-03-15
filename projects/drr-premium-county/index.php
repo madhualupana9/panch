@@ -1315,12 +1315,12 @@
                             <li><a href="#highlights">Projects Highlights</a></li>
                             <li><a href="#location">Location Highlights</a></li>
 
-                            <li><a href="Tel:+919100999099">Contact</a></li>
+                            <li><a href="Tel:+917237997999">Contact</a></li>
                         </ul>
                     </nav>
                     <p><b>RERA NO:</b> </p>
-                    <a href="tel:+919100999099"
-                        ><p><b>Call:</b> +91 9100999099</p></a
+                    <a href="tel:+917237997999"
+                        ><p><b>Call:</b> +91 723 799 7999</p></a
                     >
                     <div class="social-icons d-flex justify-content-center gap-3 mb-3">
                         <a target="_blank" href="https://www.facebook.com/AnkuraHomes1/" aria-label="Facebook"

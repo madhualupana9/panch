@@ -36262,16 +36262,16 @@
                                         }),
                                     }),
                                     (0, St.jsx)("li", {
-                                        children: (0, St.jsx)("a", { href: "Tel:+919100999099", children: "Contact" }),
+                                        children: (0, St.jsx)("a", { href: "Tel:+917237997999", children: "Contact" }),
                                     }),
                                 ],
                             }),
                         }),
                         (0, St.jsxs)("p", { children: [(0, St.jsx)("b", { children: "" }), " "] }),
                         (0, St.jsx)("a", {
-                            href: "tel:+919100999099",
+                            href: "tel:+917237997999",
                             children: (0, St.jsxs)("p", {
-                                children: [(0, St.jsx)("b", { children: "Call:" }), " +91 9100999099"],
+                                children: [(0, St.jsx)("b", { children: "Call:" }), " +91 723 799 7999"],
                             }),
                         }),
                         (0, St.jsxs)("div", {
