@@ -11,6 +11,12 @@ use App\Models\SiteSetting;
 use App\Models\User;
 use App\Models\Vendor;
 use App\Models\ChannelPartner;
+use App\Models\Slider;
+use App\Models\Career;
+use App\Models\JobApplication;
+use App\Models\ContactSubmission;
+use App\Models\DrrEnquiry;
+use App\Models\DrrBrochureDownload;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -30,11 +36,17 @@ class DashboardController extends Controller
             'news_views' => News::sum('views'),
             'vendors' => Vendor::count(),
             'channel_partners' => ChannelPartner::count(),
+            'sliders' => Slider::count(),
+            'careers' => Career::count(),
+            'job_applications' => JobApplication::count(),
+            'contact_submissions' => ContactSubmission::count(),
+            'drr_enquiries' => DrrEnquiry::count(),
+            'drr_brochures' => DrrBrochureDownload::count(),
         ];
 
-        $recentProjects = Project::latest()->take(5)->get();
-        $recentNews = News::latest()->take(5)->get();
+        $recentVendors = Vendor::latest()->take(5)->get();
+        $recentChannelPartners = ChannelPartner::latest()->take(5)->get();
 
-        return view('admin.dashboard', compact('stats', 'recentProjects', 'recentNews'));
+        return view('admin.dashboard', compact('stats', 'recentVendors', 'recentChannelPartners'));
     }
 }

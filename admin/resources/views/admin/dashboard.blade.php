@@ -21,76 +21,10 @@
         </div>
     </div>
 
-    <!-- Stats Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Total Projects -->
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition">
-            <div class="flex items-center justify-between mb-4">
-                <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-project-diagram text-cyan-600 text-xl"></i>
-                </div>
-                <span class="text-xs font-semibold text-green-600 bg-green-100 px-2 py-1 rounded">+100% vs last month</span>
-            </div>
-            <h3 class="text-3xl font-bold text-gray-800 mb-1">{{ $stats['projects'] ?? 0 }}</h3>
-            <p class="text-sm text-gray-500">Total Projects</p>
-            <div class="mt-4 text-xs text-gray-400">
-                <i class="fas fa-arrow-up text-green-500 mr-1"></i>
-                In stock
-            </div>
-        </div>
-
-        <!-- Total News -->
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition">
-            <div class="flex items-center justify-between mb-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-newspaper text-blue-600 text-xl"></i>
-                </div>
-                <span class="text-xs font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">Active</span>
-            </div>
-            <h3 class="text-3xl font-bold text-gray-800 mb-1">{{ $stats['news'] ?? 0 }}</h3>
-            <p class="text-sm text-gray-500">News Articles</p>
-            <div class="mt-4 text-xs text-gray-400">
-                <i class="fas fa-eye text-blue-500 mr-1"></i>
-                {{ $stats['news_views'] ?? 0 }} total views
-            </div>
-        </div>
-
-        <!-- Content Sections -->
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition">
-            <div class="flex items-center justify-between mb-4">
-                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-file-alt text-purple-600 text-xl"></i>
-                </div>
-                <span class="text-xs font-semibold text-purple-600 bg-purple-100 px-2 py-1 rounded">Managed</span>
-            </div>
-            <h3 class="text-3xl font-bold text-gray-800 mb-1">{{ $stats['content_sections'] ?? 0 }}</h3>
-            <p class="text-sm text-gray-500">Content Sections</p>
-            <div class="mt-4 text-xs text-gray-400">
-                <i class="fas fa-check-circle text-green-500 mr-1"></i>
-                All active
-            </div>
-        </div>
-
-        <!-- Navigation Items -->
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition">
-            <div class="flex items-center justify-between mb-4">
-                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-bars text-orange-600 text-xl"></i>
-                </div>
-                <span class="text-xs font-semibold text-orange-600 bg-orange-100 px-2 py-1 rounded">Menu Items</span>
-            </div>
-            <h3 class="text-3xl font-bold text-gray-800 mb-1">{{ $stats['navigation'] ?? 0 }}</h3>
-            <p class="text-sm text-gray-500">Navigation Links</p>
-            <div class="mt-4 text-xs text-gray-400">
-                <i class="fas fa-link text-orange-500 mr-1"></i>
-                Active links
-            </div>
-        </div>
-    </div>
 
     <!-- Quick Stats Row -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+        <!-- <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
             <div class="flex items-center justify-between">
                 <div>
                     <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Featured Projects</p>
@@ -98,7 +32,7 @@
                 </div>
                 <i class="fas fa-star text-yellow-500 text-2xl"></i>
             </div>
-        </div>
+        </div> -->
 
         <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
             <div class="flex items-center justify-between">
@@ -110,35 +44,7 @@
             </div>
         </div>
 
-        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
-            <div class="flex items-center justify-between">
-                <div>
-                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Active Sections</p>
-                    <p class="text-2xl font-bold text-gray-800">{{ $stats['active_sections'] ?? 0 }}</p>
-                </div>
-                <i class="fas fa-toggle-on text-blue-500 text-2xl"></i>
-            </div>
-        </div>
 
-        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
-            <div class="flex items-center justify-between">
-                <div>
-                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Site Settings</p>
-                    <p class="text-2xl font-bold text-gray-800">{{ $stats['settings'] ?? 0 }}</p>
-                </div>
-                <i class="fas fa-cog text-gray-500 text-2xl"></i>
-            </div>
-        </div>
-
-        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
-            <div class="flex items-center justify-between">
-                <div>
-                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Total Users</p>
-                    <p class="text-2xl font-bold text-gray-800">{{ $stats['users'] ?? 0 }}</p>
-                </div>
-                <i class="fas fa-users text-purple-500 text-2xl"></i>
-            </div>
-        </div>
 
         <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
             <div class="flex items-center justify-between">
@@ -159,82 +65,134 @@
                 <i class="fas fa-handshake text-indigo-500 text-2xl"></i>
             </div>
         </div>
+
+       
+
+        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Careers</p>
+                    <p class="text-2xl font-bold text-gray-800">{{ $stats['careers'] ?? 0 }}</p>
+                </div>
+                <i class="fas fa-briefcase text-orange-500 text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Job Applications</p>
+                    <p class="text-2xl font-bold text-gray-800">{{ $stats['job_applications'] ?? 0 }}</p>
+                </div>
+                <i class="fas fa-user-graduate text-purple-500 text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Contact Submissions</p>
+                    <p class="text-2xl font-bold text-gray-800">{{ $stats['contact_submissions'] ?? 0 }}</p>
+                </div>
+                <i class="fas fa-envelope text-red-500 text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">DRR Enquiries</p>
+                    <p class="text-2xl font-bold text-gray-800">{{ $stats['drr_enquiries'] ?? 0 }}</p>
+                </div>
+                <i class="fas fa-building text-cyan-500 text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase font-semibold mb-1">Brochure Downloads</p>
+                    <p class="text-2xl font-bold text-gray-800">{{ $stats['drr_brochures'] ?? 0 }}</p>
+                </div>
+                <i class="fas fa-file-download text-green-500 text-2xl"></i>
+            </div>
+        </div>
     </div>
 
     <!-- Recent Activity & Quick Actions -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- Recent Projects -->
+        <!-- Recent Vendors -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-200">
             <div class="p-6 border-b border-gray-200">
                 <div class="flex items-center justify-between">
                     <h3 class="text-lg font-bold text-gray-800">
-                        <i class="fas fa-project-diagram text-blue-600 mr-2"></i>
-                        Recent Projects
+                        <i class="fas fa-users text-blue-600 mr-2"></i>
+                        Recent Vendors
                     </h3>
-                    <a href="{{ route('admin.projects.index') }}" class="text-sm text-blue-600 hover:text-blue-700">View All →</a>
+                    <a href="{{ route('admin.vendors.index') }}" class="text-sm text-blue-600 hover:text-blue-700">View All →</a>
                 </div>
             </div>
             <div class="p-6">
-                @if(isset($recentProjects) && count($recentProjects) > 0)
+                @if(isset($recentVendors) && count($recentVendors) > 0)
                     <div class="space-y-4">
-                        @foreach($recentProjects as $project)
+                        @foreach($recentVendors as $vendor)
                             <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-folder text-blue-600"></i>
+                                        <i class="fas fa-user text-blue-600"></i>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-gray-800">{{ $project->title }}</p>
-                                        <p class="text-xs text-gray-500">{{ $project->created_at->diffForHumans() }}</p>
+                                        <p class="font-semibold text-gray-800">{{ $vendor->name }}</p>
+                                        <p class="text-xs text-gray-500">{{ $vendor->created_at->diffForHumans() }}</p>
                                     </div>
                                 </div>
                                 <span class="px-3 py-1 text-xs font-semibold rounded-full 
-                                    {{ $project->status === 'completed' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700' }}">
-                                    {{ ucfirst($project->status) }}
+                                    {{ $vendor->status === 'new' ? 'bg-blue-100 text-blue-700' : 'bg-green-100 text-green-700' }}">
+                                    {{ ucfirst($vendor->status) }}
                                 </span>
                             </div>
                         @endforeach
                     </div>
                 @else
-                    <p class="text-gray-500 text-center py-8">No projects yet. <a href="{{ route('admin.projects.create') }}" class="text-blue-600 hover:underline">Create one</a></p>
+                    <p class="text-gray-500 text-center py-8">No vendors yet.</p>
                 @endif
             </div>
         </div>
 
-        <!-- Recent News -->
+        <!-- Recent Channel Partners -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-200">
             <div class="p-6 border-b border-gray-200">
                 <div class="flex items-center justify-between">
                     <h3 class="text-lg font-bold text-gray-800">
-                        <i class="fas fa-newspaper text-purple-600 mr-2"></i>
-                        Recent News
+                        <i class="fas fa-handshake text-purple-600 mr-2"></i>
+                        Recent Channel Partners
                     </h3>
-                    <a href="{{ route('admin.news.index') }}" class="text-sm text-blue-600 hover:text-blue-700">View All →</a>
+                    <a href="{{ route('admin.channel-partners.index') }}" class="text-sm text-blue-600 hover:text-blue-700">View All →</a>
                 </div>
             </div>
             <div class="p-6">
-                @if(isset($recentNews) && count($recentNews) > 0)
+                @if(isset($recentChannelPartners) && count($recentChannelPartners) > 0)
                     <div class="space-y-4">
-                        @foreach($recentNews as $news)
+                        @foreach($recentChannelPartners as $partner)
                             <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
                                 <div class="flex items-center space-x-3">
                                     <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                        <i class="fas fa-file-alt text-purple-600"></i>
+                                        <i class="fas fa-user-friends text-purple-600"></i>
                                     </div>
                                     <div>
-                                        <p class="font-semibold text-gray-800">{{ $news->title }}</p>
-                                        <p class="text-xs text-gray-500">{{ $news->created_at->diffForHumans() }}</p>
+                                        <p class="font-semibold text-gray-800">{{ $partner->name }}</p>
+                                        <p class="text-xs text-gray-500">{{ $partner->created_at->diffForHumans() }}</p>
                                     </div>
                                 </div>
                                 <span class="px-3 py-1 text-xs font-semibold rounded-full 
-                                    {{ $news->is_published ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-700' }}">
-                                    {{ $news->is_published ? 'Published' : 'Draft' }}
+                                    {{ $partner->status === 'new' ? 'bg-blue-100 text-blue-700' : 'bg-green-100 text-green-700' }}">
+                                    {{ ucfirst($partner->status) }}
                                 </span>
                             </div>
                         @endforeach
                     </div>
                 @else
-                    <p class="text-gray-500 text-center py-8">No news articles yet. <a href="{{ route('admin.news.create') }}" class="text-blue-600 hover:underline">Create one</a></p>
+                    <p class="text-gray-500 text-center py-8">No channel partners yet.</p>
                 @endif
             </div>
         </div>
@@ -247,15 +205,8 @@
             Quick Actions
         </h3>
         <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-            <a href="{{ route('admin.projects.create') }}" class="flex flex-col items-center justify-center p-6 bg-blue-50 hover:bg-blue-100 rounded-lg transition group">
-                <i class="fas fa-plus-circle text-blue-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
-                <span class="text-sm font-semibold text-blue-700">Add Project</span>
-            </a>
-            <a href="{{ route('admin.news.create') }}" class="flex flex-col items-center justify-center p-6 bg-purple-50 hover:bg-purple-100 rounded-lg transition group">
-                <i class="fas fa-plus-circle text-purple-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
-                <span class="text-sm font-semibold text-purple-700">Add News</span>
-            </a>
-            <a href="{{ route('admin.vendors.index') }}" class="flex flex-col items-center justify-center p-6 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition group">
+
+        <a href="{{ route('admin.vendors.index') }}" class="flex flex-col items-center justify-center p-6 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition group">
                 <i class="fas fa-users text-indigo-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
                 <span class="text-sm font-semibold text-indigo-700">Vendors</span>
             </a>
@@ -263,10 +214,12 @@
                 <i class="fas fa-handshake text-teal-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
                 <span class="text-sm font-semibold text-teal-700">Partners</span>
             </a>
-            <a href="{{ route('admin.content.index') }}" class="flex flex-col items-center justify-center p-6 bg-green-50 hover:bg-green-100 rounded-lg transition group">
-                <i class="fas fa-edit text-green-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
-                <span class="text-sm font-semibold text-green-700">Edit Content</span>
+
+             <a href="{{ route('admin.news.create') }}" class="flex flex-col items-center justify-center p-6 bg-purple-50 hover:bg-purple-100 rounded-lg transition group">
+                <i class="fas fa-plus-circle text-purple-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
+                <span class="text-sm font-semibold text-purple-700">Add News</span>
             </a>
+            
             <a href="{{ route('admin.settings') }}" class="flex flex-col items-center justify-center p-6 bg-gray-50 hover:bg-gray-100 rounded-lg transition group">
                 <i class="fas fa-cog text-gray-600 text-3xl mb-2 group-hover:scale-110 transition"></i>
                 <span class="text-sm font-semibold text-gray-700">Settings</span>
