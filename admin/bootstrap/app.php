@@ -19,6 +19,9 @@ return Application::configure(basePath: dirname(__DIR__))
         // Exclude API routes from CSRF verification
         $middleware->validateCsrfTokens(except: [
             'api/*',
+            'admin/api/*',
+            'drr/*',
+            'drr-premium-county/*',
         ]);
 
         // Redirect guests to admin login (use function to avoid redirect loop)

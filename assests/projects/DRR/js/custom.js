@@ -35916,20 +35916,23 @@
                     n.append("sell_do[form][lead][phone]", e.phone || ""),
                     e.message && n.append("sell_do[form][lead][message]", e.message);
                 try {
-                    const i = "/admin/api/drr/" + (t === "brochure" ? "brochure" : "enquiry");
-                    await fetch(i, {
+                    const i = "/admin/api/drr/" + (t.includes("brochure") ? "brochure" : "enquiry");
+                    const localRes = await fetch(i, {
                         method: "POST",
                         headers: { "Content-Type": "application/json", "Accept": "application/json" },
                         body: JSON.stringify(e),
                     });
+                    if (!localRes.ok) {
+                        const err = await localRes.text();
+                        console.error("Local API Error:", err);
+                    }
                     const r = await fetch("https://app.sell.do/api/leads/create", {
                         method: "POST",
                         headers: { "Content-Type": "application/x-www-form-urlencoded" },
                         body: n.toString(),
                     });
                     if (r.ok) {
-                        const e = "/projects/drr-premium-county";
-                        window.location.href = "".concat(e, "/").concat(t);
+                        window.location.href = "/projects/drr-premium-county/thank-you/";
                     } else {
                         const e = await r.text();
                         console.error("Sell.Do error response:", e),
@@ -35991,7 +35994,7 @@
                                                     e.preventDefault(), n(!0);
                                                     const t = Object.fromEntries(new FormData(e.target).entries());
                                                     try {
-                                                        await qh(t), e.target.reset();
+                                                        await qh(t, "enquiry"), e.target.reset();
                                                     } catch (i) {
                                                         console.error("Error submitting form:", i);
                                                     } finally {
@@ -40316,7 +40319,7 @@
                                         }),
                                         (0, St.jsx)("div", {
                                             className: "modal-body",
-                                            children: (0, St.jsx)(i, { redirect: "thank-you" }),
+                                            children: (0, St.jsx)(i, { redirect: "enquiry" }),
                                         }),
                                     ],
                                 }),

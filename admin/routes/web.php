@@ -161,7 +161,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 });
 
 // API Routes for Next.js Frontend
-Route::prefix('api')->group(function () {
+Route::prefix('admin/api')->group(function () {
     // Contact form submission
     Route::post('/contact', [ContactController::class, 'submit']);
     Route::post('/vendor-submit', [VendorPartnerController::class, 'submitVendor']);

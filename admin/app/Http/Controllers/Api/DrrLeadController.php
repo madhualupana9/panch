@@ -30,6 +30,7 @@ class DrrLeadController extends Controller
 
     public function submitBrochure(Request $request)
     {
+        \Log::info('Brochure submission attempt', $request->all());
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
