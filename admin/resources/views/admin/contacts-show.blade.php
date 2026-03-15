@@ -6,16 +6,16 @@
     <div class="max-w-5xl mx-auto py-6">
         <!-- Action Buttons -->
         <div class="mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <a href="{{ route('admin.contacts.index') }}" class="inline-flex items-center text-sm font-medium text-gray-600 hover:text-blue-600 transition-all bg-white px-5 py-2.5 rounded-xl shadow-sm border border-gray-200">
-                <i class="fas fa-arrow-left mr-2"></i>
+            <a href="{{ route('admin.contacts.index') }}" class="w-full sm:w-auto inline-flex items-center justify-center text-sm font-bold text-gray-600 hover:text-blue-600 transition-all bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-200">
+                <i class="fas fa-arrow-left mr-2 text-blue-500"></i>
                 Back to All Submissions
             </a>
             
-            <form action="{{ route('admin.contacts.destroy', $contact) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this submission?');">
+            <form action="{{ route('admin.contacts.destroy', $contact) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this submission?');" class="w-full sm:w-auto">
                 @csrf
                 @method('DELETE')
-                <button type="submit" class="inline-flex items-center px-5 py-2.5 border border-transparent rounded-xl shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-all">
-                    <i class="fas fa-trash-alt mr-2"></i> Delete
+                <button type="submit" style="background-color: #dc2626;" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-xl shadow-md text-sm font-bold text-white hover:bg-red-700 transition-all duration-300">
+                    <i class="fas fa-trash-alt mr-2"></i> Delete Submission
                 </button>
             </form>
         </div>
@@ -66,7 +66,7 @@
             </div>
 
             <!-- Content Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Contact Information & Actions -->
                 <div class="lg:col-span-1 space-y-8">
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">

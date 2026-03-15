@@ -11,13 +11,26 @@
         </div>
     @endif
 
-    <!-- Back Button -->
-    <div class="mb-6">
+    <!-- Back Button & Actions -->
+    <div class="mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <a href="{{ route('admin.job-applications.index') }}" 
-           class="inline-flex items-center text-gray-600 hover:text-gray-900 font-medium transition-colors">
-            <i class="fas fa-arrow-left mr-2"></i>
-            <span>Back to Applications</span>
+           class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-white border border-gray-200 rounded-xl text-sm font-bold text-gray-700 hover:text-blue-600 hover:border-blue-200 transition shadow-sm">
+            <i class="fas fa-arrow-left mr-2 text-blue-500"></i>
+            Back to Applications
         </a>
+
+        <form action="{{ route('admin.job-applications.destroy', $jobApplication) }}"
+              method="POST"
+              onsubmit="return confirm('Are you sure you want to permanently delete this application? This action cannot be undone.');"
+              class="w-full sm:w-auto">
+            @csrf
+            @method('DELETE')
+            <button type="submit"
+                    style="background-color: #dc2626;"
+                    class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-xl shadow-md text-sm font-bold text-white hover:bg-red-700 transition-all duration-300">
+                <i class="fas fa-trash-alt mr-2"></i> Delete Application
+            </button>
+        </form>
     </div>
 
     <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
@@ -258,7 +271,7 @@
             <!-- Quick Actions -->
             <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
                 <div class="bg-gradient-to-r from-purple-600 to-purple-700 px-6 py-4">
-                    <h3 class="text-lg font-bold text-black flex items-center gap-2">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
                         <i class="fas fa-bolt"></i>
                         Quick Actions
                     </h3>
@@ -300,18 +313,7 @@
                             </div>
                         @endif
 
-                        <!-- Delete Button -->
-                        <form action="{{ route('admin.job-applications.destroy', $jobApplication) }}"
-                              method="POST"
-                              onsubmit="return confirm('Are you sure you want to permanently delete this application? This action cannot be undone.');">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit"
-                                    class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-red-600 text-black rounded-lg hover:bg-red-700 transition-all shadow-md hover:shadow-lg font-semibold">
-                                <i class="fas fa-trash-alt"></i>
-                                <span>Delete Application</span>
-                            </button>
-                        </form>
+
                     </div>
                 </div>
             </div>
@@ -414,7 +416,7 @@
                         Cancel
                     </button>
                     <button type="submit" 
-                            class="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-600 text-black rounded-lg hover:bg-purple-700 transition-all shadow-md hover:shadow-lg font-medium">
+                            class="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all shadow-md hover:shadow-lg font-medium">
                         <i class="fas fa-paper-plane"></i>
                         <span>Send Email</span>
                     </button>

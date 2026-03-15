@@ -2,13 +2,19 @@
     
 <div class="max-w-5xl mx-auto py-4">
         <!-- Top Action Bar -->
-        <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
-            <a href="{{ route('admin.channel-partners.index') }}" class="inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-semibold text-gray-700 hover:bg-gray-50 hover:text-indigo-600 transition shadow-sm">
-                <i class="fas fa-arrow-left mr-2"></i>
+        <div class="mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <a href="{{ route('admin.channel-partners.index') }}" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-white border border-gray-200 rounded-xl text-sm font-bold text-gray-700 hover:text-indigo-600 hover:border-indigo-200 transition shadow-sm">
+                <i class="fas fa-arrow-left mr-2 text-indigo-500"></i>
                 Back to All Channel Partners
             </a>
             
-           
+            <form action="{{ route('admin.channel-partners.destroy', $channelPartner) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this partner?');" class="w-full sm:w-auto">
+                @csrf
+                @method('DELETE')
+                <button type="submit" style="background-color: #dc2626;" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-xl shadow-md text-sm font-bold text-white hover:bg-red-700 transition-all duration-300">
+                    <i class="fas fa-trash-alt mr-2"></i> Delete Partner
+                </button>
+            </form>
         </div>
 
         <div class="space-y-6">
@@ -47,7 +53,7 @@
             </div>
 
             <!-- Content Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <!-- Info Column -->
                 <div class="lg:col-span-1 space-y-6">
                     <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">

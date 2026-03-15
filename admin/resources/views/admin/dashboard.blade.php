@@ -11,12 +11,12 @@
                 <p class="text-blue-100">Here's your business overview.</p>
             </div>
             <div class="flex space-x-2">
-                <button class="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition">
+                <!-- <button class="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition">
                     <i class="fas fa-sync-alt mr-2"></i>Refresh
                 </button>
                 <button class="px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition">
                     <i class="fas fa-download mr-2"></i>Export
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
