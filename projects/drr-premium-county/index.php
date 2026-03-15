@@ -30,10 +30,10 @@
         <meta name="robots" content="index, follow" />
         <script async="" src="https://scripts.clarity.ms/0.8.56/clarity.js"></script>
         <script defer="defer" src="/assests/projects/DRR/js/custom.js"></script>
-        <link href="https://ankurahomes.com/urban-trilla-apartments/static/css/main.e54e2a16.css" rel="stylesheet" />
+        <link href="/assests/projects/DRR/css/main.e54e2a16.css" rel="stylesheet" />
     
        
-        <link rel="stylesheet" href="../../assests/css/whatsapp-widget.css">
+        <link rel="stylesheet" href="/assests/css/whatsapp-widget.css">
     </head>
     <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
        
@@ -1678,6 +1678,7 @@ function submitDrrForm(formId, endpoint, successId, errorId, btnId) {
     if (!form) return;
     form.addEventListener('submit', function(e) {
         e.preventDefault();
+        e.stopPropagation();
         var btn = document.getElementById(btnId);
         var successDiv = document.getElementById(successId);
         var errorDiv = document.getElementById(errorId);
@@ -1703,6 +1704,7 @@ function submitDrrForm(formId, endpoint, successId, errorId, btnId) {
             if (result.ok) {
                 successDiv.style.display = 'block';
                 form.reset();
+                window.location.href = '/projects/drr-premium-county/thank-you/';
             } else {
                 var msg = result.data.message || 'Something went wrong. Please try again.';
                 if (result.data.errors) {
@@ -1719,7 +1721,7 @@ function submitDrrForm(formId, endpoint, successId, errorId, btnId) {
             errorDiv.textContent = 'Network error. Please try again.';
             errorDiv.style.display = 'block';
         });
-    });
+    }, true);
 }
 
 submitDrrForm('enquiryForm', '/drr/enquiry', 'enquiry-success', 'enquiry-error', 'enquirySubmitBtn');

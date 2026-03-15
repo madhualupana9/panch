@@ -35916,21 +35916,27 @@
                     n.append("sell_do[form][lead][phone]", e.phone || ""),
                     e.message && n.append("sell_do[form][lead][message]", e.message);
                 try {
-                    const e = await fetch("https://app.sell.do/api/leads/create", {
+                    const i = "/admin/api/drr/" + (t === "brochure" ? "brochure" : "enquiry");
+                    await fetch(i, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                        body: JSON.stringify(e),
+                    });
+                    const r = await fetch("https://app.sell.do/api/leads/create", {
                         method: "POST",
                         headers: { "Content-Type": "application/x-www-form-urlencoded" },
                         body: n.toString(),
                     });
-                    if (e.ok) {
-                        const e = "/urban-trilla-apartments";
+                    if (r.ok) {
+                        const e = "/projects/drr-premium-county";
                         window.location.href = "".concat(e, "/").concat(t);
                     } else {
-                        const t = await e.text();
-                        console.error("Sell.Do error response:", t),
+                        const e = await r.text();
+                        console.error("Sell.Do error response:", e),
                             alert("Something went wrong while submitting. Please try again.");
                     }
                 } catch (i) {
-                    console.error("Sell.Do Integration Error:", i),
+                    console.error("Submission Error:", i),
                         alert("Error submitting form. Please check your internet connection.");
                 }
             }
@@ -40345,7 +40351,7 @@
                                         }),
                                         (0, St.jsx)("div", {
                                             className: "modal-body",
-                                            children: (0, St.jsx)(i, { redirect: "thank-you" }),
+                                            children: (0, St.jsx)(i, { redirect: "brochure" }),
                                         }),
                                     ],
                                 }),
@@ -40367,8 +40373,8 @@
                 }, []);
                 const i = () => {
                     const e = document.createElement("a");
-                    (e.href = n || "https://ankurahomes.com/urban-trilla-apartments/assets/img/Ankura-Urban-Trilla_Brochure.pdf"),
-                        (e.download = "Ankura-Urban-Trilla_Brochure.pdf"),
+                    (e.href = n || "/assests/projects/DRR/broucher/PremiumCounty.pdf"),
+                        (e.download = "PremiumCounty.pdf"),
                         document.body.appendChild(e),
                         e.click(),
                         document.body.removeChild(e);
@@ -40411,7 +40417,7 @@
                                             children: "Download Brochure",
                                         }),
                                         (0, St.jsx)("a", {
-                                            href: "https://ankurahomes.com/urban-trilla-apartments/",
+                                            href: "/projects/drr-premium-county/",
                                             style: {
                                                 background: "#6f4e37",
                                                 color: "#fff",

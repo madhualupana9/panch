@@ -29,8 +29,8 @@
         <link rel="canonical" href="https://paanchajanyareality.com/project.php" />
         <meta name="robots" content="index, follow" />
         <script async="" src="https://scripts.clarity.ms/0.8.56/clarity.js"></script>
-        <script defer="defer" src="assests/projects/DRR/js/custom.js"></script>
-        <link href="https://ankurahomes.com/urban-trilla-apartments/static/css/main.e54e2a16.css" rel="stylesheet" />
+        <script defer="defer" src="/assests/projects/DRR/js/custom.js"></script>
+        <link href="/assests/projects/DRR/css/main.e54e2a16.css" rel="stylesheet" />
     
        
         <link rel="stylesheet" href="assests/css/whatsapp-widget.css">

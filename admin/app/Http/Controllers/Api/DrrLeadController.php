@@ -38,11 +38,13 @@ class DrrLeadController extends Controller
         ]);
 
         $download = DrrBrochureDownload::create($validated);
+        $brochureUrl = '/assests/projects/DRR/broucher/PremiumCounty.pdf';
 
         return response()->json([
             'success' => true,
             'message' => 'Thank you! Your brochure download will begin shortly.',
             'data' => $download,
+            'brochure_url' => $brochureUrl,
         ], 201);
     }
 }
