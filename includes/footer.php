@@ -33,15 +33,15 @@
                 </div>
                 <div class="sc_layouts_item elementor-element elementor-element-6994220 sc_fly_static elementor-widget elementor-widget-heading" data-id="6994220" data-element_type="widget" data-widget_type="heading.default">
                 <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">Creating contemporary home designs.</h2>             </div>
+                    <h2 class="elementor-heading-title elementor-size-default">Invest in Land. Invest in Tomorrow</h2>             </div>
                 </div>
                 <div class="sc_layouts_item elementor-element elementor-element-32c50fcd sc_fly_static elementor-widget elementor-widget-text-editor" data-id="32c50fcd" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
-                                    <p><a class="underline_anim" href="mailto:paanchajanyareality@gmail.com"><span class="icon-envelope"> </span>paanchajanyareality@gmail.com</a></p>                              </div>
+                                    <p><a class="underline_anim" href="mailto:Paanchajanyarealty@gmail.com"><span class="icon-envelope"> </span>Paanchajanyarealty@gmail.com</a></p>                              </div>
                 </div>
                 <div class="sc_layouts_item elementor-element elementor-element-3d6acaae sc_fly_static elementor-widget elementor-widget-text-editor" data-id="3d6acaae" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
-                                    <p><span class="trx_addons_alter_text"> <a href="tel:+919100999099"><span class="icon-iphone">  </span>+91 91009 99099</a></span></p>                               </div>
+                                    <p><span class="trx_addons_alter_text"> <a href="tel:+917237997999"><span class="icon-iphone">  </span>+91 723 799 7999</a></span></p>                               </div>
                 </div>
                     </div>
         </div>

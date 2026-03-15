@@ -60,12 +60,12 @@
                 </a>
                 @endif
 
-                @if(auth()->user()->can('projects.view'))
+                <!-- @if(auth()->user()->can('projects.view'))
                 <a href="{{ route('admin.projects.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.projects.*') ? 'active' : '' }}">
                     <i class="fas fa-project-diagram w-5"></i>
                     <span>Projects</span>
                 </a>
-                @endif
+                @endif -->
 
                 @if(auth()->user()->can('news.view'))
                 <a href="{{ route('admin.news.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.news.*') ? 'active' : '' }}">
@@ -135,6 +135,21 @@
                     @endif
                 </a>
                 @endif
+
+                <div class="pt-4 pb-2">
+                    <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Projects</p>
+                </div>
+
+                <a href="{{ route('admin.drr.index') }}" class="sidebar-link flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-800 transition {{ request()->routeIs('admin.drr.*') ? 'active' : '' }}">
+                    <i class="fas fa-building w-5"></i>
+                    <span>DRR Premium County</span>
+                    @php
+                        $newDrrCount = \App\Models\DrrEnquiry::where('status', 'new')->count() + \App\Models\DrrBrochureDownload::where('status', 'new')->count();
+                    @endphp
+                    @if($newDrrCount > 0)
+                        <span class="ml-auto bg-orange-500 text-white text-xs px-2 py-1 rounded-full">{{ $newDrrCount }}</span>
+                    @endif
+                </a>
 
                 <!-- User Management -->
                 @if(auth()->user()->can('users.view') || auth()->user()->can('roles.view'))

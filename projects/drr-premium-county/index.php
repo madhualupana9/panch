@@ -1248,7 +1248,9 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="contact-form-wrapper shadow-lg p-4 p-md-5 rounded-4 bg-white">
-                                    <form class="row g-3">
+                                    <div id="contact-success" style="display:none;" class="alert alert-success mb-3">Thank you for contacting us! We will get back to you shortly.</div>
+                                    <div id="contact-error" style="display:none;" class="alert alert-danger mb-3"></div>
+                                    <form class="row g-3" id="contactForm">
                                         <div class="col-md-6">
                                             <input
                                                 class="form-control form-control-lg form-controls"
@@ -1288,6 +1290,7 @@
                                             <button
                                                 type="submit"
                                                 class="btn btn-warning px-5 py-2 fw-bold rounded-pill shadow-lg"
+                                                id="contactSubmitBtn"
                                             >
                                                 Submit
                                             </button>
@@ -1516,7 +1519,9 @@
                                 ></button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <div id="enquiry-success" style="display:none;" class="alert alert-success">Thank you for your enquiry! We will get back to you shortly.</div>
+                                <div id="enquiry-error" style="display:none;" class="alert alert-danger"></div>
+                                <form id="enquiryForm">
                                     <div class="mb-3">
                                         <input
                                             class="form-control"
@@ -1552,7 +1557,7 @@
                                             rows="3"
                                         ></textarea>
                                     </div>
-                                    <button type="submit" class="btn custom_submit w-100">Submit</button>
+                                    <button type="submit" class="btn custom_submit w-100" id="enquirySubmitBtn">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -1571,7 +1576,9 @@
                                 ></button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <div id="brochure-success" style="display:none;" class="alert alert-success">Thank you! Your brochure download will begin shortly.</div>
+                                <div id="brochure-error" style="display:none;" class="alert alert-danger"></div>
+                                <form id="brochureForm">
                                     <div class="mb-3">
                                         <input
                                             class="form-control"
@@ -1607,7 +1614,7 @@
                                             rows="3"
                                         ></textarea>
                                     </div>
-                                    <button type="submit" class="btn custom_submit w-100">Submit</button>
+                                    <button type="submit" class="btn custom_submit w-100" id="brochureSubmitBtn">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -1662,6 +1669,73 @@
 </div>
 
 <script src="../../assests/js/whatsapp-widget.js"></script>
+
+<script>
+var API_BASE = '/admin/api';
+
+function submitDrrForm(formId, endpoint, successId, errorId, btnId) {
+    var form = document.getElementById(formId);
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var btn = document.getElementById(btnId);
+        var successDiv = document.getElementById(successId);
+        var errorDiv = document.getElementById(errorId);
+        var originalText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Submitting...';
+        successDiv.style.display = 'none';
+        errorDiv.style.display = 'none';
+
+        var formData = new FormData(form);
+        var data = {};
+        formData.forEach(function(value, key) { data[key] = value; });
+
+        fetch(API_BASE + endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(data)
+        })
+        .then(function(res) { return res.json().then(function(json) { return { ok: res.ok, data: json }; }); })
+        .then(function(result) {
+            btn.disabled = false;
+            btn.textContent = originalText;
+            if (result.ok) {
+                successDiv.style.display = 'block';
+                form.reset();
+            } else {
+                var msg = result.data.message || 'Something went wrong. Please try again.';
+                if (result.data.errors) {
+                    var errs = Object.values(result.data.errors);
+                    msg = errs.map(function(e) { return e[0]; }).join('<br>');
+                }
+                errorDiv.innerHTML = msg;
+                errorDiv.style.display = 'block';
+            }
+        })
+        .catch(function() {
+            btn.disabled = false;
+            btn.textContent = originalText;
+            errorDiv.textContent = 'Network error. Please try again.';
+            errorDiv.style.display = 'block';
+        });
+    });
+}
+
+submitDrrForm('enquiryForm', '/drr/enquiry', 'enquiry-success', 'enquiry-error', 'enquirySubmitBtn');
+submitDrrForm('brochureForm', '/drr/brochure', 'brochure-success', 'brochure-error', 'brochureSubmitBtn');
+
+(function() {
+    var form = document.getElementById('contactForm');
+    if (!form) return;
+    var hidden = document.createElement('input');
+    hidden.type = 'hidden';
+    hidden.name = 'source';
+    hidden.value = 'contact_form';
+    form.appendChild(hidden);
+})();
+submitDrrForm('contactForm', '/drr/enquiry', 'contact-success', 'contact-error', 'contactSubmitBtn');
+</script>
 
     </body>
 </html>
