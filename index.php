@@ -303,7 +303,7 @@ $sliders = $stmt->fetchAll();
             <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-47d89f7 elementor-absolute elementor-widget-mobile__width-initial sc_fly_static elementor-widget elementor-widget-image" data-id="47d89f7" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_scale_direction&quot;:&quot;out-in&quot;,&quot;motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default" style="width: 100%; display: flex; justify-content: center; left: 0;">
                 <div class="elementor-widget-container">
-                                                            <img loading="lazy" decoding="async" width="1167" height="497" src="assests/image/idea_transparent-paanchajanya.png" class="attachment-full size-full wp-image-26548" alt="ankura villas">                                                           </div>
+                                                            <img loading="lazy" decoding="async" width="1167" height="497" src="assests/image/bubble.png" class="attachment-full size-full wp-image-26548" alt="ankura villas">                                                           </div>
                 </div>
                     </div>
         </div>
