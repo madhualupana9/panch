@@ -139,7 +139,7 @@
                         $date = date('F d, Y', strtotime($article['published_at']));
                         $image_path = $article['image'];
                         if (strpos($image_path, 'news/') === 0) {
-                            $image_path = 'admin/public/storage/' . $image_path;
+                            $image_path = 'admin/storage/' . $image_path;
                         }
                 ?>
                 <div class="col-lg-4 col-md-6">

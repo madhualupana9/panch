@@ -85,7 +85,7 @@ $sliders = $stmt->fetchAll();
                                                                         <picture class="skip-lazy" data-skip-lazy="1"
                                                                             ><img
                                                                                 decoding="async"
-                                                                                src="admin/public/storage/<?php echo $slider['image']; ?>"
+                                                                                src="admin/storage/<?php echo $slider['image']; ?>"
                                                                                 alt="<?php echo htmlspecialchars($slider['title'] ?? ''); ?>"
                                                                                 title="<?php echo htmlspecialchars($slider['title'] ?? ''); ?>"
                                                                                 loading="lazy"

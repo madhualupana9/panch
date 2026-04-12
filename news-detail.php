@@ -17,7 +17,7 @@ if (!$article) {
 
 $image_path = $article['image'];
 if (strpos($image_path, 'news/') === 0) {
-    $image_path = 'admin/public/storage/' . $image_path;
+    $image_path = 'admin/storage/' . $image_path;
 }
 
 include 'includes/header.php'; 
