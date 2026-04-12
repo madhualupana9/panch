@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🗄️  Setting up MySQL Database for Joshitha Infratech Admin..."
+echo "🗄️  Setting up MySQL Database for paanch Admin..."
 
 # Database credentials
 DB_NAME="infinitydevdb"
@@ -52,7 +52,7 @@ else
 fi
 
 echo -e "\n${YELLOW}Step 3: Testing database connection...${NC}"
-cd /var/www/joshitha-modern-site/admin
+cd /var/www/paanch/admin
 
 # Clear cache
 php artisan config:clear
@@ -93,5 +93,5 @@ echo -e "Database Host: localhost"
 echo -e "\n${YELLOW}Next steps:${NC}"
 echo -e "1. Restart PHP-FPM: sudo systemctl restart php8.1-fpm"
 echo -e "2. Restart Nginx: sudo systemctl restart nginx"
-echo -e "3. Restart PM2: pm2 restart joshitha-frontend"
+echo -e "3. Restart PM2: pm2 restart paanch-frontend"
 

@@ -8,12 +8,12 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 echo -e "${BLUE}╔════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║   Joshitha Infratech - Database Diagnostic Tool       ║${NC}"
+echo -e "${BLUE}║   paanch - Database Diagnostic Tool       ║${NC}"
 echo -e "${BLUE}╚════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
 # Navigate to admin directory
-cd /var/www/joshitha-modern-site/admin
+cd /var/www/paanch/admin
 
 # 1. Check PHP Version
 echo -e "${YELLOW}[1/10] Checking PHP Version...${NC}"
@@ -157,7 +157,7 @@ if [ "$CRITICAL_OK" = true ]; then
     echo -e "${BLUE}Next steps:${NC}"
     echo -e "  1. Clear cache: php artisan config:clear && php artisan cache:clear"
     echo -e "  2. Restart services: sudo systemctl restart php8.1-fpm nginx"
-    echo -e "  3. Restart PM2: pm2 restart joshitha-frontend"
+    echo -e "  3. Restart PM2: pm2 restart paanch-frontend"
 else
     echo ""
     echo -e "${RED}⚠ Critical issues found! Please fix the errors above.${NC}"

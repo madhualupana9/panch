@@ -69,7 +69,7 @@
     @media (max-width: 768px) {
         .page-banner { padding: 120px 0 80px; }
         .page-banner h1 { font-size: 2.5rem; }
-        .section-padding { padding: 50px 0; }
+        .section-padding { padding: 86px 0; }
         .story-img { margin-top: 30px; }
     }
 </style>

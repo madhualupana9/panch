@@ -34,7 +34,7 @@ class RolesAndAdminSeeder extends Seeder
         // Create test admin user
         DB::table('users')->insert([
             'name' => 'Admin User',
-            'email' => 'admin@joshitha.com',
+            'email' => 'admin@paanch.com',
             'password' => Hash::make('admin123'),
             'role_id' => $adminRole,
             'is_active' => true,
@@ -46,7 +46,7 @@ class RolesAndAdminSeeder extends Seeder
         // Create test regular user
         DB::table('users')->insert([
             'name' => 'Test User',
-            'email' => 'user@joshitha.com',
+            'email' => 'user@paanch.com',
             'password' => Hash::make('user123'),
             'role_id' => $userRole,
             'is_active' => true,

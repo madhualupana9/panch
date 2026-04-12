@@ -260,6 +260,12 @@ if ($current_page == 'news-detail.php' && isset($article)) {
   color: #000000 !important;
 }
 
+/* Sub-menu links should always be white as they have a dark background */
+.top_panel .sc_layouts_menu_nav .sub-menu a span,
+.top_panel .sc_layouts_menu_nav .sub-menu a {
+  color: #ffffff !important;
+}
+
 <?php if ($current_page != 'index.php') : ?>
 /* Non-index page nav styles */
 .is-non-index .top_panel,
@@ -292,10 +298,16 @@ if ($current_page == 'news-detail.php' && isset($article)) {
 .is-non-index .top_panel.scrolled .sc_layouts_menu_nav .sub-menu a {
   color: #ffffff !important;
 }
+/* Mobile menu links should always be white as they have a dark background */
+.menu_mobile_nav_area a span,
+.menu_mobile_nav_area a {
+  color: #ffffff !important;
+}
+
 /* Mobile menu links for non-index */
 .is-non-index .menu_mobile_nav_area a span,
 .is-non-index .menu_mobile_nav_area a {
-  color: #000000 !important;
+  color: #ffffff !important;
 }
 /* Burger and Search icons for non-index */
 .is-non-index .sc_layouts_menu_mobile_button_burger .sc_layouts_item_icon,
@@ -1019,17 +1031,17 @@ if ($current_page == 'news-detail.php' && isset($article)) {
 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
     <div class="menu_mobile_inner with_widgets">
         <div class="menu_mobile_header_wrap">
-            <a class="sc_layouts_logo" href="index.htm">
+            <a class="sc_layouts_logo" href="index.php">
         <span class="logo_text">PAANCHAJANYA REALITY</span> </a>
     
             <a class="menu_mobile_close menu_button_close" tabindex="0"><span class="menu_button_close_text">Close</span><span class="menu_button_close_icon"></span></a>
         </div>
         <div class="menu_mobile_content_wrap content_wrap">
-            <div class="menu_mobile_content_wrap_inner"><nav class="menu_mobile_nav_area" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="menu_mobile_252574338"><li id="menu_mobile-item-28238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28238"><a href="javascript:void(0);"><span style="color: #ffffff;">About Us</span></a></li><li id="menu_mobile-item-18327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18327"><a href="javascript:void(0);"><span style="color: #FFFFFF;">Projects</span></a>
+            <div class="menu_mobile_content_wrap_inner"><nav class="menu_mobile_nav_area" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"><ul id="menu_mobile_252574338"><li id="menu_mobile-item-28238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28238"><a href="aboutus"><span style="color: #ffffff;">About Us</span></a></li><li id="menu_mobile-item-18327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18327"><a href="javascript:void(0);"><span style="color: #FFFFFF;">Projects</span></a>
 <ul class="sub-menu"><li id="menu_mobile-item-30409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30409"><a href="#"><span>Current Projects</span></a>
-    <ul class="sub-menu"><li id="menu_mobile-item-28243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28243"><a href="javascript:void(0);"><span>DRR Premium County</span></a></li></ul>
+    <ul class="sub-menu"><li id="menu_mobile-item-28243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28243"><a href="projects/drr-premium-county/"><span>DRR Premium County</span></a></li></ul>
 </li></ul>
-</li><li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="blog"><span style="color: #FFFFFF;">Blog</span></a></li> <li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="contactus"><span style="color: #FFFFFF;">Contact Us</span></a></li></ul></nav><div class="socials_mobile"><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_youtube2" style=""><span class="trx_addons_icon-youtube2"></span></span></a></div>            </div>
+</li><li id="menu_mobile-item-28264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28264"><a href="partner-with-us"><span style="color: #FFFFFF;">Partner with us</span></a></li><li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="blog"><span style="color: #FFFFFF;">Blog</span></a></li> <li id="menu_mobile-item-28263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28263"><a href="contactus"><span style="color: #FFFFFF;">Contact Us</span></a></li></ul></nav><div class="socials_mobile"><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a><a target="_blank" href="javascript:void(0);" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_youtube2" style=""><span class="trx_addons_icon-youtube2"></span></span></a></div>            </div>
         </div><div class="menu_mobile_widgets_area"></div>
     </div>
 </div>

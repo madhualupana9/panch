@@ -173,7 +173,7 @@ $jobs = $stmt->fetchAll();
         <div class="container">
             <h3>Don't see a role that fits?</h3>
             <p class="mb-4">Send us your resume anyway and we'll keep you in mind for future openings.</p>
-            <a href="mailto:careers@paanchajanya.com" class="btn-apply" style="padding: 12px 35px; font-size: 1.1rem;">Email Your CV</a>
+            <a href="mailto:paanchajanyarealty@gmail.com" class="btn-apply" style="padding: 12px 35px; font-size: 1.1rem;">Email Your CV</a>
         </div>
     </section>
 </div>

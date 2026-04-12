@@ -35297,123 +35297,153 @@
                         img: "/assests/projects/DRR/images/layout/plan1.png",
                         alt: "Layout For DRR Premium County",
                     },
-                    // {
-                    //     key: "blockA",
-                    //     label: "Block A",
-                    //     type: "slider",
-                    //     images: [
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-1.webp",
-                    //             alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3703 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-2.webp",
-                    //             alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3769 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-3.webp",
-                    //             alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3427 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-4.webp",
-                    //             alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3893 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-5.webp",
-                    //             alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3889 sq. ft.",
-                    //         },
-                    //     ],
-                    // },
-                    // {
-                    //     key: "blockB",
-                    //     label: "Block B",
-                    //     type: "slider",
-                    //     images: [
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-1.webp",
-                    //             alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3893 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-2.webp",
-                    //             alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3889 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-3.webp",
-                    //             alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3427 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-4.webp",
-                    //             alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3703 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-5.webp",
-                    //             alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3769 sq. ft.",
-                    //         },
-                    //     ],
-                    // },
-                    // {
-                    //     key: "blockC",
-                    //     label: "Block C",
-                    //     type: "slider",
-                    //     images: [
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-1.webp",
-                    //             alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3029 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-2.webp",
-                    //             alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3187 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-3.webp",
-                    //             alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3017 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-4.webp",
-                    //             alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3073 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-5.webp",
-                    //             alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3073 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-6.webp",
-                    //             alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3073 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-7.webp",
-                    //             alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3073 sq. ft.",
-                    //         },
-                    //     ],
-                    // },
-                    // {
-                    //     key: "eastFacing",
-                    //     label: "East Facing",
-                    //     type: "slider",
-                    //     images: [
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-1.webp",
-                    //             alt: "Urban Trilla Apartments East Facing Floor Plan Block A & B \u2013 4 BHK, 3073 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-2.webp",
-                    //             alt: "Urban Trilla Apartments East Facing Floor Plan Block B \u2013 4 BHK, 3427 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-3.webp",
-                    //             alt: "Urban Trilla Apartments East Facing Floor Plan Block A & B \u2013 4 BHK, 3889 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-4.webp",
-                    //             alt: "Urban Trilla Apartments East Facing Floor Plan Block C \u2013 4 BHK, 3073 sq. ft.",
-                    //         },
-                    //         {
-                    //             src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-5.webp",
-                    //             alt: "Urban Trilla Apartments East Facing Floor Plan Block C \u2013 4 BHK, 3017 sq. ft.",
-                    //         },
-                    //     ],
-                    // },
-                    // 
+                    {
+                        key: "blockA",
+                        label: "Block A",
+                        type: "slider",
+                        images: [
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-1.webp",
+                                alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3703 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-2.webp",
+                                alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3769 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-3.webp",
+                                alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3427 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-4.webp",
+                                alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3893 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-bloack-a/block-a-5.webp",
+                                alt: "Urban Trilla Apartments Block A, Floor Plan \u2013 4 BHK, 3889 sq. ft.",
+                            },
+                        ],
+                    },
+                    {
+                        key: "blockB",
+                        label: "Block B",
+                        type: "slider",
+                        images: [
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-1.webp",
+                                alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3893 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-2.webp",
+                                alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3889 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-3.webp",
+                                alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3427 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-4.webp",
+                                alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3703 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-b/uta-block-b-5.webp",
+                                alt: "Urban Trilla Apartments Block B, Floor Plan \u2013 4 BHK, 3769 sq. ft.",
+                            },
+                        ],
+                    },
+                    {
+                        key: "blockC",
+                        label: "Block C",
+                        type: "slider",
+                        images: [
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-1.webp",
+                                alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3029 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-2.webp",
+                                alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3187 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-3.webp",
+                                alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3017 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-4.webp",
+                                alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3073 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-5.webp",
+                                alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3073 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-6.webp",
+                                alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3073 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-block-c/uta-block-c-7.webp",
+                                alt: "Urban Trilla Apartments Block C, Floor Plan \u2013 4 BHK, 3073 sq. ft.",
+                            },
+                        ],
+                    },
+                    {
+                        key: "eastFacing",
+                        label: "East Facing",
+                        type: "slider",
+                        images: [
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-1.webp",
+                                alt: "Urban Trilla Apartments East Facing Floor Plan Block A & B \u2013 4 BHK, 3073 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-2.webp",
+                                alt: "Urban Trilla Apartments East Facing Floor Plan Block B \u2013 4 BHK, 3427 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-3.webp",
+                                alt: "Urban Trilla Apartments East Facing Floor Plan Block A & B \u2013 4 BHK, 3889 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-4.webp",
+                                alt: "Urban Trilla Apartments East Facing Floor Plan Block C \u2013 4 BHK, 3073 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-east-facing/east-facing-5.webp",
+                                alt: "Urban Trilla Apartments East Facing Floor Plan Block C \u2013 4 BHK, 3017 sq. ft.",
+                            },
+                        ],
+                    },
+                    {
+                        key: "westFacing",
+                        label: "West Facing",
+                        type: "slider",
+                        images: [
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-west-facing/uta-west-facing-1.webp",
+                                alt: "Urban Trilla Apartments West Facing Floor Plan Block C \u2013 4 BHK, 3073 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-west-facing/uta-west-facing-2.webp",
+                                alt: "Urban Trilla Apartments West Facing Floor Plan Block C \u2013 4 BHK, 3187 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-west-facing/uta-west-facing-3.webp",
+                                alt: "Urban Trilla Apartments West Facing Floor Plan Block A & B \u2013 4 BHK, 3769 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-west-facing/uta-west-facing-4.webp",
+                                alt: "Urban Trilla Apartments West Facing Floor Plan Block A \u2013 4 BHK, 3769 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-west-facing/uta-west-facing-5.webp",
+                                alt: "Urban Trilla Apartments West Facing Floor Plan Block A & B \u2013 4 BHK, 3893 sq. ft.",
+                            },
+                            {
+                                src: "https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-west-facing/uta-west-facing-6.webp",
+                                alt: "Urban Trilla Apartments West Facing Floor Plan Block C \u2013 4 BHK, 3893 sq. ft.",
+                            },
+                        ],
+                    },
                 ],
                 Oh = (0, t.memo)((e) => {
                     let { images: t } = e;
@@ -35474,7 +35504,7 @@
                                         children: (0, St.jsx)("h2", {
                                             className: "section-title mt-2",
                                             "data-aos": "zoom-in",
-                                            children: "Project Layout",
+                                            children: "Floor Plan & Master Plan",
                                         }),
                                     }),
                                     (0, St.jsx)("div", {

@@ -665,7 +665,7 @@
                             style="transform: scale(0.5)"
                         />
                         <div class="luxury-text" style="opacity: 0; transform: translateY(50px)">
-                            <h1>Light<span>. </span>Air<span>. </span>Space<span>. </span></h1>
+                            <h1>Where <span>. </span>Comfort Meets<span>. </span>Space<span>. </span></h1>
                         </div>
                     </div>
                     <style>

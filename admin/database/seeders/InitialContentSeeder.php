@@ -63,7 +63,7 @@ class InitialContentSeeder extends Seeder
         $settings = [
             ['key' => 'site_name', 'value' => 'Paanchajanya Reality', 'type' => 'text', 'group' => 'general'],
             ['key' => 'site_tagline', 'value' => 'Building Tomorrow\'s Infrastructure Today', 'type' => 'text', 'group' => 'general'],
-            ['key' => 'contact_email', 'value' => 'info@joshitha.com', 'type' => 'text', 'group' => 'contact'],
+            ['key' => 'contact_email', 'value' => 'info@paanch.com', 'type' => 'text', 'group' => 'contact'],
             ['key' => 'contact_phone', 'value' => '+91 1234567890', 'type' => 'text', 'group' => 'contact'],
             ['key' => 'contact_address', 'value' => 'Hyderabad, Telangana, India', 'type' => 'textarea', 'group' => 'contact'],
             ['key' => 'facebook_url', 'value' => 'https://facebook.com/Paanchajanya Reality', 'type' => 'text', 'group' => 'social'],

@@ -42,7 +42,7 @@ $date = date('F d, Y', strtotime($article['published_at']));
         background: rgba(0, 0, 0, 0.6);
     }
     .news-detail-banner .container { position: relative; z-index: 2; }
-    .news-detail-banner h1 { font-size: 3rem; font-weight: 700; margin-bottom: 20px; color: aliceblue;}
+    .news-detail-banner h1 { font-size: 2rem; font-weight: 700; margin-bottom: 20px; color: aliceblue;}
     .news-meta {
         font-size: 1.1rem;
         font-weight: 500;

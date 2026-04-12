@@ -175,15 +175,15 @@
             
             <div class="contact-info">
                 <p>
-                    📧 Email: <a href="mailto:infra@joshithagroup.com">infra@joshithagroup.com</a><br>
-                    🌐 Website: <a href="https://joshithagroup.com" target="_blank">joshithagroup.com</a><br>
+                    📧 Email: <a href="mailto:infra@paanch.com">infra@paanch.com</a><br>
+                    🌐 Website: <a href="https://paanch.com" target="_blank">paanch.com</a><br>
                     📞 Phone: +91 9000313963
                 </p>
             </div>
 
             <p style="margin-top: 20px; font-size: 12px; color: #999;">
                 This is an automated email. Please do not reply directly to this message.<br>
-                If you have any questions, please contact us at <a href="mailto:infra@joshithagroup.com">infra@joshithagroup.com</a>
+                If you have any questions, please contact us at <a href="mailto:infra@paanch.com">infra@paanch.com</a>
             </p>
         </div>
     </div>

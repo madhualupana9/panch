@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>403 - Access Denied | Joshitha Admin</title>
+    <title>403 - Access Denied | paanch Admin</title>
     @vite(['resources/css/app.css'])
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -112,7 +112,7 @@
             <div class="mt-6">
                 <p class="text-gray-500 text-sm">
                     Need access? Contact your system administrator or email 
-                    <a href="mailto:infra@joshithagroup.com" class="text-blue-400 hover:text-blue-300">infra@joshithagroup.com</a>
+                    <a href="mailto:infra@paanch.com" class="text-blue-400 hover:text-blue-300">infra@paanch.com</a>
                 </p>
             </div>
         </div>

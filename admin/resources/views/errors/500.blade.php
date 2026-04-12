@@ -99,10 +99,10 @@
         <div class="glass-card rounded-2xl p-8">
             <p class="text-gray-400 mb-4">If this problem persists, please contact support:</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="mailto:infra@joshithagroup.com" 
+                <a href="mailto:infra@paanch.com" 
                    class="inline-flex items-center gap-2 px-6 py-3 bg-white/5 text-gray-300 rounded-lg border border-white/10 hover:bg-white/10 hover:border-blue-500/50 hover:text-blue-400 transition-all duration-300">
                     <i class="fas fa-envelope"></i>
-                    <span>infra@joshithagroup.com</span>
+                    <span>infra@paanch.com</span>
                 </a>
             </div>
         </div>

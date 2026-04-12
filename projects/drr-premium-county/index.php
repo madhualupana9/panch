@@ -94,7 +94,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="https://ankurahomes.com/" class="nav-link" data-bs-dismiss="offcanvas">Home</a>
+                                <a href="#" class="nav-link" data-bs-dismiss="offcanvas">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#highlights" class="nav-link" data-bs-dismiss="offcanvas"
@@ -614,7 +614,7 @@
                             style="transform: scale(0.5)"
                         />
                         <div class="luxury-text" style="opacity: 0; transform: translateY(50px)">
-                            <h1>Light<span>. </span>Air<span>. </span>Space<span>. </span></h1>
+                            <h1>Where<span>. </span>Comfort Meets<span>. </span>Space<span>. </span></h1>
                         </div>
                     </div>
                     <style>

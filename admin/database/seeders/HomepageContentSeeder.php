@@ -53,7 +53,7 @@ class HomepageContentSeeder extends Seeder
                     'paragraphs' => [
     'Paanchajanya Reality Private Limited, established in 2010, began with a vision to deliver excellence across Civil, Electrical, Mechanical, Design, Engineering, and Construction services. Although founded in 2010, full-scale operations commenced in FY2017, marking the beginning of a strong and impactful journey in diverse construction activities.',
     
-    'From the very first year of operations, the company proudly secured significant work orders from reputed clients. JOSHITHA was founded through the shared vision of its promoters—to contribute to the industry through skilled and experienced engineering professionals committed to quality and innovation.',
+    'From the very first year of operations, the company proudly secured significant work orders from reputed clients. paanch was founded through the shared vision of its promoters—to contribute to the industry through skilled and experienced engineering professionals committed to quality and innovation.',
     
     'As we continue executing various projects, we consistently develop our infrastructure, expand our skilled team, and enhance our capabilities to take on forthcoming works of any scale. Over time, we have accumulated the resources, expertise, and technical strength required to handle projects of any magnitude with confidence and efficiency.'
 ],
