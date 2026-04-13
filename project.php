@@ -1736,7 +1736,7 @@
             </div>
         </div>
         <div class="popup-footer">
-            <a href="https://wa.me/918688177563?text=Hi,%20I%20am%20coming%20from%20Paanchajanya%20Reality%20website%20for%20enquiry." target="_blank" class="chat-btn">
+            <a href="https://wa.me/917237997999?text=Hi,%20I%20am%20coming%20from%20Paanchajanya%20Reality%20website%20for%20enquiry." target="_blank" class="chat-btn">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
                 Chat on WhatsApp
             </a>
