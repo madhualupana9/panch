@@ -4,6 +4,80 @@
     error_reporting(E_ALL);
 ?>
 <?php include 'includes/header.php'; ?>
+<style>
+    .statistics-section {
+        padding: 50px 0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    .statistics-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(to right, #c9a45c, #e5c78b, #c9a45c);
+    }
+    .stat-card {
+        background: #ffffff;
+        padding: 25px 15px;
+        border-radius: 15px;
+        text-align: center;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        border: 1px solid rgba(201, 164, 92, 0.1);
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(201, 164, 92, 0.12);
+        border-color: rgba(201, 164, 92, 0.3);
+    }
+    .stat-icon {
+        font-size: 2.2rem;
+        color: #c9a45c;
+        margin-bottom: 15px;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+    .stat-card:hover .stat-icon {
+        transform: scale(1.1) rotate(5deg);
+    }
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #222;
+        margin-bottom: 5px;
+        display: inline-block;
+        line-height: 1;
+        font-family: 'DM Sans', sans-serif;
+    }
+    .stat-suffix {
+        color: #c9a45c;
+        font-size: 1.8rem;
+        font-weight: 800;
+        vertical-align: top;
+        margin-left: 2px;
+    }
+    .stat-text {
+        font-size: 0.85rem;
+        color: #666;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+    @media (max-width: 768px) {
+        .statistics-section { padding: 40px 0; }
+        .stat-number { font-size: 2rem; }
+        .stat-suffix { font-size: 1.5rem; }
+        .stat-card { padding: 20px 10px; }
+    }
+</style>
 <?php include 'includes/db.php'; ?>
 <?php
 $stmt = $pdo->query("SELECT * FROM sliders WHERE is_active = 1 ORDER BY `order` ASC");
@@ -460,7 +534,53 @@ $sliders = $stmt->fetchAll();
     </div>
 </section>
 <!-- aboutus end -->
-
+<!-- Statistics -->
+    <section class="statistics-section">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                        <div>
+                            <span class="stat-number" data-count="25">0</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-text">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div>
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-text">Projects</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <div>
+                            <span class="stat-number" data-count="527">0</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-text">Acres Developed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div>
+                            <span class="stat-number" data-count="2750">0</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-text">Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <!-- our projects start -->
 <section
     class="elementor-section elementor-top-section elementor-element elementor-element-d60b439 elementor-section-full_width elementor-section-height-default elementor-section-height-default sc_fly_static"
@@ -695,4 +815,50 @@ $sliders = $stmt->fetchAll();
                         </div>
                                             </div>
                                 </div>
-                            <?php include 'includes/footer.php'; ?>
+                            <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const stats = document.querySelectorAll('.stat-number');
+    
+    const animateCount = (el) => {
+        const target = parseInt(el.getAttribute('data-count'));
+        let current = 0;
+        const duration = 2000;
+        const startTime = performance.now();
+        
+        const updateCount = (currentTime) => {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1);
+            
+            // Ease out function
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            
+            const count = Math.floor(easedProgress * target);
+            el.innerText = count.toLocaleString();
+            
+            if (progress < 1) {
+                requestAnimationFrame(updateCount);
+            } else {
+                el.innerText = target.toLocaleString();
+            }
+        };
+        
+        requestAnimationFrame(updateCount);
+    };
+
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCount(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    stats.forEach(stat => observer.observe(stat));
+});
+</script>
+<?php include 'includes/footer.php'; ?>

@@ -319,8 +319,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <i class="fa-solid fa-clock"></i>
                                             </div>
                                             <h4>Working Hours</h4>
-                                            <p>Mon - Sat: 09:00 AM - 07:00 PM</p>
-                                            <p>Sunday: 10:00 AM - 04:00 PM</p>
+                                            <p>Mon - Sat: 10:00 AM - 07:00 PM</p>
                                         </div>
                                     </div>
                                 </div>

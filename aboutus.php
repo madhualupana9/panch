@@ -88,43 +88,13 @@
                     <p>The company’s success is built upon its commitment to passing on the benefits of its cost-efficiency to its customers. This principle, along with the company’s constant efforts to improve the community and make a positive impact on people’s lives, has been a driving force behind its success over the last 25 years.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assests/image/banner9.jpg" alt="Our Story" class="story-img">
+                    <img src="assests/image/aboutus.jpg" alt="Our Story" class="story-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Statistics -->
-    <section class="section-padding bg-light-section">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-3 col-6">
-                    <div class="stat-card">
-                        <h2>25+</h2>
-                        <p>Years Experience</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card">
-                        <h2>50+</h2>
-                        <p>Projects</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card">
-                        <h2>527+</h2>
-                        <p>Acres Developed</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="stat-card">
-                        <h2>2750+</h2>
-                        <p>Happy Customers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Vision & Values -->
     <section class="section-padding">

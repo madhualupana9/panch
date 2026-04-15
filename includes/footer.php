@@ -37,8 +37,12 @@
                 </div>
                 <div class="sc_layouts_item elementor-element elementor-element-32c50fcd sc_fly_static elementor-widget elementor-widget-text-editor" data-id="32c50fcd" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
-                                    <p><a class="underline_anim" href="mailto:Paanchajanyarealty@gmail.com"><span class="icon-envelope"> </span>Paanchajanyarealty@gmail.com</a></p>                              </div>
+                                    <p><a class="underline_anim" href="mailto:Paanchajanyarealty@gmail.com"><span class="icon-envelope"> </span>Paanchajanyarealty@gmail.com</a></p>        
+                                <!-- <p><a class="underline_anim" href="mailto:gsgroupadmin@gmail.com"><span class="icon-envelope"> </span>gsgroupadmin@gmail.com</a></p>      -->
+                                
+                                </div> 
                 </div>
+                
                 <div class="sc_layouts_item elementor-element elementor-element-3d6acaae sc_fly_static elementor-widget elementor-widget-text-editor" data-id="3d6acaae" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
                                     <p><span class="trx_addons_alter_text"> <a href="tel:+917237997999"><span class="icon-iphone">  </span>+91 723 799 7999</a></span></p>                               </div>
@@ -125,7 +129,21 @@
                             id="menu-item-28695"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
                         >
-                            <a href="contactus"><span style="color: #ffffff">Contactus</span></a>
+                            <a href="partner-with-us"><span style="color: #ffffff">Partner With Us</span></a>
+                        </li>
+
+                        <li
+                            id="menu-item-28695"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
+                        >
+                            <a href="blog"><span style="color: #ffffff">Blog</span></a>
+                        </li>
+
+                        <li
+                            id="menu-item-28695"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28695"
+                        >
+                            <a href="contactus"><span style="color: #ffffff">Contact Us</span></a>
                         </li>
 
                         <li
@@ -277,7 +295,7 @@
             <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="sc_layouts_item elementor-element elementor-element-e5df69a sc_fly_static elementor-widget elementor-widget-text-editor" data-id="e5df69a" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
-                                    <p><a href="/" target="_blank" rel="noopener">PAANCHAJANYA REALITY</a> © 2026. All Rights Reserved.</p>                             </div>
+                                    <p><a href="/" target="_blank" rel="noopener">PAANCHAJANYA REALTY</a> © 2026. All Rights Reserved.</p>                             </div>
                 </div>
                     </div>
         </div>
@@ -430,38 +448,7 @@ var ElementorProFrontendConfig = {
 <script type="text/javascript" src="assests/js/frontend.min.js" id="elementor-pro-frontend-js"></script>
 <script type="text/javascript" src="assests/js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
 
-<div id="whatsapp-widget">
-    <!-- Popup -->
-    <div id="whatsapp-popup">
-        <div class="popup-header">
-            <button class="close-btn" id="close-popup">×</button>
-            <img src="assests/image/paanchajanya-logo-new.png" alt="Paanchajanya Realty" class="brand-logo">
-            <div class="header-content">
-                <div class="title">Paanchajanya Realty</div>
-                <div class="status">Online now</div>
-            </div>
-        </div>
-        <div class="popup-body">
-            <div class="message">
-                👋 Hi there! Welcome to Paanchajanya Realty.<br>
-                Looking for luxury apartments or villas? 
-                Our team is just a message away on WhatsApp.
-            </div>
-        </div>
-        <div class="popup-footer">
-            <a href="https://wa.me/917237997999?text=Hi,%20I%20am%20coming%20from%20Paanchajanya%20Reality%20website%20for%20enquiry." target="_blank" class="chat-btn">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-                Chat on WhatsApp
-            </a>
-        </div>
-    </div>
-    <!-- Floating Button -->
-    <div id="whatsapp-button">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </div>
-</div>
 
-<script src="assests/js/whatsapp-widget.js"></script>
 
 </body>
 </html>

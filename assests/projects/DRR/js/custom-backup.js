@@ -40426,7 +40426,7 @@
                         (0, St.jsx)("h2", {
                             className: "section-title",
                             style: { fontSize: "2.2rem", marginBottom: "30px", fontWeight: "900", color: "#111" },
-                            children: "Construction Update",
+                            children: "Project Update",
                         }),
                         (0, St.jsx)("div", {
                             style: {

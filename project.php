@@ -1287,7 +1287,7 @@
                         class="section-title"
                         style="font-size: 2.2rem; margin-bottom: 30px; font-weight: 900; color: rgb(17, 17, 17)"
                     >
-                        Construction Update
+                       Project Update
                     </h2>
                     <div
                         style="
