@@ -310,7 +310,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="high"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/cafe.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Café</div>
                                 </div>
@@ -323,7 +323,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/gym.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Gym</div>
                                 </div>
@@ -336,7 +336,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/mini-theatre.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Mini Theatre</div>
                                 </div>
@@ -349,7 +349,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/indoor-games.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Indoor Games</div>
                                 </div>
@@ -362,7 +362,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/banquet-hall.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Banquet Hall</div>
                                 </div>
@@ -375,7 +375,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/meditation.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Meditation Zone</div>
                                 </div>
@@ -388,7 +388,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/infinity-pool.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Infinity Pool</div>
                                 </div>
@@ -401,7 +401,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/jucuzzi.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Jacuzzi</div>
                                 </div>
@@ -414,7 +414,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/multipurpose-hal.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Multipurpose Hall</div>
                                 </div>
@@ -427,7 +427,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/clubhouse.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">5-Floor Clubhouse</div>
                                 </div>
@@ -440,7 +440,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/terrace-swimming.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Terrace Swimming Pool</div>
                                 </div>
@@ -453,7 +453,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/courtyard.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Central Courtyard</div>
                                 </div>
@@ -466,7 +466,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/ev.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">EV Charging</div>
                                 </div>
@@ -479,7 +479,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/elders-sitting-area.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Elders Sitting Area</div>
                                 </div>
@@ -492,7 +492,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/badminton.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Badminton Courts</div>
                                 </div>
@@ -505,7 +505,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/gazebo.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Gazebo</div>
                                 </div>
@@ -518,7 +518,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/childrens-play-area.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Children’s Play Area</div>
                                 </div>
@@ -531,7 +531,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/skating.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Skating Rink</div>
                                 </div>
@@ -544,7 +544,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/walking-track.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Walking Track</div>
                                 </div>
@@ -557,7 +557,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/half-basketball.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Half Basketball Court</div>
                                 </div>
@@ -570,7 +570,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/amphitheatre.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Amphitheatre</div>
                                 </div>
@@ -583,7 +583,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/avenue-plantation.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Avenue Plantation</div>
                                 </div>
@@ -596,7 +596,7 @@
                                             loading="lazy"
                                             decoding="async"
                                             fetchpriority="low"
-                                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/amenities/security-cabin.webp"
+                                            src=""
                                     /></a>
                                     <div class="fw-semibold mt-1">Security Cabin</div>
                                 </div>
@@ -610,7 +610,7 @@
                             alt="Modern apartment interior at Urban Trilla Apartments"
                             class="scaling-image"
                             loading="lazy"
-                            src="https://ankurahomes.com/urban-trilla-apartments/assets/img/interior.webp"
+                            src=""
                             style="transform: scale(0.5)"
                         />
                         <div class="luxury-text" style="opacity: 0; transform: translateY(50px)">
@@ -689,8 +689,8 @@
                             ><button class="btn rounded-pill px-3 py-2 btn-outline-secondary">West Facing</button>
                         </div>
                         <div class="card-plain overflow-hidden position-relative aos-init" data-aos="zoom-in">
-                            <a href="https://ankurahomes.com/urban-trilla-apartments/assets/img/plans/masterplan.webp" data-fancybox="gallery"
-                                ><img alt="" class="w-100" loading="eager" src="https://ankurahomes.com/urban-trilla-apartments/assets/img/plans/masterplan.webp"
+                            <a href="" data-fancybox="gallery"
+                                ><img alt="" class="w-100" loading="eager" src=""
                             /></a>
                         </div>
                     </div>
@@ -744,7 +744,7 @@
                                                 class="w-100 pt-4"
                                                 alt="Location map showing Urban Trilla Apartments"
                                                 loading="lazy"
-                                                src="https://ankurahomes.com/urban-trilla-apartments/assets/img/uta-location-high.webp"
+                                                src=""
                                             />
                                         </div>
                                     </div>
@@ -835,7 +835,7 @@
                                 loading="lazy"
                                 decoding="async"
                                 fetchpriority="high"
-                                src="https://ankurahomes.com/urban-trilla-apartments/assets/img/gallery/gallery-4.webp"
+                                src=""
                                 style="
                                     max-width: 80%;
                                     max-height: 70%;
@@ -866,7 +866,7 @@
                                 loading="lazy"
                                 decoding="async"
                                 fetchpriority="low"
-                                src="https://ankurahomes.com/urban-trilla-apartments/assets/img/gallery/gallery-8.webp"
+                                src=""
                                 style="
                                     max-width: 80%;
                                     max-height: 70%;
@@ -897,7 +897,7 @@
                                 loading="lazy"
                                 decoding="async"
                                 fetchpriority="low"
-                                src="https://ankurahomes.com/urban-trilla-apartments/assets/img/gallery/gallery-2.webp"
+                                src=""
                                 style="
                                     max-width: 80%;
                                     max-height: 70%;
@@ -928,7 +928,7 @@
                                 loading="lazy"
                                 decoding="async"
                                 fetchpriority="low"
-                                src="https://ankurahomes.com/urban-trilla-apartments/assets/img/gallery/gallery-3.webp"
+                                src=""
                                 style="
                                     max-width: 80%;
                                     max-height: 70%;
@@ -959,7 +959,7 @@
                                 loading="lazy"
                                 decoding="async"
                                 fetchpriority="low"
-                                src="https://ankurahomes.com/urban-trilla-apartments/assets/img/gallery/gallery-7.webp"
+                                src=""
                                 style="
                                     max-width: 80%;
                                     max-height: 70%;
