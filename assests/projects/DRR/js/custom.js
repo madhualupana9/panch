@@ -17895,7 +17895,7 @@
                                     children: (0, St.jsx)("ul", {
                                         className: "navbar-nav",
                                         children: [
-                                            ["https://ankurahomes.com/", "Home"],
+                                            ["/", "Home"],
                                             ["highlights", "Project Highlights"],
                                             ["amenities", "Amenities"],
                                             ["plans", "Plans"],
