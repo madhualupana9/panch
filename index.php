@@ -441,42 +441,33 @@ $sliders = $stmt->fetchAll();
 >
     <div class="elementor-container elementor-column-gap-default">
 
-        <!-- LEFT COLUMN (60%) -->
-        <div
-            class="elementor-column elementor-col-60 elementor-top-column elementor-element elementor-element-d529f19"
-            data-id="d529f19"
-            data-element_type="column"
-        >
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                    class="elementor-element elementor-element-68ce1fa elementor-widget elementor-widget-heading"
-                    data-id="68ce1fa"
-                    data-element_type="widget"
-                    data-settings='{"motion_fx_motion_fx_scrolling":"yes","motion_fx_translateX_effect":"yes","motion_fx_translateX_direction":"negative","motion_fx_translateX_speed":{"unit":"px","size":4},"motion_fx_devices":["desktop","tablet","mobile"]}'
-                    data-widget_type="heading.default"
-                >
-                    <div class="elementor-widget-container">
-                        <h2 class="elementor-heading-title">About Us</h2>
-                    </div>
-                </div>
+        <div class="elementor-widget-container about-text">
+    <p>
+        <strong>Paanchajanya Realty Pvt. Ltd.</strong>, founded in 2009 by
+        <strong>Mr. Rajender Reddy</strong>, began its journey as
+        <strong>Sahaja Properties</strong> with a vision to provide trusted,
+        transparent, and value-driven real estate investments.
+    </p>
 
-                <div
-                    class="elementor-element elementor-element-597f695 elementor-widget elementor-widget-text-editor"
-                    data-id="597f695"
-                    data-element_type="widget"
-                    data-widget_type="text-editor.default"
-                >
-                    <div class="elementor-widget-container about-text">
-                        <p>
-                            Paanchajanya Reality Pvt Ltd, founded by Mr. Rajender Reddy in 2009, has established itself as a leading provider of Villa Plots in Hyderabad, Shirdi, Bangalore, and Bangkok. Over the years, the company has sold thousands of plots, growing from its initial project of 2000 plots to delivering over 11 lakh square yards.
-                        </p>
-                        <p>
-                            The company’s success is built upon its commitment to passing on the benefits of its cost-efficiency to its customers. This principle, along with constant efforts to improve the community and positively impact lives, has driven its success for over 25 years.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <p>
+        Today, the company is recognized as one of the leading developers of
+        premium villa plots across <strong>Hyderabad, Bengaluru, Shirdi, and
+        Bangkok</strong>. With over <strong>11 lakh square yards</strong> of
+        successfully developed plotted communities, Paanchajanya Realty has
+        earned the trust of thousands of happy customers through quality
+        developments and timely delivery.
+    </p>
+
+    <p>
+        Guided by the principles of <strong>quality, integrity, innovation, and
+        customer-first values</strong>, every project is thoughtfully planned to
+        deliver long-term investment value while creating well-connected,
+        sustainable communities. Backed by more than
+        <strong>25 years of industry expertise</strong>, Paanchajanya Realty
+        continues to shape the future of plotted developments with excellence,
+        transparency, and an unwavering commitment to customer satisfaction.
+    </p>
+</div>
 
         <!-- RIGHT COLUMN (40%) -->
         <div
