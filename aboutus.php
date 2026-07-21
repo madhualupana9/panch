@@ -122,7 +122,7 @@
     
 
     <!-- Vision & Values -->
-    <section class="section-padding">
+    <section class="section-padding" style="padding: 10px 0;">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Vision & Commitment</h2>

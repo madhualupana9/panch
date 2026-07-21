@@ -76,6 +76,47 @@
         .stat-number { font-size: 2rem; }
         .stat-suffix { font-size: 1.5rem; }
         .stat-card { padding: 20px 10px; }
+        
+        /* Fix for passionate/bubble section image */
+        .elementor-element-a1490fe,
+        .elementor-element-b3d77cb,
+        .elementor-element-0cef163,
+        .elementor-element-5636a9d,
+        .elementor-element-1e06928,
+        .elementor-element-2dc6c0c,
+        .elementor-element-03e4e66,
+        .elementor-element-fee331a,
+        .elementor-element-046dfdf,
+        .elementor-element-47d89f7 {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            min-height: auto !important;
+            height: auto !important;
+        }
+
+        .elementor-element-a1490fe {
+            padding: 40px 0 !important;
+            background: #fff !important;
+        }
+
+        .elementor-element-47d89f7 {
+            position: relative !important;
+            width: 100% !important;
+            left: 0 !important;
+            margin: 20px 0 !important;
+            display: flex !important;
+            justify-content: center !important;
+            transform: none !important;
+            z-index: 999 !important;
+        }
+        
+        .elementor-element-47d89f7 img {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 100% !important;
+            display: block !important;
+        }
     }
 </style>
 <?php include 'includes/db.php'; ?>
